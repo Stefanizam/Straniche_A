@@ -22,18 +22,17 @@ body {
     color: rgb(200, 200, 200);
 }
 
-#primaryHeader {
+#headerContainer {
+    background-image: url("Images/Triangles.png");
     top: 0%;
     display: flex;
-    align-items: fl
-    ex-start;
+    align-items: center;
+    justify-content: center;
     height: 600px;
 }
 
 #nameContainer {
-    position: absolute;
-    top: 14rem;
-    left: 16rem;
+    translate: -10rem;
     width: 26rem;
     height: 10rem;
 }
@@ -65,13 +64,11 @@ body {
 /* Corners end*/
 
 @media (max-width: 800px) {
-    #headerImage {
+    #headerContainer {
         height: 400px;
     }    
     #nameContainer {
-        position: absolute;
-        top: 14rem;
-        left: 10rem;
+        translate: -4rem;
         width: 19rem;
         height: 10rem;
     }
@@ -92,9 +89,7 @@ body {
 
 @media (max-width: 532px) {
     #nameContainer {
-        position: absolute;
-        top: 14rem;
-        left: 6rem;
+        translate: -2rem;
         width: 15rem;
         height: 10rem;
     }
