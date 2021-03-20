@@ -1,0 +1,113 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(14, 15, 16);
+}
+
+.largeText {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    line-height: 2.7rem;
+}
+
+.mediumText {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgb(200, 200, 200);
+}
+
+.smallText {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(200, 200, 200);
+}
+
+#primaryHeader {
+    top: 0%;
+    display: flex;
+    align-items: flex-start;
+    height: 600px;
+}
+
+#nameContainer {
+    position: absolute;
+    top: 14rem;
+    left: 16rem;
+    width: 26rem;
+    height: 10rem;
+}
+
+/* Corners */
+
+.corners {
+    position: relative;
+    left: -2.25rem;
+    top: -0.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.corners div {
+    background-color: white;
+}
+
+.corners .horizontal {
+    height: 0.35rem;
+    width: 1rem;
+}
+
+.corners .vertical {
+    height: 0.7rem;
+    width: 0.35rem;
+}
+
+/* Corners end*/
+
+@media (max-width: 800px) {
+    #headerImage {
+        height: 400px;
+    }    
+    #nameContainer {
+        position: absolute;
+        top: 14rem;
+        left: 10rem;
+        width: 19rem;
+        height: 10rem;
+    }
+
+    .largeText {
+        font-size: 2rem;
+        font-weight: 900;
+        color: white;
+        line-height: 1.9rem;
+    }
+    
+    .mediumText {
+        font-size: 1rem;
+        font-weight: 300;
+        color: rgb(200, 200, 200);
+    }
+}
+
+@media (max-width: 532px) {
+    #nameContainer {
+        position: absolute;
+        top: 14rem;
+        left: 6rem;
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .largeText {
+        font-size: 1.4rem;
+        font-weight: 900;
+        color: white;
+        line-height: 1.3rem;
+    }
+    
+    .mediumText {
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: rgb(200, 200, 200);
+    }
+}
