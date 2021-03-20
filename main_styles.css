@@ -25,7 +25,8 @@ body {
 #primaryHeader {
     top: 0%;
     display: flex;
-    align-items: flex-start;
+    align-items: fl
+    ex-start;
     height: 600px;
 }
 
