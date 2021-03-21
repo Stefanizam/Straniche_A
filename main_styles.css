@@ -3,20 +3,20 @@ body {
     background-color: rgb(14, 15, 16);
 }
 
-.largeText {
+.fontLarge {
     font-size: 3rem;
     font-weight: 900;
     color: white;
     line-height: 2.7rem;
 }
 
-.mediumText {
+.fontMedium {
     font-size: 1.25rem;
     font-weight: 300;
     color: rgb(200, 200, 200);
 }
 
-.smallText {
+.fontSmall {
     font-size: 1rem;
     font-weight: 300;
     color: rgb(200, 200, 200);
@@ -26,13 +26,14 @@ body {
     background-image: url("Images/Triangles.png");
     top: 0%;
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 600px;
 }
 
 #nameContainer {
-    transform: translateX(-10rem);
+    position: absolute;
+    top: 13.5rem;
+    left: 12rem;
     width: 26rem;
     height: 10rem;
 }
@@ -63,25 +64,48 @@ body {
 
 /* Corners end*/
 
+#aboutMeContainer {
+    margin: 6rem;
+    display: flex;
+    
+}
+
+#aboutMeText {
+    margin-left: 4rem;
+}
+
+#profileImage {
+    max-height: 300px;
+}
+
 @media (max-width: 800px) {
     #headerContainer {
         height: 400px;
     }
     #nameContainer {
-        transform: translateX(-4rem);
+        top: 8.5rem;
+        left: 7.8rem;
         width: 19rem;
         height: 10rem;
     }
-    .largeText {
+    .fontLarge {
         font-size: 2rem;
-        font-weight: 900;
-        color: white;
         line-height: 1.9rem;
     }
-    .mediumText {
+    .fontMedium {
         font-size: 1rem;
-        font-weight: 300;
-        color: rgb(200, 200, 200);
+    }
+    .fontSmall {
+        font-size: 0.8rem;
+    }
+    #aboutMeContainer {
+        margin: 3rem;
+    }
+    #profileImage {
+        max-height: 200px;
+    }
+    #aboutMeText {
+        margin-left: 2rem;
     }
 }
 
@@ -90,19 +114,29 @@ body {
         height: 300px;
     }
     #nameContainer {
-        transform: translateX(-2rem);
+        top: 6.5rem;
+        left: 50%;
+        transform: translateX(-33%);
         width: 15rem;
         height: 10rem;
     }
-    .largeText {
+    .fontLarge {
         font-size: 1.4rem;
-        font-weight: 900;
-        color: white;
         line-height: 1.3rem;
     }
-    .mediumText {
+    .fontMedium {
         font-size: 0.8rem;
-        font-weight: 300;
-        color: rgb(200, 200, 200);
+    }
+    .fontSmall {
+        font-size: 0.8rem;
+    }
+    #aboutMeContainer {
+        margin: 2rem;
+    }
+    #profileImage {
+        display: none;
+    }
+    #aboutMeText {
+        margin-left: 1rem;
     }
 }
