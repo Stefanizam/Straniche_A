@@ -40,6 +40,8 @@
 
 /* Corners end*/
 
+/* Media */
+
 @media (max-width: 800px) {
     #headerContainer {
         height: 400px;

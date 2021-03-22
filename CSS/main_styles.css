@@ -1,56 +1,67 @@
 body {
     font-family: 'Lato', sans-serif;
     background-color: rgb(14, 15, 16);
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(200, 200, 200);
 }
 
 .sectionMargin {
     margin: 6rem 6rem;
 }
 
-.fontLarge {
+.font-XL {
     font-size: 3rem;
     font-weight: 900;
     color: white;
     line-height: 2.7rem;
 }
 
-.fontMedium {
+.font-L {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: white;
+    line-height: 2rem;
+}
+
+.font-M {
     font-size: 1.25rem;
     font-weight: 300;
     color: rgb(200, 200, 200);
 }
 
-.fontSmall {
-    font-size: 1rem;
-    font-weight: 300;
-    color: rgb(200, 200, 200);
-}
-
-
+/* Media */
 
 @media (max-width: 800px) {
-    .fontLarge {
+    .font-XL {
         font-size: 2rem;
         line-height: 1.9rem;
     }
-    .fontMedium {
+    .font-L {
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+    }
+    .font-M {
         font-size: 1rem;
     }
-    .fontSmall {
+    .font-S {
         font-size: 0.8rem;
     }
-
 }
 
 @media (max-width: 532px) {
-    .fontLarge {
+    .font-XL {
         font-size: 1.4rem;
         line-height: 1.3rem;
     }
-    .fontMedium {
+    .font-L {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .font-M {
         font-size: 0.8rem;
     }
-    .fontSmall {
+    .font-S {
         font-size: 0.8rem;
     }
 }

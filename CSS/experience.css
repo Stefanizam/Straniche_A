@@ -1,3 +1,65 @@
 #experienceContainer {
     margin-top: 6rem;
 }
+
+#vfxContainer {
+    /* margin: 3rem; */
+}
+
+#vfxHeaderContainer {
+    display: flex;
+    background-color: rgb(237, 26, 59);
+    max-height: 280px;
+}
+
+#vfxHeaderText {
+    flex-direction: column;
+    margin: 3rem;
+    min-width: 18rem;
+    max-width: 18rem;
+
+}
+
+#vfxHeaderText p {
+    color: white;
+}
+
+#vfxImageContainer {
+    background-image: url(../Images/vfxImage.jpg);
+    width: 1366px;
+    height: 280px;
+}
+
+#vfxJob {
+    font-size: 0.75rem;
+    max-width: 12rem;
+}
+
+#vfxMainContainer {
+    display: flex;
+}
+
+#vfxIntroText {
+    margin: 3rem;
+    text-align: right;
+}
+
+/* Media */
+
+@media (max-width: 800px) {
+    #experienceContainer {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 532px) {
+    #experienceContainer {
+        margin-top: 2rem;
+    }
+    #vfxImageContainer {
+        display: none;
+    }
+    #vfxJob {
+        display: none;
+    }
+}
