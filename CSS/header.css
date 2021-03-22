@@ -1,0 +1,66 @@
+#headerContainer {
+    background-image: url("../Images/bkgTriangles.png");
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+#nameContainer {
+    position: absolute;
+    top: 13.5rem;
+    left: 12rem;
+    width: 26rem;
+    height: 10rem;
+}
+
+/* Corners */
+
+.corners {
+    position: relative;
+    left: -2.25rem;
+    top: -0.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.corners div {
+    background-color: white;
+}
+
+.corners .horizontal {
+    height: 0.35rem;
+    width: 1rem;
+}
+
+.corners .vertical {
+    height: 0.7rem;
+    width: 0.35rem;
+}
+
+/* Corners end*/
+
+@media (max-width: 800px) {
+    #headerContainer {
+        height: 400px;
+    }
+    #nameContainer {
+        top: 8.5rem;
+        left: 7.8rem;
+        width: 19rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 532px) {
+    #headerContainer {
+        height: 300px;
+    }
+    #nameContainer {
+        top: 6.5rem;
+        left: 50%;
+        transform: translateX(-33%);
+        width: 15rem;
+        height: 10rem;
+    }
+}

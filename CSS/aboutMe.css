@@ -1,0 +1,36 @@
+#aboutMeContainer {
+    margin: 6rem 6rem 3rem 6rem;
+    display: flex;
+}
+
+#aboutMeText {
+    margin-left: 4rem;
+}
+
+#profileImage {
+    max-height: 300px;
+}
+
+@media (max-width: 800px) {
+    #aboutMeContainer {
+        margin: 3rem;
+    }
+    #profileImage {
+        max-height: 200px;
+    }
+    #aboutMeText {
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 532px) {
+    #aboutMeContainer {
+        margin: 2rem;
+    }
+    #profileImage {
+        display: none;
+    }
+    #aboutMeText {
+        margin-left: 1rem;
+    }
+}
