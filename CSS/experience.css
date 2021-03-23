@@ -2,11 +2,14 @@
     margin-top: 6rem;
 }
 
+/* VFX Header Start */
+
 #vfxContainer {
     /* margin: 3rem; */
 }
 
 #vfxHeaderContainer {
+    width: 100%;
     display: flex;
     background-color: rgb(237, 26, 59);
     max-height: 280px;
@@ -17,34 +20,63 @@
     margin: 3rem;
     min-width: 18rem;
     max-width: 18rem;
-
 }
 
 #vfxHeaderText p {
     color: white;
+    text-align: end;
 }
 
 #vfxImageContainer {
     background-image: url(../Images/vfxImage.jpg);
-    width: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
     height: 280px;
 }
 
 #vfxJob {
     font-size: 0.75rem;
-    max-width: 12rem;
 }
+
+/* VFX Header End */
+
+/* VFX Main Start */
 
 #vfxMainContainer {
     display: flex;
+    flex-direction: row;
 }
 
 #vfxIntroText {
     margin: 3rem;
+    max-width: 40%;
     text-align: right;
 }
 
+#vfxSkillsContainer {
+    margin-top: 3rem;
+    max-width: 60%;
+    display: flex;
+}
+
+#vfxSkillsContainer div {
+}
+
+#vfxSkillsContainer img {
+    width: 33%;
+
+}
+
+/* VFX Main End */
+
 /* Media */
+
+@media (min-width: 1080px) {
+    #vfxImageContainer {
+        background-position-x: right;
+    }
+}
 
 @media (max-width: 800px) {
     #experienceContainer {
@@ -56,10 +88,19 @@
     #experienceContainer {
         margin-top: 2rem;
     }
+    #vfxHeaderContainer {
+        justify-content: flex-end;
+    }
     #vfxImageContainer {
         display: none;
     }
     #vfxJob {
         display: none;
     }
+    #vfxIntroText {
+        max-width: 100%;
+    }
+    #vfxSkillsContainer {
+        display: none;
+    }    
 }

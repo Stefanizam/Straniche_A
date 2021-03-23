@@ -1,5 +1,6 @@
 #headerContainer {
     background-image: url("../Images/bkgTriangles.png");
+    background-position-x: center;
     top: 0%;
     display: flex;
     justify-content: center;
@@ -41,6 +42,12 @@
 /* Corners end*/
 
 /* Media */
+
+@media (min-width: 1080px) {
+    #headerContainer {
+        background-size: cover;
+    }
+}
 
 @media (max-width: 800px) {
     #headerContainer {
