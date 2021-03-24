@@ -78,6 +78,7 @@
     margin-right: 2rem;
     width: 50%;
     display: none;
+    animation: unset;
 }
 
 #vfxSkillsContainer span {
@@ -153,3 +154,13 @@
     }
 }
 
+/* Animations */
+
+@keyframes opacityAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
