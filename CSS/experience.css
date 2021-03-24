@@ -65,8 +65,8 @@
     width: auto;
     height: 70px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,15 +74,18 @@
     transition: height 0.5s;
 }
 #vfxSkillsContainer p {
-    text-align: end;
-    margin-right: 2rem;
+    margin-top: 1rem;
+    text-align: start;
+    margin-left: 2.5rem;
     width: 50%;
     display: none;
     animation: unset;
 }
 
 #vfxSkillsContainer span {
+    margin-top: 1.25rem;
     margin-left: 2.5rem;
+
     font-size: 1.5rem;
 }
 

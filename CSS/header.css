@@ -66,7 +66,6 @@
 
 .corners div {
     background-color: white;
-    animation: 0.25s linear 0.5s 1 corners;
 }
 
 .corners .horizontal {

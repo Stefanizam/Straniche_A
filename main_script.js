@@ -14,7 +14,8 @@ for (let divche of skillsDiv) {
     divche.addEventListener('mouseenter', () => {
         divche.style.height = "240px";
         divche.querySelector("p").style.display = "inline";
-        divche.querySelector("p").style.animation = "1s linear 0s 1 opacityAppear";
+        divche.querySelector("p").style.animation = "0.5s linear 0s 1 opacityAppear";
+        divche.querySelector("p").style.backgroundImage = "../Images/pntImageB.jpg"
     });
 
     divche.addEventListener('mouseleave', () => {
