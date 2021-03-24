@@ -70,7 +70,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1000px;
-    /* padding-top: 1rem; */
+    transition: height 0.5s;
+}
+#vfxSkillsContainer p {
+    text-align: end;
+    /* height: 160px; */
+    width: 60%;
+    justify-self: flex-end;
+    display: none;
 }
 
 #vfxSkillsContainer span {
@@ -145,3 +152,4 @@
         display: none;
     }
 }
+
