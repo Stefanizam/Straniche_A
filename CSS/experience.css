@@ -63,9 +63,10 @@
 
 #vfxSkillsContainer>div {
     width: auto;
-    height: 80px;
+    height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,9 +75,8 @@
 }
 #vfxSkillsContainer p {
     text-align: end;
-    /* height: 160px; */
-    width: 60%;
-    justify-self: flex-end;
+    margin-right: 2rem;
+    width: 50%;
     display: none;
 }
 
@@ -90,11 +90,11 @@
 }
 
 #vfxCompositing {
-    background-image: url(../Images/compImageA.jpg);
+    background-image: url(../Images/compImageC.jpg);
 }
 
 #vfxMotionTrack {
-    background-image: url(../Images/compImageC.jpg);
+    background-image: url(../Images/vfxMotion.jpg);
 }
 
 #vfxRoto {
