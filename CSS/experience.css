@@ -56,16 +56,50 @@
 
 #vfxSkillsContainer {
     margin-top: 3rem;
-    max-width: 60%;
+    width: 60%;
     display: flex;
+    flex-direction: column;
 }
 
-#vfxSkillsContainer div {
+#vfxSkillsContainer>div {
+    width: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1000px;
+    /* padding-top: 1rem; */
 }
 
-#vfxSkillsContainer img {
-    width: 33%;
+#vfxSkillsContainer span {
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+}
 
+#vfxPaint {
+    background-image: url(../Images/pntImageA.jpg);
+}
+
+#vfxCompositing {
+    background-image: url(../Images/compImageA.jpg);
+}
+
+#vfxMotionTrack {
+    background-image: url(../Images/compImageC.jpg);
+}
+
+#vfxRoto {
+    background-image: url(../Images/pntImageB.jpg);
+}
+
+#vfxSimulation {
+    background-image: url(../Images/compImageB.jpg);
+}
+
+#vfx3D {
+    background-image: url(../Images/pntImageA.jpg);
 }
 
 /* VFX Main End */
@@ -81,6 +115,13 @@
 @media (max-width: 800px) {
     #experienceContainer {
         margin-top: 3rem;
+    }
+    #vfxSkillsContainer>div {
+        height: 60px;
+    }
+    #vfxSkillsContainer span {
+        margin-left: 2rem;
+        font-size: 1rem;
     }
 }
 
@@ -102,5 +143,5 @@
     }
     #vfxSkillsContainer {
         display: none;
-    }    
+    }
 }
