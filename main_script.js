@@ -24,7 +24,7 @@ for (let divche of skillsDiv) {
                 break;
             case "vfxMotionTrack":
                 divche.querySelector('video').style.height = "auto";
-                divche.querySelector('video').style.zIndex = "1";
+                // divche.querySelector('video').style.zIndex = "1";
                 divche.querySelector('video').play();
                 break;
         }
@@ -42,7 +42,7 @@ for (let divche of skillsDiv) {
                 break;
             case "vfxMotionTrack":
                 divche.querySelector('video').style.height = "0px";
-                divche.querySelector('video').style.zIndex = "-1";
+                // divche.querySelector('video').style.zIndex = "-1";
                 divche.querySelector('video').pause();
                 break;
         }
