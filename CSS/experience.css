@@ -67,50 +67,81 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
     max-width: 1000px;
     transition: height 0.5s;
 }
-#vfxSkillsContainer p {
+
+.wrapper {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper p {
     margin-top: 1rem;
     text-align: start;
     margin-left: 2.5rem;
-    width: 50%;
     display: none;
     animation: unset;
+    max-width: 40%;
 }
 
-#vfxSkillsContainer span {
+.wrapper span {
     margin-top: 1.25rem;
     margin-left: 2.5rem;
-
     font-size: 1.5rem;
 }
 
-#vfxPaint {
-    background-image: url(../Images/pntImageA.jpg);
+.wrapper>div {
+    background-image: linear-gradient(to right, rgba(10, 10, 10, .7) 0%, rgba(10, 10, 10, 0) 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
 }
 
-#vfxCompositing {
-    background-image: url(../Images/compImageC.jpg);
+.wrapper video {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    z-index: 1;
 }
 
-#vfxMotionTrack {
-    background-image: url(../Images/vfxMotion.jpg);
+#vfxPaint .wrapper {
+    background-image: url(../Images/pntImage.jpg);
 }
 
-#vfxRoto {
-    background-image: url(../Images/pntImageB.jpg);
+#vfxComp .wrapper {
+    background-image: url(../Images/compImage.jpg);
 }
 
-#vfxSimulation {
+#vfxMotionTrack .wrapper {
+    background-image: url(../Images/motionTrackImage.jpg);
+    /* z-index: 0; */
+}
+
+#vfxRoto .wrapper {
+    background-image: url(../Images/pntImage.jpg);
+}
+
+#vfxSimulation .wrapper {
     background-image: url(../Images/compImageB.jpg);
 }
 
-#vfx3D {
-    background-image: url(../Images/pntImageA.jpg);
+#vfx3D .wrapper {
+    background-image: url(../Images/pntImage.jpg);
 }
 
 /* VFX Main End */
@@ -133,6 +164,9 @@
     #vfxSkillsContainer span {
         margin-left: 2rem;
         font-size: 1rem;
+    }
+    #vfxSkillsContainer p {
+        max-width: 75%;
     }
 }
 

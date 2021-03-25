@@ -27,7 +27,13 @@ body {
 .font-M {
     font-size: 1.25rem;
     font-weight: 300;
-    color: rgb(200, 200, 200);
+    color: white;
+}
+
+.font-S {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: white;
 }
 
 /* Media */
@@ -45,7 +51,6 @@ body {
         font-size: 1rem;
     }
     .font-S {
-        font-size: 0.8rem;
     }
 }
 
@@ -62,6 +67,5 @@ body {
         font-size: 0.8rem;
     }
     .font-S {
-        font-size: 0.8rem;
     }
 }
