@@ -7,41 +7,7 @@
     height: 600px;
 }
 
-@keyframes slideLeft {
-    0% {
-        transform: translateY(-800px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes blink {
-    0% {
-        color: white;
-    }
-    50% {
-        color: rgb(237, 26, 59);
-    }
-    100% {
-        color: white;
-    }
-}
-
-@keyframes corners {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 #nameContainer {
-    animation: 0.15s ease-in 0s 1 slideLeft;
     position: absolute;
     top: 13.5rem;
     left: 12rem;
@@ -49,14 +15,9 @@
     height: 10rem;
 }
 
-#nameContainer h1 {
-    animation: 0.25s linear 0.5s 1 blink;
-}
-
 /* Corners */
 
 .corners {
-    
     position: relative;
     left: -2.25rem;
     top: -0.7rem;

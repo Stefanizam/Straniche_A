@@ -9,9 +9,17 @@ for (let divche of skillsDiv) {
         divche.querySelector("p").style.display = "flex";
         divche.querySelector("p").style.animation = "0.5s linear 0s 1 opacityAppear";
 
-        divche.querySelector(".wrapper").style.backgroundImage = "unset";
-        divche.querySelector('video').style.height = "unset";
-        divche.querySelector('video').play();
+        switch (divche.id) {
+            case "vfxPaint":
+                divche.querySelector(".wrapper").style.backgroundImage = "url(../Straniche_A/Images/pntGIF.gif)"
+                break;
+
+            default:
+                divche.querySelector(".wrapper").style.backgroundImage = "unset";
+                divche.querySelector('video').style.height = "unset";
+                divche.querySelector('video').play();
+        }
+
     });
 
     divche.addEventListener('mouseleave', () => {
