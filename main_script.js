@@ -27,35 +27,30 @@ for (let divche of skillsDiv) {
         divche.style.height = skillsHeight;
         divche.querySelector("p").style.display = "none";
 
-        let hideVideo = function () {
+        let hideVideo = function (image) {
+            divche.querySelector(".wrapper").style.backgroundImage = `url(../Straniche_A/Images/${image})`;
             divche.querySelector('video').style.height = "0px";
             divche.querySelector('video').pause();
         }
 
         switch (divche.id) {
             case "vfxPaint":
-                divche.querySelector(".wrapper").style.backgroundImage = "url(../Straniche_A/Images/pntImage.jpg";
-                hideVideo();
+                hideVideo("vfxPaintImage.jpg");
                 break;
             case "vfxComp":
-                divche.querySelector(".wrapper").style.backgroundImage = "url(../Straniche_A/Images/compImage.jpg";
-                hideVideo();
+                hideVideo("compImage.jpg");
                 break;
             case "vfxMotionTrack":
-                divche.querySelector(".wrapper").style.backgroundImage = "url(../Straniche_A/Images/motionTrackImage.jpg"
-                hideVideo();
+                hideVideo("motionTrackImage.jpg");
                 break;
             case "vfxRoto":
-                divche.querySelector(".wrapper").style.backgroundImage = "url(../Straniche_A/Images/vfxRoto.jpg"
-                hideVideo();
+                hideVideo("vfxRoto.jpg");
                 break;
             case "vfxSimulation":
-                divche.querySelector(".wrapper").style.backgroundImage = "url(../Straniche_A/Images/motionTrackImage.jpg"
-                hideVideo();
+                hideVideo("motionTrackImage.jpg");
                 break;
             case "vfx3D":
-                divche.querySelector(".wrapper").style.backgroundImage = "url(../Straniche_A/Images/motionTrackImage.jpg"
-                hideVideo();
+                hideVideo("vfxRoto.jpg");
                 break;
         }
     });

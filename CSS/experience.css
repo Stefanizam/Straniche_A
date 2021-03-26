@@ -115,7 +115,7 @@
 }
 
 #vfxPaint .wrapper {
-    background-image: url(../Images/pntImage.jpg);
+    background-image: url(../Images/vfxPaintImage.jpg);
 }
 
 #vfxComp .wrapper {
@@ -130,8 +130,16 @@
     background-image: url(../Images/vfxRoto.jpg);
 }
 
+#vfxRoto video {
+    transform: translateY(-20%)
+}
+
 #vfxSimulation .wrapper {
     background-image: url(../Images/compImageB.jpg);
+}
+
+#vfxSimulation video {
+    transform: translateY(-25%);
 }
 
 #vfx3D .wrapper {
@@ -142,7 +150,7 @@
 
 /* Media */
 
-@media (min-width: 1080px) {
+@media (min-width: 1000px) {
     #vfxImageContainer {
         background-position-x: right;
     }
@@ -162,10 +170,12 @@
     #vfxSkillsContainer p {
         max-width: 75%;
     }
-    
     .wrapper video {
         width: 150%;
         transform: translateX(-25%);
+    }
+    #vfxSimulation video {
+        transform: translateY(0%);
     }
 }
 
@@ -192,5 +202,4 @@
 
 /* Animations */
 
-@keyframes opacityAppear {
-}
+@keyframes opacityAppear {}
