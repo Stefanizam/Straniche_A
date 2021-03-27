@@ -119,7 +119,7 @@
 }
 
 #vfxPaint video {
-    transform: translateY(-40%);
+    transform: translateY(-20%);
 }
 
 #vfxComp .wrapper {
@@ -136,6 +136,10 @@
 
 #vfxRoto video {
     transform: translateY(-20%)
+}
+
+.asdasd {
+    sksk: jdjd;
 }
 
 #vfxSimulation .wrapper {
