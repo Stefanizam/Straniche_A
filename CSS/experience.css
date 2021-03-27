@@ -115,15 +115,19 @@
 }
 
 #vfxPaint .wrapper {
-    background-image: url(../Images/vfxPaintImage.jpg);
+    background-image: url(../Images/vfxPaint.jpg);
+}
+
+#vfxPaint video {
+    transform: translateY(-40%);
 }
 
 #vfxComp .wrapper {
-    background-image: url(../Images/compImage.jpg);
+    background-image: url(../Images/vfxComp.jpg);
 }
 
 #vfxMotionTrack .wrapper {
-    background-image: url(../Images/motionTrackImage.jpg);
+    background-image: url(../Images/vfxCMM.jpg);
 }
 
 #vfxRoto .wrapper {
@@ -135,7 +139,7 @@
 }
 
 #vfxSimulation .wrapper {
-    background-image: url(../Images/compImageB.jpg);
+    background-image: url(../Images/vfxSim.jpg);
 }
 
 #vfxSimulation video {
