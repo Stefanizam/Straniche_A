@@ -5,7 +5,7 @@ const skillsHeight = document.querySelector('#vfxSkillsContainer>div').style.hei
 for (let divche of skillsDiv) {
     divche.addEventListener('mouseenter', () => {
 
-        divche.style.height = "300px";
+        divche.style.height = "240px";
         divche.querySelector("p").style.display = "flex";
         divche.querySelector("p").style.animation = "0.5s linear 0s 1 opacityAppear";
 
@@ -42,7 +42,7 @@ for (let divche of skillsDiv) {
                 hideVideo("vfxSim.jpg");
                 break;
             case "vfx3D":
-                hideVideo("vfxRoto.jpg");
+                hideVideo("vfx3D.jpg");
                 break;
         }
     });

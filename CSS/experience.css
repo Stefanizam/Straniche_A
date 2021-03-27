@@ -138,10 +138,6 @@
     transform: translateY(-20%)
 }
 
-.asdasd {
-    sksk: jdjd;
-}
-
 #vfxSimulation .wrapper {
     background-image: url(../Images/vfxSim.jpg);
 }
@@ -151,7 +147,11 @@
 }
 
 #vfx3D .wrapper {
-    background-image: url(../Images/pntImage.jpg);
+    background-image: url(../Images/vfx3D.jpg);
+}
+
+#vfx3D video {
+    transform: translateY(-25%);
 }
 
 /* VFX Main End */
