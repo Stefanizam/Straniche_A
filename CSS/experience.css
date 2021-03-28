@@ -97,7 +97,7 @@
 }
 
 .wrapper>div {
-    background-image: linear-gradient(to right, rgba(10, 10, 10, .7) 0%, rgba(10, 10, 10, 0) 50%);
+    background-image: linear-gradient(to right, rgba(10, 10, 10, .6) 0%, rgba(10, 10, 10, 0) 60%);
     position: absolute;
     top: 0;
     left: 0;
