@@ -109,8 +109,8 @@
 
 .wrapper video {
     display: none;
-    height: 480px;
-    width: 960px;
+    height: auto;
+    width: 100%;
 }
 
 .iconsContainer {
@@ -163,12 +163,12 @@
     #vfxImageContainer {
         background-position-x: right;
     }
-    .wrapper video {
-    }
 }
 
 @media (max-width: 1170px) {
     .wrapper video {
+        height: auto;
+        width: auto;
     }
 }
 
@@ -187,7 +187,6 @@
         margin-left: 2rem;
         max-width: 75%;
     }
-    
     .iconsContainer span {
         display: none;
     }
