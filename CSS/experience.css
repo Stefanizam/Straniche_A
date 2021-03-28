@@ -108,7 +108,6 @@
 }
 
 .wrapper video {
-    display: none;
     height: auto;
     width: 100%;
 }
@@ -129,30 +128,6 @@
 .iconsContainer img {
     height: 48px;
     width: auto;
-}
-
-#vfxPaint .wrapper {
-    background-image: url(../Images/vfxPaint.jpg);
-}
-
-#vfxComp .wrapper {
-    background-image: url(../Images/vfxComp.jpg);
-}
-
-#vfxMotionTrack .wrapper {
-    background-image: url(../Images/vfxCMM.jpg);
-}
-
-#vfxRoto .wrapper {
-    background-image: url(../Images/vfxRoto.jpg);
-}
-
-#vfxSimulation .wrapper {
-    background-image: url(../Images/vfxSim.jpg);
-}
-
-#vfx3D .wrapper {
-    background-image: url(../Images/vfx3D.jpg);
 }
 
 /* VFX Main End */
