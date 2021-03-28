@@ -4,15 +4,16 @@ let skillsDiv = document.querySelectorAll('#vfxSkillsContainer>div');
 const skillsHeight = document.querySelector('#vfxSkillsContainer>div').style.height;
 
 for (let divche of skillsDiv) {
+    const originalHeight = divche.querySelector('video').style.height;
+
     divche.addEventListener('mouseenter', () => {
 
-        divche.style.height = "240px";
-        divche.querySelector("p").style.display = "flex";
-        divche.querySelector(".iconsContainer").style.display = "flex";        
-        divche.querySelector("p").style.animation = "0.5s linear 0s 1 opacityAppear";
-
+        divche.style.height = "300px";
         divche.querySelector(".wrapper").style.backgroundImage = "unset";
-        divche.querySelector('video').style.height = "unset";
+        divche.querySelector(".iconsContainer").style.display = "flex";        
+        divche.querySelector("p").style.display = "flex";
+        divche.querySelector("p").style.animation = "0.5s linear 0s 1 opacityAppear";
+        divche.querySelector('video').style.display = "flex"
         divche.querySelector('video').play();
     });
 
@@ -24,8 +25,8 @@ for (let divche of skillsDiv) {
 
         let hideVideo = function (image) {
             divche.querySelector(".wrapper").style.backgroundImage = `url(../Straniche_A/Images/${image})`;
-            divche.querySelector('video').style.height = "0px";
             divche.querySelector('video').pause();
+            divche.querySelector('video').style.display = "none";
         }
 
         switch (divche.id) {
