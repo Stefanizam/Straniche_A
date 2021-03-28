@@ -28,12 +28,22 @@ body {
     font-size: 1.25rem;
     font-weight: 300;
     color: white;
+    line-height: normal;
+
 }
 
 .font-S {
     font-size: 0.9rem;
     font-weight: 300;
     color: white;
+    line-height: normal;
+}
+
+.font-XS {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: white;
+    line-height: normal;
 }
 
 /* Media */

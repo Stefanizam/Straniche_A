@@ -4,10 +4,6 @@
 
 /* VFX Header Start */
 
-#vfxContainer {
-    /* margin: 3rem; */
-}
-
 #vfxHeaderContainer {
     width: 100%;
     display: flex;
@@ -86,13 +82,14 @@
 
 .wrapper p {
     margin-top: 1rem;
-    text-align: start;
     margin-left: 2.5rem;
+    margin-bottom: 0;
+    text-align: start;
     display: none;
     max-width: 40%;
 }
 
-.wrapper span {
+.wrapper>div>span {
     margin-top: 1.25rem;
     margin-left: 2.5rem;
     font-size: 1.5rem;
@@ -112,6 +109,24 @@
 .wrapper video {
     width: inherit;
     height: 0px;
+}
+
+.iconsContainer {
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    transform: translateX(-0.5rem);
+}
+
+.iconsContainer>div {
+    margin-right: .75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconsContainer img {
+    height: 48px;
+    width: auto;
 }
 
 #vfxPaint .wrapper {
@@ -176,6 +191,7 @@
         font-size: 1rem;
     }
     #vfxSkillsContainer p {
+        margin-left: 2rem;
         max-width: 75%;
     }
     .wrapper video {
@@ -184,6 +200,9 @@
     }
     #vfxSimulation video {
         transform: translateY(0%);
+    }
+    .iconsContainer span {
+        display: none;
     }
 }
 
