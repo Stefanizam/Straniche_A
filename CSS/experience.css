@@ -50,6 +50,10 @@
     text-align: right;
 }
 
+#vfxIntroText span {
+    display: inline;
+}
+
 #vfxSkillsContainer {
     margin-top: 3rem;
     width: 60%;
@@ -165,6 +169,9 @@
     .iconsContainer span {
         display: none;
     }
+    /* #vfxIntroText span{
+        visibility: hidden;
+    } */
 }
 
 @media (max-width: 532px) {

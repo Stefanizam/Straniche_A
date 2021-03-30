@@ -4,13 +4,12 @@ let skillsDiv = document.querySelectorAll('#vfxSkillsContainer>div');
 const skillsHeight = document.querySelector('#vfxSkillsContainer>div').style.height;
 
 for (let divche of skillsDiv) {
-    const originalHeight = divche.querySelector('video').style.height;
 
     divche.addEventListener('mouseenter', () => {
 
         divche.style.height = "300px";
         divche.querySelector(".wrapper").style.backgroundImage = "unset";
-        divche.querySelector(".iconsContainer").style.display = "flex";        
+        divche.querySelector(".iconsContainer").style.display = "flex";
         divche.querySelector("p").style.display = "flex";
         divche.querySelector("p").style.animation = "0.5s linear 0s 1 opacityAppear";
         divche.querySelector('video').play();
@@ -25,3 +24,20 @@ for (let divche of skillsDiv) {
     });
 }
 // vfx Skills Hover - End
+
+// vfx Intro Text - hide movies list
+const moviesList = document.querySelector('#vfxIntroText span');
+const originalText = moviesList.innerHTML;
+let screenWidth800 = window.matchMedia("(max-width: 800px)");
+
+moviesList.addEventListener(screenWidth800, () => {
+    if (screenWidth800.matches) {
+        moviesList.innerHTML = ('');
+        
+    }
+    else {
+        moviesList.innerHTML = originalText;
+    }
+});
+
+// vfx Intro Text - hide movies list
