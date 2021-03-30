@@ -1,6 +1,7 @@
 #aboutMeContainer {
-    margin: 6rem 6rem 3rem 6rem;
+    padding: 0rem 6rem 6rem 6rem;
     display: flex;
+    margin: 0px;
 }
 
 #aboutMeText {
@@ -13,7 +14,7 @@
 
 @media (max-width: 800px) {
     #aboutMeContainer {
-        margin: 3rem;
+        padding: 0rem 3rem 3rem 3rem;
     }
     #profileImage {
         max-height: 200px;
@@ -25,7 +26,7 @@
 
 @media (max-width: 532px) {
     #aboutMeContainer {
-        margin: 2rem;
+        padding: 0rem 2rem 2rem 2rem;
     }
     #profileImage {
         display: none;

@@ -1,16 +1,14 @@
 #headerContainer {
-    background-image: url("../Images/bkgTriangles.png");
+    /* background-image: url("../Images/bkgTriangles.png"); */
     background-position-x: center;
     top: 0%;
     display: flex;
     justify-content: center;
-    height: 600px;
+    align-items: center;
+    height: 400px;
 }
 
 #nameContainer {
-    position: absolute;
-    top: 13.5rem;
-    left: 12rem;
     width: 26rem;
     height: 10rem;
 }
@@ -43,7 +41,7 @@
 
 /* Media */
 
-@media (min-width: 1080px) {
+@media (min-width: 1170px) {
     #headerContainer {
         background-size: cover;
     }
@@ -51,11 +49,9 @@
 
 @media (max-width: 800px) {
     #headerContainer {
-        height: 400px;
+        height: 300px;
     }
     #nameContainer {
-        top: 8.5rem;
-        left: 7.8rem;
         width: 19rem;
         height: 10rem;
     }
@@ -63,12 +59,9 @@
 
 @media (max-width: 532px) {
     #headerContainer {
-        height: 300px;
+        height: 200px;
     }
     #nameContainer {
-        top: 6.5rem;
-        left: 50%;
-        transform: translateX(-33%);
         width: 15rem;
         height: 10rem;
     }

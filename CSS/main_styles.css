@@ -1,4 +1,7 @@
 body {
+    background-image: url(../Images/bkgTriangles.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Lato', sans-serif;
     background-color: rgb(14, 15, 16);
     font-size: 1rem;
@@ -6,8 +9,32 @@ body {
     color: rgb(200, 200, 200);
 }
 
-.sectionMargin {
-    margin: 6rem 6rem;
+#wholePage {
+    margin: auto;
+    max-width: 1750px;
+}
+
+.subsection {
+    margin: 20rem 0rem;
+}
+
+.borderBottom {
+    border-bottom: 0.1rem solid rgb(40, 40, 40);
+}
+
+.sectionName {
+    color: rgb(237, 26, 59);
+    font-size: 2rem;
+    font-weight: 900;
+    display: flex;
+    height: 20rem;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionName>p {
+    margin: 0;
 }
 
 .font-XL {
@@ -29,7 +56,6 @@ body {
     font-weight: 300;
     color: white;
     line-height: normal;
-
 }
 
 .font-S {
@@ -60,7 +86,9 @@ body {
     .font-M {
         font-size: 1rem;
     }
-    .font-S {
+    .font-S {}
+    section {
+        margin: 3rem 0rem;
     }
 }
 
@@ -76,6 +104,8 @@ body {
     .font-M {
         font-size: 0.8rem;
     }
-    .font-S {
+    .font-S {}
+    section {
+        margin: 2rem 0rem;
     }
 }

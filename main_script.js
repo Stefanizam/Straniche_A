@@ -1,7 +1,7 @@
 // vfx Skills Hover actions
-let skillsContainer = document.querySelector("#vfxSkillsContainer");
-let skillsDiv = document.querySelectorAll('#vfxSkillsContainer>div');
-const skillsHeight = document.querySelector('#vfxSkillsContainer>div').style.height;
+let skillsContainer = document.querySelector(".skillsContainer");
+let skillsDiv = document.querySelectorAll('.skillsContainer>div');
+const skillsHeight = document.querySelector('.skillsContainer>div').style.height;
 
 for (let divche of skillsDiv) {
 
@@ -24,20 +24,3 @@ for (let divche of skillsDiv) {
     });
 }
 // vfx Skills Hover - End
-
-// vfx Intro Text - hide movies list
-const moviesList = document.querySelector('#vfxIntroText span');
-const originalText = moviesList.innerHTML;
-let screenWidth800 = window.matchMedia("(max-width: 800px)");
-
-moviesList.addEventListener(screenWidth800, () => {
-    if (screenWidth800.matches) {
-        moviesList.innerHTML = ('');
-        
-    }
-    else {
-        moviesList.innerHTML = originalText;
-    }
-});
-
-// vfx Intro Text - hide movies list

@@ -24,279 +24,338 @@
 </head>
 
 <body>
-    <!-- Header - Start -->
-    <header id="headerContainer">
-        <div id="nameContainer">
-            <div class="corners">
-                <div class="horizontal"></div>
-                <div class="horizontal"></div>
-            </div>
-            <div class="corners">
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-            </div>
-            <h1 class="font-XL">STEFAN<br>BOZHINOVSKI</h1>
-            <p class="font-M">
-                Computer Enthusiast
-            </p>
-            <div class="corners">
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-            </div>
-            <div class="corners">
-                <div class="horizontal"></div>
-                <div class="horizontal"></div>
-            </div>
-        </div>
-    </header>
-    <!-- Header - End -->
-
-    <!-- AboutMe - Start -->
-    <section id="aboutMeContainer">
-        <picture>
-            <img id="profileImage" src="Images/StefanProfileImage.png" alt="">
-        </picture>
-        <p id="aboutMeText">
-            As a senior visual effects artist and graphic designer by profession, with over a decade of professional
-            experience, and a concept artist and gamer by hobby, I am confident enough to say that I have developed a
-            very strong affinity and knowledge of computers
-            and their most intricate functions. After ascending the hierarchies of companies I have been employed at, I
-            feel ready and eager to take on a new challenge.<br> As an employee, I would describe myself as a high
-            performer, adaptable,
-            with unrelenting focus. Whether on a supervisory or subordinate position, my pragmatic nature leads me to
-            assign value to my co-workers according to merit, efficiency and perseverance.
-            <br> I have always had a flair for automation and optimization when it comes to solving problems, so my
-            current plan is to play to my strengths and expand my knowledge of programming languages further and move
-            into game, software or web development.
-            I am currently in the market, searching for a full-time or part-time position at any type of organization,
-            but I also welcome opportunities as a consultant or freelancer.
-        </p>
-    </section>
-    <!-- AboutMe - End -->
-
-    <!-- Experience - Start -->
-    <section id="experienceContainer">
-        <!-- Visual Effects - Start -->
-        <section id="vfxContainer">
-            <div id="vfxHeaderContainer">
-                <picture id="vfxImageContainer"></picture>
-                <div id="vfxHeaderText">
-                    <p id="vfxTitle" class="font-L">
-                        VFX PAINT AND COMPOSITING <br> SENIOR/LEAD ARTIST
-                    </p>
-                    <p id="vfxJob">
-                        FX3X Studio for Visual Effects Skopje, Macedonia 01.2015 - 08.2020
-                    </p>
+    <div id="wholePage">
+        <!-- Header - Start -->
+        <header id="headerContainer">
+            <div id="nameContainer">
+                <div class="corners">
+                    <div class="horizontal"></div>
+                    <div class="horizontal"></div>
                 </div>
-            </div>
-            <div id="vfxMainContainer">
-                <div id="vfxSkillsContainer">
-                    <div id="vfxPaint">
-                        <div class="wrapper">
-                            <video loop muted src="Videos/vfxPnt.mp4"></video>
-                            <div>
-                                <span class="font-L">PAINT</span>
-                                <p class="font-S">
-                                    Removal of any unwanted object off of a given video footage or still image, with a
-                                    seamless reconstruction of the surrounding area, background and foreground elements.
-                                </p>
-                                <div class="iconsContainer font-S">
-                                    <div>
-                                        <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
-                                        <span class="font-S">Nuke</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_Silhouette.png" alt="Silhouette FX">
-                                        <span class="font-s">Silhouette</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_Mocha.png" alt="Mocha Pro">
-                                        <span class="font-S">Mocha Pro</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="vfxComp">
-                        <div class="wrapper">
-                            <video loop muted src="Videos/vfxComp.mp4"></video>
-                            <div>
-                                <span class="font-L">COMPOSITING</span>
-                                <p class="font-S">Match moving and color grading any given object onto a given video
-                                    footage or still image.
-                                </p>
-                                <div class="iconsContainer font-S">
-                                    <div>
-                                        <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
-                                        <span class="font-S">Nuke</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_Fusion.png" alt="Silhouette FX">
-                                        <span class="font-S">Fusion</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="vfxMotionTrack">
-                        <div class="wrapper">
-                            <video loop muted src="Videos/vfxCmm.mp4"></video>
-                            <div>
-                                <span class="font-L">MOTION TRACKING</span>
-                                <p class="font-S">3D extrapolation of a virtual camera to be used in other VFX
-                                    procedures.
-                                </p>
-                                <div class="iconsContainer font-S">
-                                    <div>
-                                        <img src="Images/Icons/ico_Equalizer.png" alt="The Foundry Nuke">
-                                        <span class="font-S">3DEqualizer</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_PFTrack.png" alt="Silhouette FX">
-                                        <span class="font-S">PFTrack</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_Blender.png" alt="Mocha Pro">
-                                        <span class="font-S">Blender</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="vfxRoto">
-                        <div class="wrapper">
-                            <video loop muted src="Videos/vfxRoto.mp4"></video>
-                            <div>
-                                <span class="font-L">ROTOSCOPING</span>
-                                <p class="font-S">Outlining of certain objects on a given video footage, to be used as a
-                                    matte in other VFX procedures.
-                                </p>
-                                <div class="iconsContainer font-S">
-                                    <div>
-                                        <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
-                                        <span class="font-S">Nuke</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_Mocha.png" alt="Silhouette FX">
-                                        <span class="font-S">Mocha Pro</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_Silhouette.png" alt="Mocha Pro">
-                                        <span class="font-S">Silhouette</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="vfxSimulation">
-                        <div class="wrapper">
-                            <video loop muted src="Videos/vfxSim.mp4"></video>
-                            <div>
-                                <span class="font-L">SIMULATION</span>
-                                <p class="font-S">Creating computer generated renderings of certain visual effects. Such
-                                    as explosions, fluid simulations, screen and holographic interfaces and so on.
-                                </p>
-                                <div class="iconsContainer font-S">
-                                    <div>
-                                        <img src="Images/Icons/ico_Blender.png" alt="The Foundry Nuke">
-                                        <span class="font-S">Blender</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_Houdini.png" alt="Silhouette FX">
-                                        <span class="font-S">Houdini</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="vfx3D">
-                        <div class="wrapper">
-                            <video loop muted src="Videos/vfx3D.mp4"></video>
-                            <div>
-                                <span class="font-L">3D MODELING</span>
-                                <p class="font-S">Modeling and texturing 3D represantations of real world or imaginary
-                                    objects to be used in other VFX procedures or game development.
-                                </p>
-                                <div class="iconsContainer font-S">
-                                    <div>
-                                        <img src="Images/Icons/ico_Blender.png" alt="The Foundry Nuke">
-                                        <span class="font-S">Blender</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_Max.png" alt="Silhouette FX">
-                                        <span class="font-S">3DsMax</span>
-                                    </div>
-                                    <div>
-                                        <img src="Images/Icons/ico_Maya.png" alt="Mocha Pro">
-                                        <span class="font-S">Maya</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="corners">
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
                 </div>
-                <p id="vfxIntroText">
-                    While starting off as a hobbyist, primarily focused on concept art and matte painting, a job
-                    opportunity presented itself at FX3X, which required that I shift my focus to VFX compositing.<br>
-                    At FX3X I was given the means and resources
-                    to expand my abilities and with the help and mentorship of Zoran Dimanovski, one of the company’s
-                    most valued lead artists, I was able to become a fully fledged VFX paint and compositing artist with
-                    nearly six years of experience in
-                    the film industry.
-                    <br><br> My portfolio now includes over forty, full feature films and popular TV shows<span>:<br>
-                    Thor: Ragnarok, Black Panther, Guardians of the Galaxy, Spider man: Homecoming, Batman v Superman:
-                    Dawn of Justice, Star Wars - The Last
-                    Jedi & The Rise of Skywalker, Alien: Covenant, X-Men: Apocalypse, Mission Impossible - Fallout,
-                    Ghost in the Shell, Star Trek: Discovery, etc.</span>
+                <h1 class="font-XL">STEFAN<br>BOZHINOVSKI</h1>
+                <p class="font-M">
+                    Computer Enthusiast
                 </p>
+                <div class="corners">
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                </div>
+                <div class="corners">
+                    <div class="horizontal"></div>
+                    <div class="horizontal"></div>
+                </div>
             </div>
+        </header>
+        <!-- Header - End -->
+
+        <!-- AboutMe - Start -->
+        <div class="sectionName" style="height: 10rem">
+            <p>- ABOUT ME -</p>
+        </div>
+        <section id="aboutMeContainer" class="borderBottom">
+            <picture>
+                <img id="profileImage" src="Images/StefanProfileImage.png" alt="">
+            </picture>
+            <p id="aboutMeText">
+                As a senior visual effects artist and graphic designer by profession, with over a decade of professional
+                experience, and a concept artist and gamer by hobby, I am confident enough to say that I have developed
+                a
+                very strong affinity and knowledge of computers
+                and their most intricate functions. After ascending the hierarchies of companies I have been employed
+                at, I
+                feel ready and eager to take on a new challenge.<br> As an employee, I would describe myself as a high
+                performer, adaptable,
+                with unrelenting focus. Whether on a supervisory or subordinate position, my pragmatic nature leads me
+                to
+                assign value to my co-workers according to merit, efficiency and perseverance.
+                <br> I have always had a flair for automation and optimization when it comes to solving problems, so my
+                current plan is to play to my strengths and expand my knowledge of programming languages further and
+                move
+                into game, software or web development.
+                I am currently in the market, searching for a full-time or part-time position at any type of
+                organization,
+                but I also welcome opportunities as a consultant or freelancer.
+            </p>
         </section>
-        <!-- Visual Effects - Start -->
+        <!-- AboutMe - End -->
 
-        <!-- Graphic Design - Start -->
-        <section id="graphicDesign" style="height: 400px">
+        <!-- Experience - Start -->
+        <div class="sectionName">
+            <p>- SKILLS & EXPERIENCE -</p>
+        </div>
+        <section id="experience">
+            <!-- Visual Effects - Start -->
+            <section id="vfxContainer" class="">
+                <div class="sectionHeader">
+                    <picture id="vfxImage"></picture>
+                    <div class="jobHeaderText">
+                        <p class="jobTitle font-L">
+                            VFX PAINT AND COMPOSITING <br> SENIOR/LEAD ARTIST
+                        </p>
+                        <p class="jobInfoText">
+                            FX3X Studio for Visual Effects
+                            <br>Skopje, Macedonia
+                            <br>01.2015 - 08.2020
+                        </p>
+                    </div>
+                </div>
+                <div id="vfxContents">
+                    <div class="skillsContainer">
+                        <div id="vfxPaint">
+                            <div class="wrapper">
+                                <video loop muted src="Videos/vfxPnt.mp4"></video>
+                                <div>
+                                    <span class="font-L">PAINT</span>
+                                    <p class="font-S">
+                                        Removal of any unwanted object off of a given video footage or still image, with
+                                        a
+                                        seamless reconstruction of the surrounding area, background and foreground
+                                        elements.
+                                    </p>
+                                    <div class="iconsContainer font-S">
+                                        <div>
+                                            <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
+                                            <span class="font-S">Nuke</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_Silhouette.png" alt="Silhouette FX">
+                                            <span class="font-s">Silhouette</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_Mocha.png" alt="Mocha Pro">
+                                            <span class="font-S">Mocha Pro</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="vfxComp">
+                            <div class="wrapper">
+                                <video loop muted src="Videos/vfxComp.mp4"></video>
+                                <div>
+                                    <span class="font-L">COMPOSITING</span>
+                                    <p class="font-S">Match moving and color grading any given object onto a given video
+                                        footage or still image.
+                                    </p>
+                                    <div class="iconsContainer font-S">
+                                        <div>
+                                            <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
+                                            <span class="font-S">Nuke</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_Fusion.png" alt="Silhouette FX">
+                                            <span class="font-S">Fusion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="vfxMotionTrack">
+                            <div class="wrapper">
+                                <video loop muted src="Videos/vfxCmm.mp4"></video>
+                                <div>
+                                    <span class="font-L">MOTION TRACKING</span>
+                                    <p class="font-S">3D extrapolation of a virtual camera to be used in other VFX
+                                        procedures.
+                                    </p>
+                                    <div class="iconsContainer font-S">
+                                        <div>
+                                            <img src="Images/Icons/ico_Equalizer.png" alt="The Foundry Nuke">
+                                            <span class="font-S">3DEqualizer</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_PFTrack.png" alt="Silhouette FX">
+                                            <span class="font-S">PFTrack</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_Blender.png" alt="Mocha Pro">
+                                            <span class="font-S">Blender</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="vfxRoto">
+                            <div class="wrapper">
+                                <video loop muted src="Videos/vfxRoto.mp4"></video>
+                                <div>
+                                    <span class="font-L">ROTOSCOPING</span>
+                                    <p class="font-S">Outlining of certain objects on a given video footage, to be used
+                                        as a
+                                        matte in other VFX procedures.
+                                    </p>
+                                    <div class="iconsContainer font-S">
+                                        <div>
+                                            <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
+                                            <span class="font-S">Nuke</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_Mocha.png" alt="Silhouette FX">
+                                            <span class="font-S">Mocha Pro</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_Silhouette.png" alt="Mocha Pro">
+                                            <span class="font-S">Silhouette</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="vfxSimulation">
+                            <div class="wrapper">
+                                <video loop muted src="Videos/vfxSim.mp4"></video>
+                                <div>
+                                    <span class="font-L">SIMULATION</span>
+                                    <p class="font-S">Creating computer generated renderings of certain visual effects.
+                                        Such
+                                        as explosions, fluid simulations, screen and holographic interfaces and so on.
+                                    </p>
+                                    <div class="iconsContainer font-S">
+                                        <div>
+                                            <img src="Images/Icons/ico_Blender.png" alt="The Foundry Nuke">
+                                            <span class="font-S">Blender</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_Houdini.png" alt="Silhouette FX">
+                                            <span class="font-S">Houdini</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="vfx3D">
+                            <div class="wrapper">
+                                <video loop muted src="Videos/vfx3D.mp4"></video>
+                                <div>
+                                    <span class="font-L">3D MODELING</span>
+                                    <p class="font-S">Modeling and texturing 3D represantations of real world or
+                                        imaginary
+                                        objects to be used in other VFX procedures or game development.
+                                    </p>
+                                    <div class="iconsContainer font-S">
+                                        <div>
+                                            <img src="Images/Icons/ico_Blender.png" alt="The Foundry Nuke">
+                                            <span class="font-S">Blender</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_Max.png" alt="Silhouette FX">
+                                            <span class="font-S">3DsMax</span>
+                                        </div>
+                                        <div>
+                                            <img src="Images/Icons/ico_Maya.png" alt="Mocha Pro">
+                                            <span class="font-S">Maya</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="jobIntroText">
+                        While starting off as a hobbyist, primarily focused on concept art and matte painting, a job
+                        opportunity presented itself at FX3X, which required that I shift my focus to VFX
+                        compositing.<br>
+                        At FX3X I was given the means and resources
+                        to expand my abilities and with the help and mentorship of Zoran Dimanovski, one of the
+                        company’s
+                        most valued lead artists, I was able to become a fully fledged VFX paint and compositing artist
+                        with
+                        nearly six years of experience in
+                        the film industry.
+                        <br><br> My portfolio now includes over forty, full feature films and popular TV shows<span
+                            id="moviesList">:<br>
+                            Thor: Ragnarok, Black Panther, Guardians of the Galaxy, Spider man: Homecoming, Batman v
+                            Superman:
+                            Dawn of Justice, Star Wars - The Last
+                            Jedi & The Rise of Skywalker, Alien: Covenant, X-Men: Apocalypse, Mission Impossible -
+                            Fallout,
+                            Ghost in the Shell, Star Trek: Discovery, etc.</span>
+                    </p>
+                </div>
+            </section>
+            <!-- Visual Effects - Start -->
+
+            <!-- Graphic Design - Start -->
+            <section id="graphicsContainer" class="subsection">
+                <div class="sectionHeader">
+                    <picture id="graphicsImage"></picture>
+                    <div class="jobHeaderText">
+                        <p class="jobTitle font-L">
+                            GRAPHIC DESIGNER
+                        </p>
+                        <p class="jobInfoText">
+                            Freelance Graphic Designer
+                            Print, Web and UI Design
+                            <br>11.2013 - present
+                            <br>
+                            <br>INS Media - Marketing,
+                            Advertising and Print Studio
+                            <br>Bitola - Macedonia
+                            <br>11.2012 - 11.2013
+                        </p>
+                    </div>
+                </div>
+                <div id="graphicsContents">
+                    <div class="skilssContainer">
+
+                    </div>
+                    <p class="jobIntroText">
+                        This particular area of expertise also draws its roots from the same hobbies and interests as
+                        the
+                        visual effects, although with a different flair. My experience in this field begins with my
+                        employment at INS Media, a studio for graphic and print design. Here I had the opportunity to
+                        learn
+                        a lot about digital and offset printing, branding, typography and design in general. I later
+                        moved
+                        on to work as a freelance graphic designer for online markets like GraphicRiver and Creative
+                        Market.
+                    </p>
+                </div>
+            </section>
+            <!-- Graphic Design - Start -->
+
+            <!-- Programming - Start -->
+            <section id="programming">
+
+            </section>
+            <!-- Programming - Start -->
+
+            <!-- Computer Technician - Start -->
+            <section id="computerTechnician">
+
+            </section>
+            <!-- Computer Technician - Start -->
         </section>
-        <!-- Graphic Design - Start -->
+        <!-- Experience - End -->
 
-        <!-- Programming - Start -->
-        <section id="programming">
+        <!-- Software Affinity - End -->
+        <section id="softwareAffinity">
+            <section id="artisan">
 
+            </section>
+            <section id="proficient">
+
+            </section>
+            <section id="progress">
+
+            </section>
         </section>
-        <!-- Programming - Start -->
+        <!-- Software Affinity - End -->
 
-        <!-- Computer Technician - Start -->
-        <section id="computerTechnician">
+        <!-- My JS -->
+        <script src="main_script.js"></script>
 
-        </section>
-        <!-- Computer Technician - Start -->
-    </section>
-    <!-- Experience - End -->
-
-    <!-- Software Affinity - End -->
-    <section id="softwareAffinity">
-        <section id="artisan">
-
-        </section>
-        <section id="proficient">
-
-        </section>
-        <section id="progress">
-
-        </section>
-    </section>
-    <!-- Software Affinity - End -->
-
-    <!-- My JS -->
-    <script src="main_script.js"></script>
-
-    <!-- Bootstrap JS and popper -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-        crossorigin="anonymous"></script>
-
+        <!-- Bootstrap JS and popper -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+            integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+            integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
