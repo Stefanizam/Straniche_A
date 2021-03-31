@@ -9,6 +9,44 @@
     height: 50rem;
 }
 
+.skillsContainer {
+    margin-top: 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.skillsRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.wrapper {
+    padding: 0%;
+    display: flex;
+    width: 33.3%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.wrapper>video {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: auto;
+    height: 240px;
+}
+
+.wrapper>div {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
 .jobHeaderText {
     flex-direction: column;
     margin: 3rem;
@@ -31,13 +69,7 @@
     text-align: right;
 }
 
-.skillsContainer {
-    margin-top: 0rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
+/* Specifics - START */
 
 #vfxImage {
     background-image: url(../Images/vfxImage.jpg);
@@ -47,10 +79,6 @@
     height: 280px;
 }
 
-/* VFX Specific - End */
-
-/* Graphic Design Specific - Start */
-
 #graphicsImage {
     background-image: url(../Images/graphicsImage.jpg);
     background-repeat: no-repeat;
@@ -58,10 +86,6 @@
     width: 100%;
     height: 280px;
 }
-
-/* Graphic Design Specific - End */
-
-/* Computer Technician Specific - sTART */
 
 #techImage {
     background-image: url(../Images/techImage.jpg);
@@ -71,7 +95,7 @@
     height: 280px;
 }
 
-/* Computer Technician Specific - End */
+/* Specifics - END */
 
 /* Media */
 
@@ -79,15 +103,17 @@
     #vfxImage {
         background-position-x: right;
     }
+    #graphicsImage {
+        background-position-x: right;
+    }
+    #techImage {
+        background-position-x: right;
+    }
 }
 
-@media (max-width: 1170px) {
-    
-}
+@media (max-width: 1170px) {}
 
-@media (max-width: 800px) {
-    
-}
+@media (max-width: 800px) {}
 
 @media (max-width: 532px) {
     .sectionHeader {
@@ -102,7 +128,6 @@
     .jobIntroText {
         width: 100%;
     }
-    
 }
 
 /* Animations */
