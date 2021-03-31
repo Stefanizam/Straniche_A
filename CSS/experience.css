@@ -32,95 +32,12 @@
 }
 
 .skillsContainer {
-    margin-top: 3rem;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-
-.skillsContainer>div {
+    margin-top: 0rem;
     width: 100%;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 1000px;
-    transition: height 0.5s;
-}
-
-.wrapper {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.wrapper p {
-    margin-top: 1rem;
-    margin-left: 2.5rem;
-    margin-bottom: 0;
-    text-align: start;
-    display: none;
-    max-width: 40%;
-}
-
-.wrapper>div>span {
-    margin-top: 1.25rem;
-    margin-left: 2.5rem;
-    font-size: 1.5rem;
-}
-
-.wrapper>div {
-    background-image: linear-gradient(to right, rgba(10, 10, 10, .6) 0%, rgba(10, 10, 10, 0) 60%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: inherit;
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.wrapper video {
-    height: auto;
-    width: 100%;
-}
-
-.iconsContainer {
-    margin-top: 1rem;
-    margin-left: 2.5rem;
-    transform: translateX(-0.5rem);
-}
-
-.iconsContainer>div {
-    margin-right: .75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.iconsContainer img {
-    height: 48px;
-    width: auto;
-}
-
-/* VFX Specific - Start */
-
-#vfxContents {
-    display: flex;
-    flex-direction: row;
-}
-
-#moviesList {
-    display: inline;
-}
 
 #vfxImage {
     background-image: url(../Images/vfxImage.jpg);
@@ -142,11 +59,6 @@
     height: 280px;
 }
 
-#graphicsContents {
-    display: flex;
-    flex-direction: row;
-}
-
 /* Graphic Design Specific - End */
 
 /* Computer Technician Specific - sTART */
@@ -157,11 +69,6 @@
     background-position-x: right;
     width: 100%;
     height: 280px;
-}
-
-#techContents {
-    display: flex;
-    flex-direction: row;
 }
 
 /* Computer Technician Specific - End */
@@ -175,30 +82,11 @@
 }
 
 @media (max-width: 1170px) {
-    .wrapper video {
-        height: auto;
-        width: auto;
-    }
+    
 }
 
 @media (max-width: 800px) {
-    .skillsContainer>div {
-        height: 60px;
-    }
-    .skillsContainer span {
-        margin-left: 2rem;
-        font-size: 1rem;
-    }
-    .skillsContainer p {
-        margin-left: 2rem;
-        max-width: 75%;
-    }
-    .iconsContainer span {
-        display: none;
-    }
-    #moviesList {
-        display: none;
-    }
+    
 }
 
 @media (max-width: 532px) {
@@ -214,9 +102,7 @@
     .jobIntroText {
         width: 100%;
     }
-    .skillsContainer {
-        display: none;
-    }
+    
 }
 
 /* Animations */
