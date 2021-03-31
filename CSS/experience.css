@@ -5,6 +5,10 @@
     max-height: 280px;
 }
 
+#experience>section {
+    height: 50rem;
+}
+
 .jobHeaderText {
     flex-direction: column;
     margin: 3rem;

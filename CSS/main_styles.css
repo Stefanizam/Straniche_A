@@ -2,6 +2,8 @@ body {
     background-image: url(../Images/bkgTriangles.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: -40rem;
+    background-position-y: center;
     font-family: 'Lato', sans-serif;
     background-color: rgb(14, 15, 16);
     font-size: 1rem;
@@ -9,9 +11,9 @@ body {
     color: rgb(200, 200, 200);
 }
 
-#wholePage {
+#pageContainer {
     margin: auto;
-    max-width: 1750px;
+    max-width: 90%;
 }
 
 .subsection {

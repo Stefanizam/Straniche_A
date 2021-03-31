@@ -1,16 +1,36 @@
 #headerContainer {
-    /* background-image: url("../Images/bkgTriangles.png"); */
-    background-position-x: center;
-    top: 0%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 6rem;
 }
 
 #nameContainer {
+    margin-top: 10rem;
+    margin-left: 6rem;
     width: 26rem;
     height: 10rem;
+    animation: slideInTop 0.25s ease-in-out 0.5s 1;
+    animation-fill-mode: backwards;
+}
+
+#aboutMeContainer {
+    margin-top: 6rem;
+    display: flex;
+}
+
+#aboutMeText {
+    animation: slideInRight 0.5s ease-in-out 1s 1;
+    animation-fill-mode: backwards;
+    margin-left: 4rem;
+}
+
+#profileImage {
+    animation: slideInLeft 0.5s ease-in-out 0.75s 1;
+    animation-fill-mode: backwards;
+    max-height: 300px;
 }
 
 /* Corners */
@@ -41,28 +61,78 @@
 
 /* Media */
 
-@media (min-width: 1170px) {
-    #headerContainer {
-        background-size: cover;
-    }
-}
+@media (min-width: 1170px) {}
 
 @media (max-width: 800px) {
     #headerContainer {
-        height: 300px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
     }
     #nameContainer {
+        margin-top: 6rem;
+        margin-left: 4.75rem;
         width: 19rem;
         height: 10rem;
+    }
+    #aboutMeContainer {
+        margin-top: 2rem;
+    }
+    #aboutMeText {
+        margin-left: 2rem;
+    }
+    #profileImage {
+        max-height: 200px;
     }
 }
 
 @media (max-width: 532px) {
     #headerContainer {
-        height: 200px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
     }
     #nameContainer {
-        width: 15rem;
-        height: 10rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        width: 14rem;
+        height: 6rem;
+    }
+    #aboutMeContainer {
+        margin-top: 2rem;
+    }
+    #aboutMeText {
+        margin-left: 0rem;
+    }
+    #profileImage {
+        display: none;
+    }
+}
+
+/* Animation */
+@keyframes slideInTop {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateY(0);
     }
 }
