@@ -1,138 +1,106 @@
 .sectionHeader {
     width: 100%;
     display: flex;
+    padding: 3rem;
     background-color: rgb(237, 26, 59);
-    height: 280px;
 }
 
 #experience>section {
-    height: 50rem;
-}
-
-.jobHeaderText {
-    flex-direction: column;
-    margin: 3rem;
-    min-width: 18rem;
-    max-width: 18rem;
-}
-
-.jobHeaderText p {
-    color: white;
-    text-align: end;
-}
-
-.jobInfoText {
-    font-size: 0.75rem;
-}
-
-.jobIntroText {
-    padding: 3rem;
-    width: 40%;
-    text-align: right;
+    margin: 10rem 0rem;
 }
 
 .skillsContainer {
-    margin-top: 3rem;
-    width: 60%;
+    margin-top: 0rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.skillsContainer>div {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 1000px;
-    transition: height 0.5s;
-}
-
-.wrapper {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
     overflow: hidden;
 }
 
-.wrapper p {
-    margin-top: 1rem;
-    margin-left: 2.5rem;
-    margin-bottom: 0;
-    text-align: start;
-    display: none;
-    max-width: 40%;
-}
-
-.wrapper>div>span {
-    margin-top: 1.25rem;
-    margin-left: 2.5rem;
-    font-size: 1.5rem;
-}
-
-.wrapper>div {
-    background-image: linear-gradient(to right, rgba(10, 10, 10, .6) 0%, rgba(10, 10, 10, 0) 60%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: inherit;
-    height: 100%;
+.skillsRow {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
 }
 
-.wrapper video {
-    height: auto;
+.wrapper {
+    position: relative;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    width: 33.3%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.wrapper>video {
+    width: auto;
+    height: 240px;
+}
+
+.wrapperBkg {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0%;
+    margin: 0%;
     width: 100%;
+    height: 100%;
+    transition: background-color 0.5s;
+}
+
+.wrapperBkg>div {
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    max-width: 80%;
+}
+
+.wrapperBkg p {
+    margin: 0.5rem 0rem;
+}
+
+.skillsDesc {
+    opacity: 0;
+    transition: opacity 0.75s;
 }
 
 .iconsContainer {
-    margin-top: 1rem;
-    margin-left: 2.5rem;
-    transform: translateX(-0.5rem);
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.75s;
+    transform: translateX(-1rem);
 }
 
 .iconsContainer>div {
-    margin-right: .75rem;
     display: flex;
     flex-direction: column;
+    margin-right: 0.5rem;
     align-items: center;
 }
 
 .iconsContainer img {
-    height: 48px;
+    height: 50%;
     width: auto;
 }
 
-/* VFX Specific - Start */
+.jobHeaderText {
+    flex-direction: column;
+    margin-right: 3rem;
+    width: 25%;
+}
 
-#vfxContents {
-    display: flex;
-    flex-direction: row;
+.jobIntroText {
+    /* width: 20%; */
+    margin-left: 3rem;
 }
 
 #moviesList {
     display: inline;
 }
 
-#vfxImage {
-    background-image: url(../Images/vfxImage.jpg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    width: 100%;
-    height: 280px;
-}
-
-/* VFX Specific - End */
-
-/* Graphic Design Specific - Start */
+/* Specifics - START */
 
 #graphicsImage {
     background-image: url(../Images/graphicsImage.jpg);
@@ -142,15 +110,6 @@
     height: 280px;
 }
 
-#graphicsContents {
-    display: flex;
-    flex-direction: row;
-}
-
-/* Graphic Design Specific - End */
-
-/* Computer Technician Specific - sTART */
-
 #techImage {
     background-image: url(../Images/techImage.jpg);
     background-repeat: no-repeat;
@@ -159,45 +118,37 @@
     height: 280px;
 }
 
-#techContents {
-    display: flex;
-    flex-direction: row;
-}
-
-/* Computer Technician Specific - End */
+/* Specifics - END */
 
 /* Media */
 
+@media (min-width: 1440px) {
+    .wrapper>video {
+        width: 100%;
+        height: none;
+    }
+}
+
 @media (min-width: 1170px) {
-    #vfxImage {
+    #graphicsImage {
+        background-position-x: right;
+    }
+    #techImage {
         background-position-x: right;
     }
 }
 
-@media (max-width: 1170px) {
-    .wrapper video {
-        height: auto;
-        width: auto;
-    }
-}
+@media (max-width: 1170px) {}
 
 @media (max-width: 800px) {
-    .skillsContainer>div {
-        height: 60px;
+    .wrapperBkg>div {
+        padding-top: 1rem;
+        padding-left: 2rem;
+        max-width: 80%;
     }
-    .skillsContainer span {
-        margin-left: 2rem;
-        font-size: 1rem;
-    }
-    .skillsContainer p {
-        margin-left: 2rem;
-        max-width: 75%;
-    }
-    .iconsContainer span {
-        display: none;
-    }
-    #moviesList {
-        display: none;
+    .iconsContainer img {
+        height: 35%;
+        width: auto;
     }
 }
 
@@ -214,9 +165,18 @@
     .jobIntroText {
         width: 100%;
     }
-    .skillsContainer {
+    .wrapperBkg>div {
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        max-width: 90%;
+    }
+    .iconsContainer {
         display: none;
     }
+    #moviesList {
+        display: none;
+    }
+    
 }
 
 /* Animations */

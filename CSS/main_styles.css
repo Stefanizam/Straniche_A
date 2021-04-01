@@ -1,19 +1,25 @@
 body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(14, 15, 16);
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+video {
+    object-fit: cover;
+}
+
+#pageContainer {
     background-image: url(../Images/bkgTriangles.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: -40rem;
     background-position-y: center;
-    font-family: 'Lato', sans-serif;
-    background-color: rgb(14, 15, 16);
-    font-size: 1rem;
-    font-weight: 300;
-    color: rgb(200, 200, 200);
-}
-
-#pageContainer {
     margin: auto;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .subsection {
@@ -33,17 +39,13 @@ body {
     width: auto;
     align-items: center;
     justify-content: center;
-}
-
-.sectionName>p {
-    margin: 0;
     text-transform: uppercase;
+
 }
 
 .font-XL {
     font-size: 3rem;
     font-weight: 900;
-    color: white;
     line-height: 2.7rem;
     text-transform: uppercase;
 }
@@ -51,29 +53,26 @@ body {
 .font-L {
     font-size: 2.2rem;
     font-weight: 900;
-    color: white;
     line-height: 2rem;
     text-transform: uppercase;
 }
 
 .font-M {
-    font-size: 1.25rem;
-    font-weight: 300;
-    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
     line-height: normal;
+    text-transform: uppercase;
 }
 
 .font-S {
     font-size: 0.9rem;
     font-weight: 300;
-    color: white;
     line-height: normal;
 }
 
 .font-XS {
-    font-size: 0.8rem;
+    font-size: .8rem;
     font-weight: 300;
-    color: white;
     line-height: normal;
 }
 
@@ -91,7 +90,6 @@ body {
     .font-M {
         font-size: 1rem;
     }
-    .font-S {}
     section {
         margin: 3rem 0rem;
     }
@@ -109,7 +107,6 @@ body {
     .font-M {
         font-size: 0.8rem;
     }
-    .font-S {}
     section {
         margin: 2rem 0rem;
     }
