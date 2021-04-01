@@ -1,3 +1,8 @@
+#experience {
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
 .sectionHeader {
     width: 100%;
     display: flex;
@@ -6,7 +11,7 @@
 }
 
 #experience>section {
-    /* margin: 10rem 0rem; */
+    margin-bottom: 20rem;
 }
 
 .skillsContainer {
@@ -101,21 +106,21 @@
 
 /* Specifics - START */
 
-#graphicsImage {
+/* #graphicsImage {
     background-image: url(../Images/graphicsImage.jpg);
     background-repeat: no-repeat;
     background-position-x: right;
     width: 100%;
     height: 280px;
-}
+} */
 
-#techImage {
+/* #techImage {
     background-image: url(../Images/techImage.jpg);
     background-repeat: no-repeat;
     background-position-x: right;
     width: 100%;
     height: 280px;
-}
+} */
 
 /* Specifics - END */
 

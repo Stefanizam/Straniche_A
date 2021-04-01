@@ -17,7 +17,7 @@
 }
 
 #aboutMeContainer {
-    margin-top: 6rem;
+    margin-top: 3rem;
     display: flex;
 }
 
@@ -25,6 +25,7 @@
     animation: slideInRight 0.5s ease-in-out 1s 1;
     animation-fill-mode: backwards;
     margin-left: 4rem;
+    max-width: 60%;
 }
 
 #profileImage {
@@ -76,10 +77,11 @@
         height: 10rem;
     }
     #aboutMeContainer {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     #aboutMeText {
         margin-left: 2rem;
+        max-width: unset;
     }
     #profileImage {
         max-height: 200px;

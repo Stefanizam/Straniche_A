@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: rgb(14, 15, 16);
+    background-color: #141617;
     font-size: 1rem;
     font-weight: 300;
     color: white;
@@ -13,11 +13,7 @@ video {
 }
 
 #pageContainer {
-    background-image: url(../Images/bkgTriangles.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -40rem;
-    background-position-y: center;
+    /* background-image: url(../Images/Gradient.png); */
     margin: auto;
     max-width: 100%;
 }
