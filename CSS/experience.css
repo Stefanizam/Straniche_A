@@ -92,7 +92,6 @@
 }
 
 .jobIntroText {
-    /* width: 20%; */
     margin-left: 3rem;
 }
 
@@ -141,10 +140,19 @@
 @media (max-width: 1170px) {}
 
 @media (max-width: 800px) {
+    .sectionHeader {
+        padding: 2rem;
+    }
     .wrapperBkg>div {
         padding-top: 1rem;
         padding-left: 2rem;
         max-width: 80%;
+    }
+    .jobHeaderText {
+        margin-right: 2rem;
+    }
+    .jobIntroText {
+        margin-left: 2rem;
     }
     .iconsContainer img {
         height: 35%;
@@ -155,15 +163,20 @@
 @media (max-width: 532px) {
     .sectionHeader {
         justify-content: flex-end;
+        padding: 1rem;
     }
     .sectionHeader>picture {
         display: none;
+    }
+    .jobHeaderText {
+        margin-right: 1rem;
     }
     .jobInfoText {
         display: none;
     }
     .jobIntroText {
         width: 100%;
+        margin-left: 1rem;
     }
     .wrapperBkg>div {
         padding-top: 0.5rem;
