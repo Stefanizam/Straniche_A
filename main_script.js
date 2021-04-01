@@ -7,7 +7,7 @@ for (let elem of skillsDiv) {
 
         elem.querySelector(".iconsContainer").style.opacity = "1";
         elem.querySelector(".skillsDesc").style.opacity = "1";
-        elem.querySelector('.wrapperBkg').style.backgroundColor = "rgba(0,0,0,0.2)"
+        elem.querySelector('.wrapperBkg').style.backgroundColor = "rgba(0,0,0,0.3)"
         elem.querySelector('video').play();
 
     });
