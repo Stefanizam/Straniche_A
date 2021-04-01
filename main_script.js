@@ -1,13 +1,18 @@
 // vfx Skills Hover actions
-const skillsDiv = document.querySelectorAll('.wrapper');
+const wrapper = document.querySelectorAll('.wrapper');
+const widthReset = function () {
+    for (let i = 0 ; i < wrapper.length ; i++) {
+        wrapper[i].style.width = '10%'; 
+    };
+};
 
-for (let elem of skillsDiv) {
-
+for (let elem of wrapper) {
     elem.addEventListener('mouseenter', () => {
 
+        widthReset();
+        elem.style.width = "50%";
         elem.querySelector(".iconsContainer").style.opacity = "1";
         elem.querySelector(".skillsDesc").style.opacity = "1";
-        elem.querySelector('.wrapperBkg').style.backgroundColor = "rgba(0,0,0,0.3)"
         elem.querySelector('video').play();
 
     });
@@ -16,7 +21,6 @@ for (let elem of skillsDiv) {
 
         elem.querySelector(".iconsContainer").style.opacity = "0";
         elem.querySelector(".skillsDesc").style.opacity = "0";
-        elem.querySelector('.wrapperBkg').style.backgroundColor = "rgba(0,0,0,0)"
         elem.querySelector('video').pause();
     });
 }

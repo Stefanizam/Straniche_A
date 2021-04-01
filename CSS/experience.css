@@ -4,61 +4,65 @@
 }
 
 .sectionHeader {
-    width: 100%;
     display: flex;
     padding: 3rem;
-    background-color: rgb(237, 26, 59);
+    /* background-color: #19191c; */
+    border-top: 1px #ED1A3B solid;
 }
 
 #experience>section {
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
 }
 
 .skillsContainer {
     margin-top: 0rem;
     width: 100%;
     display: flex;
-    flex-direction: column;
     overflow: hidden;
 }
 
-.skillsRow {
+/* .skillsRow {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 240px;
     overflow: hidden;
-}
+} */
 
 .wrapper {
     position: relative;
     padding: 0%;
     display: flex;
     justify-content: center;
-    width: 33.3%;
-    height: 240px;
+    width: 10%;
+    height: 480px;
     overflow: hidden;
+    transition: width .5s;
 }
+
+#vfxPaint {
+    width: 50%;
+}
+
 
 .wrapper>video {
     width: auto;
-    height: 240px;
+    height: 480px;
 }
 
 .wrapperBkg {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4)0%, rgba(0,0,0,0)60%);
     position: absolute;
     top: 0%;
     margin: 0%;
     width: 100%;
     height: 100%;
-    transition: background-color 0.5s;
 }
 
 .wrapperBkg>div {
     padding-top: 1.5rem;
     padding-left: 3rem;
-    max-width: 80%;
+    max-width: 40%;
 }
 
 .wrapperBkg p {
@@ -67,14 +71,14 @@
 
 .skillsDesc {
     opacity: 0;
-    transition: opacity 0.75s;
+    transition: opacity 1s;
 }
 
 .iconsContainer {
     display: flex;
     flex-direction: row;
     opacity: 0;
-    transition: opacity 0.75s;
+    transition: opacity 1s;
     transform: translateX(-1rem);
 }
 
@@ -187,9 +191,6 @@
         padding-top: 0.5rem;
         padding-left: 1rem;
         max-width: 90%;
-    }
-    .iconsContainer {
-        display: none;
     }
     #moviesList {
         display: none;
