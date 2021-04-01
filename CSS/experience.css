@@ -1,12 +1,12 @@
 .sectionHeader {
     width: 100%;
     display: flex;
+    padding: 3rem;
     background-color: rgb(237, 26, 59);
-    height: 280px;
 }
 
 #experience>section {
-    height: 50rem;
+    margin: 10rem 0rem;
 }
 
 .skillsContainer {
@@ -49,35 +49,14 @@
 
 .jobHeaderText {
     flex-direction: column;
-    margin: 3rem;
-    min-width: 18rem;
-    max-width: 18rem;
+    margin-right: 3rem;
+    min-width: 20%;
+    max-width: 25%;
 }
 
-.jobHeaderText p {
-    color: white;
-    text-align: end;
-}
-
-.jobInfoText {
-    font-size: 0.75rem;
-}
-
-.jobIntroText {
-    padding: 3rem;
-    width: 40%;
-    text-align: right;
-}
+.jobIntroText {}
 
 /* Specifics - START */
-
-#vfxImage {
-    background-image: url(../Images/vfxImage.jpg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    width: 100%;
-    height: 280px;
-}
 
 #graphicsImage {
     background-image: url(../Images/graphicsImage.jpg);
@@ -100,9 +79,6 @@
 /* Media */
 
 @media (min-width: 1170px) {
-    #vfxImage {
-        background-position-x: right;
-    }
     #graphicsImage {
         background-position-x: right;
     }
