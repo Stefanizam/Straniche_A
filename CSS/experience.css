@@ -26,35 +26,79 @@
 }
 
 .wrapper {
+    position: relative;
     padding: 0%;
     display: flex;
+    justify-content: center;
     width: 33.3%;
     height: 240px;
     overflow: hidden;
 }
 
 .wrapper>video {
-    position: relative;
-    top: 0%;
-    left: 0%;
     width: auto;
     height: 240px;
 }
 
-.wrapper>div {
-    position: relative;
+.wrapperBkg {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
     top: 0%;
-    left: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.5s;
+}
+
+.wrapperBkg>div {
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    max-width: 80%;
+}
+
+.wrapperBkg p {
+    margin: 0.5rem 0rem;
+}
+
+.skillsDesc {
+    opacity: 0;
+    transition: opacity 0.75s;
+}
+
+.iconsContainer {
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.75s;
+    transform: translateX(-1rem);
+}
+
+.iconsContainer>div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    align-items: center;
+}
+
+.iconsContainer img {
+    height: 50%;
+    width: auto;
 }
 
 .jobHeaderText {
     flex-direction: column;
     margin-right: 3rem;
-    min-width: 20%;
-    max-width: 25%;
+    width: 25%;
 }
 
-.jobIntroText {}
+.jobIntroText {
+    /* width: 20%; */
+    margin-left: 3rem;
+}
+
+#moviesList {
+    display: inline;
+}
 
 /* Specifics - START */
 
@@ -78,6 +122,13 @@
 
 /* Media */
 
+@media (min-width: 1440px) {
+    .wrapper>video {
+        width: 100%;
+        height: none;
+    }
+}
+
 @media (min-width: 1170px) {
     #graphicsImage {
         background-position-x: right;
@@ -89,7 +140,17 @@
 
 @media (max-width: 1170px) {}
 
-@media (max-width: 800px) {}
+@media (max-width: 800px) {
+    .wrapperBkg>div {
+        padding-top: 1rem;
+        padding-left: 2rem;
+        max-width: 80%;
+    }
+    .iconsContainer img {
+        height: 35%;
+        width: auto;
+    }
+}
 
 @media (max-width: 532px) {
     .sectionHeader {
@@ -104,6 +165,18 @@
     .jobIntroText {
         width: 100%;
     }
+    .wrapperBkg>div {
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        max-width: 90%;
+    }
+    .iconsContainer {
+        display: none;
+    }
+    #moviesList {
+        display: none;
+    }
+    
 }
 
 /* Animations */

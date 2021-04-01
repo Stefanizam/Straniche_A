@@ -1,9 +1,4 @@
 body {
-    background-image: url(../Images/bkgTriangles.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -40rem;
-    background-position-y: center;
     font-family: 'Lato', sans-serif;
     background-color: rgb(14, 15, 16);
     font-size: 1rem;
@@ -13,9 +8,18 @@ body {
     padding: 0%;
 }
 
+video {
+    object-fit: cover;
+}
+
 #pageContainer {
+    background-image: url(../Images/bkgTriangles.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -40rem;
+    background-position-y: center;
     margin: auto;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .subsection {
@@ -54,9 +58,10 @@ body {
 }
 
 .font-M {
-    font-size: 1.25rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 900;
     line-height: normal;
+    text-transform: uppercase;
 }
 
 .font-S {

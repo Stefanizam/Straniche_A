@@ -1,25 +1,26 @@
 // vfx Skills Hover actions
-let skillsContainer = document.querySelector(".skillsContainer");
-let skillsDiv = document.querySelectorAll('.wrapper');
-const skillsHeight = document.querySelector('.wrapper').style.height;
+const skillsDiv = document.querySelectorAll('.wrapper');
 
-for (let divche of skillsDiv) {
+for (let elem of skillsDiv) {
 
-    divche.addEventListener('mouseenter', () => {
+    elem.addEventListener('mouseenter', () => {
 
-        // divche.style.height = "300px";
-        divche.querySelector(".iconsContainer").style.display = "flex";
-        divche.querySelector("p").style.display = "flex";
-        divche.querySelector('video').play();
+        elem.querySelector(".iconsContainer").style.opacity = "1";
+        elem.querySelector(".skillsDesc").style.opacity = "1";
+        elem.querySelector('.wrapperBkg').style.backgroundColor = "rgba(0,0,0,0.2)"
+        elem.querySelector('video').play();
+
     });
 
-    divche.addEventListener('mouseleave', () => {
+    elem.addEventListener('mouseleave', () => {
 
-        // divche.style.height = skillsHeight;
-        divche.querySelector("p").style.display = "none";
-        divche.querySelector(".iconsContainer").style.display = "none";
-        divche.querySelector('video').pause();
+        elem.querySelector(".iconsContainer").style.opacity = "0";
+        elem.querySelector(".skillsDesc").style.opacity = "0";
+        elem.querySelector('.wrapperBkg').style.backgroundColor = "rgba(0,0,0,0)"
+        elem.querySelector('video').pause();
     });
 }
 // vfx Skills Hover - End
+
+
 
