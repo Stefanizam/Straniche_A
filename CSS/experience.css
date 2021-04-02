@@ -63,6 +63,16 @@
     padding-top: 1.5rem;
     padding-left: 3rem;
     max-width: 40%;
+    transition: padding 0.5s;
+}
+
+.wrapper .font-M {
+    font-size: 0.75rem;
+    transition: font-size 0.5s;
+}
+
+.wapper .font-M>span {
+    display: inline;
 }
 
 .wrapperBkg p {
