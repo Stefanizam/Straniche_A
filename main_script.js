@@ -6,7 +6,6 @@ const widthReset = function () {
         wrapper[i].querySelector(".iconsContainer").style.opacity = "0";
         wrapper[i].querySelector(".skillsDesc").style.opacity = "0";
         wrapper[i].querySelector('span').style.fontSize = '0.75rem';
-        wrapper[i].querySelector('.wrapperBkg>div').style.paddingLeft = '0.25rem';
         wrapper[i].querySelector('span').innerText = 'Pnt';
         switch (wrapper[i].id) {
             case 'vfxPaint':
@@ -33,6 +32,7 @@ const widthReset = function () {
 };
 
 for (let elem of wrapper) {
+
     elem.addEventListener('mousedown', () => {
 
     const titleChange = function () {
@@ -64,21 +64,10 @@ for (let elem of wrapper) {
         elem.querySelector(".iconsContainer").style.opacity = "1";
         elem.querySelector(".skillsDesc").style.opacity = "1";
         elem.querySelector('span').style.fontSize = '1.25rem';
-        elem.querySelector('.wrapperBkg>div').style.paddingLeft = '3rem';
         elem.querySelector('video').play();
-
     });
-
-    // elem.addEventListener('mouseleave', () => {
-
-    //     elem.querySelector(".iconsContainer").style.opacity = "0";
-    //     elem.querySelector(".skillsDesc").style.opacity = "0";
-    //     elem.querySelector('span').style.fontSize = '0.75rem';
-    //     elem.querySelector('.wrapperBkg>div').style.paddingLeft = '0.25rem';
-    //     elem.querySelector('video').pause();
-    // });
 }
-// vfx Skills Hover - End
+// vfx Skills Event - End
 
 
 
