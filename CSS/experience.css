@@ -18,14 +18,6 @@
     overflow: hidden;
 }
 
-/* .skillsRow {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 240px;
-    overflow: hidden;
-} */
-
 .wrapper {
     position: relative;
     padding: 0%;
@@ -39,6 +31,10 @@
 
 #vfxPaint {
     width: 50%;
+}
+
+#graphicsPrint {
+    width: 70%;
 }
 
 .wrapper>video {
@@ -56,10 +52,8 @@
     outline: none;
 }
 
-/* TUKA SI */
 .wrapper:hover {
-    outline: 1px white solid;
-    outline-offset: -1px;
+    outline: 1px rgba(25, 25, 28, 0.3) solid;
 }
 
 .wrapperBkg>div {
@@ -76,6 +70,7 @@
 .wrapper .font-M {
     font-size: 0.75rem;
     transition: font-size 0.5s;
+    width: 20vw;
 }
 
 .wrapperBkg p {
@@ -83,15 +78,20 @@
 }
 
 .skillsDesc {
+    width: 20vw;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity .5s;
+    transition-delay: .35s;
 }
 
 .iconsContainer {
+    margin-top: 1rem;
+    width: 20vw;
     display: flex;
     flex-direction: row;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity .5s;
+    transition-delay: .7s;
     transform: translateX(-1rem);
 }
 
@@ -104,43 +104,27 @@
 
 .iconsContainer img {
     height: 50%;
-    /* width: auto; */
-    transition: height 1s;
 }
 
 .jobHeaderText {
     flex-direction: column;
     margin-right: 3rem;
-    width: 25%;
+    width: 28%;
+}
+
+.jobTitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .jobIntroText {
+    width: 72%;
     margin-left: 3rem;
 }
 
 #moviesList {
     display: inline;
 }
-
-/* Specifics - START */
-
-/* #graphicsImage {
-    background-image: url(../Images/graphicsImage.jpg);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    width: 100%;
-    height: 280px;
-} */
-
-/* #techImage {
-    background-image: url(../Images/techImage.jpg);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    width: 100%;
-    height: 280px;
-} */
-
-/* Specifics - END */
 
 /* Media */
 
@@ -151,17 +135,6 @@
     }
 }
 
-@media (min-width: 1170px) {
-    #graphicsImage {
-        background-position-x: right;
-    }
-    #techImage {
-        background-position-x: right;
-    }
-}
-
-@media (max-width: 1170px) {}
-
 @media (max-width: 800px) {
     .sectionHeader {
         padding: 2rem;
@@ -169,7 +142,7 @@
     .wrapperBkg>div {
         padding-top: 1rem;
         padding-left: 1rem;
-        max-width: 80%;
+        width: 80%;
     }
     .jobHeaderText {
         margin-right: 2rem;
@@ -177,9 +150,11 @@
     .jobIntroText {
         margin-left: 2rem;
     }
-    .iconsContainer img {
-        height: 35%;
-        /* width: auto; */
+    .skillsDesc {
+        width: 45vw;
+    }
+    .iconsContainer {
+        width: 45vw;
     }
 }
 
@@ -210,7 +185,3 @@
         display: none;
     }
 }
-
-/* Animations */
-
-@keyframes opacityAppear {}
