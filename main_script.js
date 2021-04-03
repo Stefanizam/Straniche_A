@@ -30,6 +30,21 @@ const titleChange = function (element) {
         case 'graphicsVideo':
             element.querySelector('span').innerText = 'Video Editing';
             break;
+        case 'techRepair':
+            element.querySelector('span').innerText = 'Computer Repair';
+            break;
+        case 'techSystems':
+            element.querySelector('span').innerText = 'System Admisitration';
+            break;
+        case 'progFront':
+            element.querySelector('span').innerText = 'Front-End';
+            break;
+        case 'progGames':
+            element.querySelector('span').innerText = 'Game Development';
+            break;
+        case 'progSoftware':
+            element.querySelector('span').innerText = 'Software Development';
+            break;
     }
 }
 
@@ -71,47 +86,75 @@ const widthReset = function (element) {
             case 'graphicsVideo':
                 element[i].querySelector('span').innerText = 'Video';
                 break;
+            case 'techRepair':
+                element[i].querySelector('span').innerText = 'Repair';
+                break;
+            case 'techSystems':
+                element[i].querySelector('span').innerText = 'Systems';
+                break;
+            case 'progFront':
+                element[i].querySelector('span').innerText = 'Front';
+                break;
+            case 'progGames':
+                element[i].querySelector('span').innerText = 'Games';
+                break;
+            case 'progSoftware':
+                element[i].querySelector('span').innerText = 'Software';
+                break;
         }
     };
 };
 
-// vfx Skills Events
+const expandWidth = function (element) {
+    if (element.id.substring(0, 3) === "vfx") {
+        element.style.width = "50%";
+        // document.querySelector('#vfxPaint').style.width = '50%';
+        document.querySelector('#graphicsPrint').style.width = '70%';
+        document.querySelector('#techRepair').style.width = '90%';
+        document.querySelector('#progFront').style.width = '80%';
+    }
+    else if (element.id.substring(0, 3) === "gra") {
+        element.style.width = "70%";
+        document.querySelector('#vfxPaint').style.width = '50%';
+        // document.querySelector('#graphicsPrint').style.width = '70%';
+        document.querySelector('#techRepair').style.width = '90%';
+        document.querySelector('#progFront').style.width = '90%';
+    }
+    else if (element.id.substring(0, 3) === "tec") {
+        element.style.width = "90%";
+        document.querySelector('#vfxPaint').style.width = '50%';
+        document.querySelector('#graphicsPrint').style.width = '70%';
+        // document.querySelector('#techRepair').style.width = '90%';
+        document.querySelector('#progFront').style.width = '90%';
+    }
+    else if (element.id.substring(0, 3) === "pro") {
+        element.style.width = "90%";
+        document.querySelector('#vfxPaint').style.width = '50%';
+        document.querySelector('#graphicsPrint').style.width = '70%';
+        document.querySelector('#techRepair').style.width = '90%';
+        // document.querySelector('#progFront').style.width = '90%';
+    }
+}
+
+// Skills Event
 const wrapper = document.querySelectorAll('.wrapper');
 
-for (let elem of wrapper) {
+for (let div of wrapper) {
 
-    elem.addEventListener('mousedown', () => {
+    div.addEventListener('mousedown', () => {
 
         widthReset(wrapper);
-        titleChange(elem);
-        if (elem.id.substring(0, 3) === "vfx") {
-            elem.style.width = "50%";
-            document.querySelector('#graphicsPrint').style.width = '70%';
-        }
-        else if (elem.id.substring(0, 3) === "gra") {
-            elem.style.width = "70%";
-            document.querySelector('#vfxPaint').style.width = '50%';
-        }
-            // else if TECH
+        titleChange(div);
+        expandWidth(div);
 
-            // else if PROGRAMMING
-
-        elem.querySelector(".iconsContainer").style.opacity = "1";
-        elem.querySelector(".skillsDesc").style.opacity = "1";
-        elem.querySelector('span').style.fontSize = '1.25rem';
-        elem.querySelector('video').play();
+        div.querySelector(".iconsContainer").style.opacity = "1";
+        div.querySelector(".skillsDesc").style.opacity = "1";
+        div.querySelector('span').style.fontSize = '1.25rem';
+        div.querySelector('video').play();
     });
 }
-// vfx Skills Event - End
+// Skills Event - End
 
-const expandWidth = function (selector, group) {
-    if (group === 'vfx') {
-        selector.style.width = "50%";
-    }
-    else if (group === 'graphics') {
-        selector.style.width = "70%"
-    }
-}
 
 
 

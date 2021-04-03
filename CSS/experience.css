@@ -1,4 +1,4 @@
-#experience {}
+/* #experience {} */
 
 .sectionHeader {
     display: flex;
@@ -18,6 +18,22 @@
     overflow: hidden;
 }
 
+#vfxPaint {
+    width: 50%;
+}
+
+#graphicsPrint {
+    width: 70%;
+}
+
+#techRepair {
+    width: 90%;
+}
+
+#progFront {
+    width: 90%;
+}
+
 .wrapper {
     position: relative;
     padding: 0%;
@@ -27,19 +43,13 @@
     height: 480px;
     overflow: hidden;
     transition: width .5s;
-}
-
-#vfxPaint {
-    width: 50%;
-}
-
-#graphicsPrint {
-    width: 70%;
+    /* transform: skewX(-15deg); */
 }
 
 .wrapper>video {
     width: auto;
     height: 480px;
+
 }
 
 .wrapperBkg {
