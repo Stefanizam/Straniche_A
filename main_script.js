@@ -156,5 +156,22 @@ for (let div of wrapper) {
 // Skills Event - End
 
 
+// link hover effect
+const aLink = document.querySelectorAll('a');
+
+for (let a of aLink) {
+    a.addEventListener('mouseenter', () => {
+        a.style.color = 'lightslategrey';
+    })
+    a.addEventListener('mouseleave', () => {
+        a.style.color = 'white';
+    })
+}
+
+
+
+
+
+
 
 
