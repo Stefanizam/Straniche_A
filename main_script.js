@@ -109,28 +109,28 @@ const expandWidth = function (element) {
     if (element.id.substring(0, 3) === "vfx") {
         element.style.width = "50%";
         // document.querySelector('#vfxPaint').style.width = '50%';
-        document.querySelector('#graphicsPrint').style.width = '70%';
+        document.querySelector('#graphicsUI').style.width = '70%';
         document.querySelector('#techRepair').style.width = '90%';
         document.querySelector('#progFront').style.width = '80%';
     }
     else if (element.id.substring(0, 3) === "gra") {
         element.style.width = "70%";
         document.querySelector('#vfxPaint').style.width = '50%';
-        // document.querySelector('#graphicsPrint').style.width = '70%';
+        // document.querySelector('#graphicsUI').style.width = '70%';
         document.querySelector('#techRepair').style.width = '90%';
         document.querySelector('#progFront').style.width = '90%';
     }
     else if (element.id.substring(0, 3) === "tec") {
         element.style.width = "90%";
         document.querySelector('#vfxPaint').style.width = '50%';
-        document.querySelector('#graphicsPrint').style.width = '70%';
+        document.querySelector('#graphicsUI').style.width = '70%';
         // document.querySelector('#techRepair').style.width = '90%';
         document.querySelector('#progFront').style.width = '90%';
     }
     else if (element.id.substring(0, 3) === "pro") {
         element.style.width = "90%";
         document.querySelector('#vfxPaint').style.width = '50%';
-        document.querySelector('#graphicsPrint').style.width = '70%';
+        document.querySelector('#graphicsUI').style.width = '70%';
         document.querySelector('#techRepair').style.width = '90%';
         // document.querySelector('#progFront').style.width = '90%';
     }
