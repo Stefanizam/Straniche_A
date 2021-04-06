@@ -5,6 +5,7 @@
     padding-left: 6rem;
     padding-right: 6rem;
     padding-bottom: 12rem;
+    overflow: hidden;
 }
 
 #nameContainer {

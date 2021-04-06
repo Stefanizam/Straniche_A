@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="CSS/main_styles.css">
     <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/aboutMe.css">
+    <link rel="stylesheet" href="CSS/navBar.css">
     <link rel="stylesheet" href="CSS/experience.css">
     <link rel="stylesheet" href="CSS/software.css">
 
@@ -21,6 +21,42 @@
 </head>
 
 <body>
+    <naviagion id="navBar" class="font-S">
+        <div>
+            <a href="#top">
+                <button class="navBtn">
+                    About Me
+                </button>
+            </a>
+        </div>
+        <div>
+            <button id="skillsBtn" class="navBtn">
+                <p>Skills</p>
+            </button>
+            <div id="subNavContent">
+                <a href="#vfxContainer">
+                    <button class="subNavBtn">
+                        Visual Effects
+                    </button>
+                </a>
+                <a href="#graphicsContainer">
+                    <button class="subNavBtn">
+                        Graphic Design
+                    </button>
+                </a>
+                <a href="#computerTechnician">
+                    <button class="subNavBtn">
+                        Computer Tech
+                    </button>
+                </a>
+                <a href="#programming">
+                    <button class="subNavBtn">
+                        Programming
+                    </button>
+                </a>
+            </div>
+        </div>
+    </naviagion>
     <div id="pageContainer">
         <header id="headerContainer">
             <div id="nameContainer">
@@ -45,6 +81,7 @@
                     <div class="horizontal"></div>
                 </div>
             </div>
+            <div id="nameBack"></div>
             <div id="aboutMeContainer">
                 <picture>
                     <img id="profileImage" src="Images/StefanProfileImage.png" alt="Personal Profile Image">
@@ -79,9 +116,6 @@
         </header>
 
         <!-- Experience - Start -->
-        <!-- <div class="sectionName font-L">
-            <p>- Skills & Experience -</p>
-        </div> -->
         <section id="experience">
             <!-- Visual Effects - Start -->
             <section id="vfxContainer" class="skillsSection">
@@ -196,7 +230,7 @@
                             </div>
                         </div>
                         <div id="vfxRoto" class="wrapper">
-                            <video loop muted src="Videos/vfxRoto.mp4"></video>
+                            <video loop muted src="Videos/vfxRoto.mp4" poster="Images/vfxRoto.jpg"></video>
                             <div class="wrapperBkg">
                                 <div>
                                     <span class="font-M">Roto</span>
@@ -345,7 +379,8 @@
                                 <div>
                                     <span class="font-M">Motion</span>
                                     <p class="font-S skillsDesc">
-                                        Illustrated or 3D generated, animated visuals to be used in videos, applications, games or
+                                        Illustrated or 3D generated, animated visuals to be used in videos,
+                                        applications, games or
                                         any type of promotional material.
                                     </p>
                                     <div class="iconsContainer font-XS">
@@ -457,7 +492,7 @@
                 <div id="techContents">
                     <div class="skillsContainer">
                         <div id="techRepair" class="wrapper">
-                            <video loop muted src="videos/graphicsMotion.mp4"></video>
+                            <video loop muted src="videos/techRepair.mp4" poster="Images/techRepair.jpg"></video>
                             <div class="wrapperBkg">
                                 <div>
                                     <span class="font-M">Repair</span>
@@ -484,7 +519,7 @@
                             </div>
                         </div>
                         <div id="techSystems" class="wrapper">
-                            <video loop muted src="videos/graphicsMotion.mp4"></video>
+                            <video loop muted src="videos/techSystems.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
                                     <span class="font-M">System</span>
@@ -539,7 +574,7 @@
                 <div id="programmingContents">
                     <div class="skillsContainer">
                         <div id="progFront" class="wrapper">
-                            <video loop muted src="videos/graphicsMotion.mp4"></video>
+                            <video loop muted src="videos/progFront.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
                                     <span class="font-M">Front</span>
@@ -574,7 +609,7 @@
                             <video loop muted src="videos/graphicsMotion.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">Games</span>
+                                    <span class="font-M">Game Dev</span>
                                     <p class="font-S skillsDesc">
                                         Game development has always been a passion for me, mainly because I have been a
                                         dedicated consumer of this type of enterntainment. Similarily to Front-End, my

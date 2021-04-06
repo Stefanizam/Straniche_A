@@ -96,7 +96,7 @@ const widthReset = function (element) {
                 element[i].querySelector('span').innerText = 'Front';
                 break;
             case 'progGames':
-                element[i].querySelector('span').innerText = 'Games';
+                element[i].querySelector('span').innerText = 'Game Dev';
                 break;
             case 'progSoftware':
                 element[i].querySelector('span').innerText = 'Software';
@@ -161,13 +161,39 @@ const aLink = document.querySelectorAll('a');
 
 for (let a of aLink) {
     a.addEventListener('mouseenter', () => {
-        a.style.color = 'lightslategrey';
+        a.style.color = 'lightgrey';
     })
     a.addEventListener('mouseleave', () => {
         a.style.color = 'white';
     })
 }
 
+// navBar Skills Menu
+const navButton = document.querySelector("#skillsBtn");
+const subNavContent = document.querySelector("#subNavContent");
+
+navButton.addEventListener('mouseenter', () => {
+    subNavContent.style.display = 'flex';
+    subNavContent.style.transform = 'scaleY(1)';
+})
+
+subNavContent.addEventListener('mouseleave', () => {
+    subNavContent.style.display = 'none';
+})
+
+
+
+
+// Anchor click event
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         document.querySelector(this.getAttribute('href')).scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
 
 
 
