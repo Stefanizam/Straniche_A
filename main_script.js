@@ -93,7 +93,7 @@ const widthReset = function (element) {
                 element[i].querySelector('span').innerText = 'Systems';
                 break;
             case 'progFront':
-                element[i].querySelector('span').innerText = 'Front';
+                element[i].querySelector('span').innerText = 'Front-End';
                 break;
             case 'progGames':
                 element[i].querySelector('span').innerText = 'Game Dev';
@@ -172,10 +172,14 @@ for (let a of aLink) {
 const navButton = document.querySelector("#skillsBtn");
 const subNavContent = document.querySelector("#subNavContent");
 
-navButton.addEventListener('mouseenter', () => {
+navButton.addEventListener('mousedown', () => {
     subNavContent.style.display = 'flex';
     subNavContent.style.transform = 'scaleY(1)';
 })
+
+// navButton.addEventListener('mouseleave', () => {
+//     subNavContent.style.display = 'none';
+// })
 
 subNavContent.addEventListener('mouseleave', () => {
     subNavContent.style.display = 'none';

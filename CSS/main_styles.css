@@ -13,6 +13,14 @@ body {
     padding: 0%;
 }
 
+#pageContainer {
+    background-image: url('../Images/bkgDefocus.png');
+    background-size: cover;
+    /* perspective: 100px; */
+    margin: 0;
+    height: 100%;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -33,11 +41,6 @@ button {
     text-decoration: none;
     background-color: unset;
     border: unset;
-}
-
-#pageContainer {
-    margin: auto;
-    max-width: 100%;
 }
 
 .subsection {

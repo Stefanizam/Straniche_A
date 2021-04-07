@@ -1,0 +1,87 @@
+#contact {
+    display: flex;
+    padding: 6rem 3rem;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactInfo {
+    width: 25%;
+    margin-right: 2rem;
+}
+
+#contactHeadline {
+    margin: 0 0 1.5rem 0;
+}
+
+#contact p {
+    margin: 0;
+}
+
+#contactHeadline p {
+    margin: 0;
+    text-align: left;
+    text-justify: center;
+}
+
+#infoContainer p {
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+
+#linkIcons {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin: 1.5rem 0rem;
+}
+
+#linkIcons img {
+    height: 2rem;
+    width: auto;
+}
+
+.icoContainer {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background-color: grey;
+    transition: background-color 0.5s;
+}
+
+.icoContainer:hover {
+    background-color: #ED1A3B;
+}
+
+#contactForms input, #contactForms textarea {
+    margin-top: 1rem;
+    border-radius: .1rem;
+    border: 1px rgba(255, 255, 255, .1) solid;
+    background-color: transparent;
+    color: white;
+    transition: border 0.5s;
+}
+
+#contactForms button {
+    margin-top: .5rem;
+    color: white;
+    height: 1.5rem;
+    width: 6rem;
+    display: block;
+    outline: none;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    border: 1px rgba(255, 255, 255, .1) solid;
+}
+
+#contactForms button:hover {
+    background-color: #ED1A3B;
+}
+
+#contactForms input:hover, #contactForms textarea:hover {
+    border: 1px #ED1A3B solid;
+}
