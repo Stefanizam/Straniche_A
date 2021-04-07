@@ -16,7 +16,8 @@ body {
 #pageContainer {
     background-image: url('../Images/bkgDefocus.png');
     background-size: cover;
-    /* perspective: 100px; */
+    /* background-position: 0; */
+    perspective: 1px;
     margin: 0;
     height: 100%;
 }
@@ -75,7 +76,7 @@ button {
 .font-S {
     font-size: 0.9rem;
     font-weight: 300;
-    line-height: normal;
+    line-height: 1.25rem;
 }
 
 .font-XS {

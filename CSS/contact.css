@@ -1,5 +1,6 @@
 #contact {
     display: flex;
+    flex-direction: row;
     padding: 6rem 3rem;
 }
 
@@ -84,4 +85,10 @@
 
 #contactForms input:hover, #contactForms textarea:hover {
     border: 1px #ED1A3B solid;
+}
+
+@media (max-width: 800px) {
+    #contact {
+        flex-direction: column;
+    }
 }

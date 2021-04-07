@@ -51,6 +51,7 @@ const titleChange = function (element) {
 const widthReset = function (element) {
     for (let i = 0; i < element.length; i++) {
         element[i].style.width = '10%';
+        element[i].querySelector('.wrapperBkg').style.backgroundColor = "rgba(0, 0, 0, 0)";
         element[i].querySelector(".iconsContainer").style.opacity = "0";
         element[i].querySelector(".skillsDesc").style.opacity = "0";
         element[i].querySelector('span').style.fontSize = '0.75rem';
@@ -141,12 +142,15 @@ const wrapper = document.querySelectorAll('.wrapper');
 
 for (let div of wrapper) {
 
-    div.addEventListener('mousedown', () => {
+    div.addEventListener('mouseenter', () => {
 
         widthReset(wrapper);
         titleChange(div);
         expandWidth(div);
 
+        // let descWidth = div.querySelector(".skillsDesc").style.width;
+        // div.querySelector(".wrapperBkg").style.width = descWidth;
+        div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0.75)";
         div.querySelector(".iconsContainer").style.opacity = "1";
         div.querySelector(".skillsDesc").style.opacity = "1";
         div.querySelector('span').style.fontSize = '1.25rem';
@@ -161,10 +165,10 @@ const aLink = document.querySelectorAll('a');
 
 for (let a of aLink) {
     a.addEventListener('mouseenter', () => {
-        a.style.color = 'lightgrey';
+        a.style.color = 'white';
     })
     a.addEventListener('mouseleave', () => {
-        a.style.color = 'white';
+        a.style.color = '#cccccc';
     })
 }
 
@@ -177,29 +181,9 @@ navButton.addEventListener('mousedown', () => {
     subNavContent.style.transform = 'scaleY(1)';
 })
 
-// navButton.addEventListener('mouseleave', () => {
-//     subNavContent.style.display = 'none';
-// })
-
 subNavContent.addEventListener('mouseleave', () => {
     subNavContent.style.display = 'none';
 })
-
-
-
-
-// Anchor click event
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
-
-
 
 
 
