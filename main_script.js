@@ -150,7 +150,7 @@ for (let div of wrapper) {
         titleChange(div);
         expandWidth(div);
 
-        div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0, 0, 0, .6)"
+        div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0, 0, 0, .75)"
         div.querySelector(".iconsContainer").style.opacity = "1";
         div.querySelector(".skillsDesc").style.opacity = "1";
         div.querySelector('span').style.fontSize = '1.25rem';
@@ -172,16 +172,19 @@ for (let a of aLink) {
     })
 }
 
+
 // navBar Skills Menu
 const navButton = document.querySelector("#skillsBtn");
 const subNavContent = document.querySelector("#subNavContent");
 
 navButton.addEventListener('mousedown', () => {
-    subNavContent.style.display = 'flex';
+    subNavContent.style.visibility = "visible";
+    subNavContent.style.opacity = "1";
 })
 
 subNavContent.addEventListener('mouseleave', () => {
-    subNavContent.style.display = 'none';
+    subNavContent.style.visibility = "hidden";
+    subNavContent.style.opacity = "0";
 })
 
 
@@ -190,18 +193,14 @@ const buttonCV = document.getElementById('downloadCV');
 const tooltipCV = document.getElementById('tooltipText');
 
 buttonCV.addEventListener('mouseenter', () => {
-    setTimeout(() => {
-        tooltipCV.style.opacity = '1';
-    },350)
+    tooltipCV.style.opacity = '1';
 })
 buttonCV.addEventListener('mouseleave', () => {
     tooltipCV.style.opacity = '0';
 })
 
 
-
-
-// Background Parallax
+// Background Parallax - Disabled on mobile devices
 window.addEventListener('scroll', () => {
     let pageContainer = document.getElementById('pageContainer');
     let scrolled = window.pageYOffset / 2;

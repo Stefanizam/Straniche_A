@@ -1,33 +1,33 @@
-#navBar {
+nav {
     position: fixed;
     top: 0%;
     right: 0%;
-    float: top;
     height: 2.5rem;
     z-index: 2;
     display: flex;
     cursor: default;
 }
 
-#navBar a {
+nav a {
     cursor: default;
-
 }
 
-#navBar div {
-
+nav div {
     text-align: center;
 }
 
+nav > div :not(:first-child) {
+    border-left: 1px solid white;
+}
 
-#navBar p {
+nav p {
     padding-top: 0.5rem;
     margin: 0;
 }
 
 .navBtn {
     height: 2.5rem;
-    width: 8rem;
+    width: 10rem;
     background-color: #d91835;
     transition: background-color 0.25s;
     color: white;
@@ -40,16 +40,18 @@
 
 #subNavContent {
     position: absolute;
-    width: 8rem;
+    width: 10rem;
     top: 2.5rem;
-    display: none;
     flex-direction: column;
     height: 10rem;
     background-color: #d91835;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease 0s;
 }
 
 .subNavBtn {
     height: 2.5rem;
-    width: 8rem;
+    width: 10rem;
     transition: all 0.5s;
 }
