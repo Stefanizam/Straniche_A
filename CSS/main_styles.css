@@ -16,7 +16,9 @@ body {
 #pageContainer {
     background-image: url('../Images/bkgDefocus.png');
     background-size: cover;
-    /* background-position: 0; */
+    background-position: 0px 0px;
+    /* background-attachment: fixed; */
+
     perspective: 1px;
     margin: 0;
     height: 100%;

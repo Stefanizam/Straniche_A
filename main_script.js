@@ -1,7 +1,5 @@
 const titleChange = function (element) {
     setTimeout(function () {
-
-
         switch (element.id) {
             case 'vfxPaint':
                 element.querySelector('span').innerText = 'Paint';
@@ -49,13 +47,16 @@ const titleChange = function (element) {
                 element.querySelector('span').innerText = 'Software Development';
                 break;
         }
-    }, 500)
+    }, 350)
 }
 
 const widthReset = function (element) {
     for (let i = 0; i < element.length; i++) {
         element[i].style.width = '10%';
         element[i].querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0)";
+
+        // element[i].querySelector(".wrapperBkg").style.transform = "scaleX(0)"
+
         element[i].querySelector(".iconsContainer").style.opacity = "0";
         element[i].querySelector(".skillsDesc").style.opacity = "0";
         element[i].querySelector('span').style.fontSize = '0.75rem';
@@ -153,6 +154,9 @@ for (let div of wrapper) {
         expandWidth(div);
 
         div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0, 0, 0, .4)"
+
+        // div.querySelector(".wrapperBkg").style.transform = "scaleX(1)"
+
         div.querySelector(".iconsContainer").style.opacity = "1";
         div.querySelector(".skillsDesc").style.opacity = "1";
         div.querySelector('span').style.fontSize = '1.25rem';
@@ -202,3 +206,10 @@ buttonCV.addEventListener('mouseleave', () => {
 
 
 
+// Background Parallax
+window.addEventListener('scroll', () => {
+    let pageContainer = document.getElementById('pageContainer');
+    let scrolled = window.pageYOffset / 2;
+
+    pageContainer.style.backgroundPosition = `0px ${scrolled}px`;
+})

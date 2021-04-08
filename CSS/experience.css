@@ -16,7 +16,7 @@
 }
 
 #experience>section:not(:last-child) {
-    margin-bottom: 10rem;
+    margin-bottom: 25rem;
 }
 
 .skillsContainer {
@@ -64,11 +64,10 @@
     margin: 0%;
     height: 100%;
     outline: none;
-    transition: background-color 0.5s;
-}
-
-.wrapper:hover {
-    outline: 1px rgba(25, 25, 28, 0.3) solid;
+    transition: background-color 0.5s ease 0.5s, transform 0.5s;
+    /* asdhbasdjhbasdjhbasdjhbasdhb */
+    /* transform: scaleX(0); */
+    /* transform-origin: left; */
 }
 
 .wrapperBkg>div {
@@ -78,11 +77,13 @@
     transition: padding 0.5s;
 }
 
-.skillsTitle {}
+.skillTitle {
+    width: 20rem;
+}
 
 .wrapper .font-M {
     font-size: 0.75rem;
-    transition: font-size 0.5s ease 0.5s;
+    transition: font-size 0.5s ease 0.65s;
     width: 20vw;
 }
 
@@ -94,8 +95,7 @@
     width: 16vw;
     padding-right: 3rem;
     opacity: 0;
-    transition: opacity .5s;
-    transition-delay: .35s;
+    transition: opacity .5s ease .8s;
     text-align: justify;
 }
 
@@ -105,8 +105,7 @@
     display: flex;
     flex-direction: row;
     opacity: 0;
-    transition: opacity .5s;
-    transition-delay: .7s;
+    transition: opacity .5s ease .95s;
     transform: translateX(-1rem);
 }
 
@@ -163,6 +162,9 @@
     .sectionHeader {
         padding: 2rem;
     }
+    #experience>section:not(:last-child) {
+        margin-bottom: 20rem;
+    }
     .wrapperBkg>div {
         padding-top: 1rem;
         padding-left: 1rem;
@@ -189,6 +191,9 @@
     }
     .sectionHeader>picture {
         display: none;
+    }
+    #experience>section:not(:last-child) {
+        margin-bottom: 15rem;
     }
     .jobHeaderText {
         margin-right: 1rem;
