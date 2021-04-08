@@ -1,6 +1,7 @@
 #contact {
     display: flex;
     flex-direction: row;
+    justify-content: left;
     padding: 6rem 3rem;
 }
 
@@ -14,7 +15,7 @@
     margin-right: 2rem;
 }
 
-#contactHeadline {
+.contactHeadline {
     margin: 0 0 1.5rem 0;
 }
 
@@ -22,7 +23,7 @@
     margin: 0;
 }
 
-#contactHeadline p {
+.contactHeadline p {
     margin: 0;
     text-align: left;
     text-justify: center;
@@ -30,14 +31,18 @@
 
 #infoContainer p {
     margin: 0;
-    margin-bottom: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+#email {
+    margin-bottom: .25rem;
 }
 
 #linkIcons {
     display: flex;
     justify-content: left;
     width: 100%;
-    margin: 1.5rem 0rem;
+    margin: 1.5remD 0rem;
 }
 
 #linkIcons img {

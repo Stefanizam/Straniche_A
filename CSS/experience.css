@@ -59,11 +59,9 @@
 }
 
 .wrapperBkg {
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
     position: absolute;
     margin: 0%;
-    /* width: unset; */
     height: 100%;
     outline: none;
     transition: background-color 0.5s;
@@ -80,13 +78,11 @@
     transition: padding 0.5s;
 }
 
-.wrapperBkg span {
-    text-align: center;
-}
+.skillsTitle {}
 
 .wrapper .font-M {
     font-size: 0.75rem;
-    transition: font-size 0.5s;
+    transition: font-size 0.5s ease 0.5s;
     width: 20vw;
 }
 
@@ -95,7 +91,7 @@
 }
 
 .skillsDesc {
-    width: 20vw;
+    width: 16vw;
     padding-right: 3rem;
     opacity: 0;
     transition: opacity .5s;
@@ -211,5 +207,16 @@
     }
     #moviesList {
         display: none;
+    }
+}
+
+/* Animations */
+
+@keyframes widthExpand {
+    from {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 60%);
+    }
+    to {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%);
     }
 }

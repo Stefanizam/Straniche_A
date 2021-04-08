@@ -1,57 +1,61 @@
 const titleChange = function (element) {
-    switch (element.id) {
-        case 'vfxPaint':
-            element.querySelector('span').innerText = 'Paint';
-            break;
-        case 'vfxComp':
-            element.querySelector('span').innerText = 'Compositing';
-            break;
-        case 'vfxMotionTrack':
-            element.querySelector('span').innerText = 'Motion Tracking';
-            break;
-        case 'vfxRoto':
-            element.querySelector('span').innerText = 'RotoScoping';
-            break;
-        case 'vfxSimulation':
-            element.querySelector('span').innerText = 'Simulations';
-            break;
-        case 'vfx3D':
-            element.querySelector('span').innerText = '3D Modeling';
-            break;
-        case 'graphicsPrint':
-            element.querySelector('span').innerText = 'Print Design';
-            break;
-        case 'graphicsUI':
-            element.querySelector('span').innerText = 'UI/Web Design';
-            break;
-        case 'graphicsMotion':
-            element.querySelector('span').innerText = 'Motion Graphics';
-            break;
-        case 'graphicsVideo':
-            element.querySelector('span').innerText = 'Video Editing';
-            break;
-        case 'techRepair':
-            element.querySelector('span').innerText = 'Computer Repair';
-            break;
-        case 'techSystems':
-            element.querySelector('span').innerText = 'System Admisitration';
-            break;
-        case 'progFront':
-            element.querySelector('span').innerText = 'Front-End';
-            break;
-        case 'progGames':
-            element.querySelector('span').innerText = 'Game Development';
-            break;
-        case 'progSoftware':
-            element.querySelector('span').innerText = 'Software Development';
-            break;
-    }
+    setTimeout(function () {
+
+
+        switch (element.id) {
+            case 'vfxPaint':
+                element.querySelector('span').innerText = 'Paint';
+                break;
+            case 'vfxComp':
+                element.querySelector('span').innerText = 'Compositing';
+                break;
+            case 'vfxMotionTrack':
+                element.querySelector('span').innerText = 'Motion Tracking';
+                break;
+            case 'vfxRoto':
+                element.querySelector('span').innerText = 'RotoScoping';
+                break;
+            case 'vfxSimulation':
+                element.querySelector('span').innerText = 'Simulations';
+                break;
+            case 'vfx3D':
+                element.querySelector('span').innerText = '3D Modeling';
+                break;
+            case 'graphicsPrint':
+                element.querySelector('span').innerText = 'Print Design';
+                break;
+            case 'graphicsUI':
+                element.querySelector('span').innerText = 'UI/Web Design';
+                break;
+            case 'graphicsMotion':
+                element.querySelector('span').innerText = 'Motion Graphics';
+                break;
+            case 'graphicsVideo':
+                element.querySelector('span').innerText = 'Video Editing';
+                break;
+            case 'techRepair':
+                element.querySelector('span').innerText = 'Computer Repair';
+                break;
+            case 'techSystems':
+                element.querySelector('span').innerText = 'System Admisitration';
+                break;
+            case 'progFront':
+                element.querySelector('span').innerText = 'Front-End';
+                break;
+            case 'progGames':
+                element.querySelector('span').innerText = 'Game Development';
+                break;
+            case 'progSoftware':
+                element.querySelector('span').innerText = 'Software Development';
+                break;
+        }
+    }, 500)
 }
 
 const widthReset = function (element) {
     for (let i = 0; i < element.length; i++) {
         element[i].style.width = '10%';
-        element[i].querySelector('.wrapperBkg').style.backgroundColor = "rgba(0, 0, 0, 0)";
+        element[i].querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0)";
         element[i].querySelector(".iconsContainer").style.opacity = "0";
         element[i].querySelector(".skillsDesc").style.opacity = "0";
         element[i].querySelector('span').style.fontSize = '0.75rem';
@@ -148,14 +152,12 @@ for (let div of wrapper) {
         titleChange(div);
         expandWidth(div);
 
-        // let descWidth = div.querySelector(".skillsDesc").style.width;
-        // div.querySelector(".wrapperBkg").style.width = descWidth;
-        div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0.75)";
+        div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0, 0, 0, .4)"
         div.querySelector(".iconsContainer").style.opacity = "1";
         div.querySelector(".skillsDesc").style.opacity = "1";
         div.querySelector('span').style.fontSize = '1.25rem';
         div.querySelector('video').play();
-    });
+    })
 }
 // Skills Event - End
 
@@ -185,6 +187,17 @@ subNavContent.addEventListener('mouseleave', () => {
     subNavContent.style.display = 'none';
 })
 
+
+// CV Tooltip Hover
+const buttonCV = document.getElementById('downloadCV');
+const tooltipCV = document.getElementById('tooltipText');
+
+buttonCV.addEventListener('mouseenter', () => {
+    tooltipCV.style.opacity = '1';
+})
+buttonCV.addEventListener('mouseleave', () => {
+    tooltipCV.style.opacity = '0';
+})
 
 
 

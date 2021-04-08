@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <naviagion id="navBar" class="font-S">
+    <navigation id="navBar" class="font-S">
         <div>
             <a href="#top">
                 <button class="navBtn">
@@ -63,7 +63,7 @@
                 </button>
             </a>
         </div>
-    </naviagion>
+    </navigation>
     <div id="pageContainer">
         <header id="headerContainer">
             <div id="nameContainer">
@@ -93,21 +93,35 @@
                 <picture>
                     <img id="profileImage" src="Images/StefanProfileImage.png" alt="Personal Profile Image">
                 </picture>
-                <p id="aboutMeText">
-                    As a senior visual effects artist and graphic designer by profession, with over a decade of
-                    professional experience, and a concept artist and gamer by hobby, I am confident enough to say that
-                    I have developed a very strong affinity and knowledge of computers and their most intricate
-                    functions. After ascending the hierarchies of companies I have been employed at, I feel ready and
-                    eager to take on a new challenge.<br><br>As an employee, I would describe myself as a high
-                    performer,
-                    adaptable, with unrelenting focus. Whether on a supervisory or subordinate position, my pragmatic
-                    nature leads me to assign value to my co-workers according to merit, efficiency and perseverance.
-                    <br><br>I have always had a flair for automation and optimization when it comes to solving
-                    problems, so my current plan is to play to my strengths and expand my knowledge of programming
-                    languages further and move into game, software or web development. I am currently in the market,
-                    searching for a full-time or part-time position at any type of organization, but I also welcome
-                    opportunities as a consultant or freelancer.
-                </p>
+                <div id="aboutMeText">
+                    <p>
+                        As a senior visual effects artist and graphic designer by profession, with over a decade of
+                        professional experience, and a concept artist and gamer by hobby, I am confident enough to say
+                        that
+                        I have developed a very strong affinity and knowledge of computers and their most intricate
+                        functions. After ascending the hierarchies of companies I have been employed at, I feel ready
+                        and
+                        eager to take on a new challenge.<br><br>As an employee, I would describe myself as a high
+                        performer,
+                        adaptable, with unrelenting focus. Whether on a supervisory or subordinate position, my
+                        pragmatic
+                        nature leads me to assign value to my co-workers according to merit, efficiency and
+                        perseverance.
+                        <br><br>I have always had a flair for automation and optimization when it comes to solving
+                        problems, so my current plan is to play to my strengths and expand my knowledge of programming
+                        languages further and move into game, software or web development. I am currently in the market,
+                        searching for a full-time or part-time position at any type of organization, but I also welcome
+                        opportunities as a consultant or freelancer.
+                    </p>
+                    <a href="https://www.dropbox.com/s/8ptlmt2f0jpf68z/CV_Placeholder.txt?dl=0" target="_blank"
+                        download>
+                        <button id="downloadCV">Download CV
+                            <!-- <div id="CVtooltip"> -->
+                            <p id="tooltipText" class="font-XS">The current file is only a placeholder</p>
+                            <!-- </div> -->
+                        </button>
+                    </a>
+                </div>
             </div>
         </header>
 
@@ -153,157 +167,157 @@
                             <video loop muted src="Videos/vfxPnt.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">Paint</span>
-                                    <p class="font-S skillsDesc">
-                                        Removal of any unwanted object off of a given video footage or still image,
-                                        with
-                                        a
-                                        seamless reconstruction of the surrounding area, background and foreground
-                                        elements.
-                                    </p>
-                                    <div class="iconsContainer font-XS">
-                                        <div>
-                                            <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
-                                            <span>Nuke</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Silhouette.png" alt="Silhouette FX">
-                                            <span>Silhouette</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Mocha.png" alt="Boris FX Mocha Pro">
-                                            <span>Mocha Pro</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="vfxComp" class="wrapper">
-                            <video loop muted src="Videos/vfxComp.mp4" poster="Images/vfxComp.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <span class="font-M">Comp</span>
-                                    <p class="font-S skillsDesc">Match moving and color grading any given object
-                                        onto a given video footage or still image.
-                                    </p>
-                                    <div class="iconsContainer font-XS">
-                                        <div>
-                                            <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
-                                            <span>Nuke</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Fusion.png" alt="Blackmagic Fusion">
-                                            <span>Fusion</span>
+                                    <div class="skillTitle"><span class="font-M">Paint</span></div>
+                                        <p class="font-S skillsDesc">
+                                            Removal of any unwanted object off of a given video footage or still image,
+                                            with
+                                            a
+                                            seamless reconstruction of the surrounding area, background and foreground
+                                            elements.
+                                        </p>
+                                        <div class="iconsContainer font-XS">
+                                            <div>
+                                                <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
+                                                <span>Nuke</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_Silhouette.png" alt="Silhouette FX">
+                                                <span>Silhouette</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_Mocha.png" alt="Boris FX Mocha Pro">
+                                                <span>Mocha Pro</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="vfxMotionTrack" class="wrapper">
-                            <video loop muted src="Videos/vfxCmm.mp4"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <span class="font-M">CMM</span>
-                                    <p class="font-S skillsDesc">3D extrapolation of a virtual camera to be used in
-                                        other VFX procedures and geometry layout.
-                                    </p>
-                                    <div class="iconsContainer font-XS">
-                                        <div>
-                                            <img src="Images/Icons/ico_Equalizer.png" alt="3DE4 Equalizer">
-                                            <span>3DE4 Equalizer</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_PFTrack.png" alt="Pixel Farm PFTrack">
-                                            <span>PFTrack</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Blender.png" alt="Blender">
-                                            <span>Blender</span>
+                            <div id="vfxComp" class="wrapper">
+                                <video loop muted src="Videos/vfxComp.mp4" poster="Images/vfxComp.jpg"></video>
+                                <div class="wrapperBkg">
+                                    <div>
+                                        <div class="skillTitle"><span class="font-M">Comp</span></div>
+                                        <p class="font-S skillsDesc">Match moving and color grading any given object
+                                            onto a given video footage or still image.
+                                        </p>
+                                        <div class="iconsContainer font-XS">
+                                            <div>
+                                                <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
+                                                <span>Nuke</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_Fusion.png" alt="Blackmagic Fusion">
+                                                <span>Fusion</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="vfxRoto" class="wrapper">
-                            <video loop muted src="Videos/vfxRoto.mp4" poster="Images/vfxRoto.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <span class="font-M">Roto</span>
-                                    <p class="font-S skillsDesc">Outlining of certain objects on a given video
-                                        footage,
-                                        to be used
-                                        as a
-                                        matte in other VFX procedures.
-                                    </p>
-                                    <div class="iconsContainer font-XS">
-                                        <div>
-                                            <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
-                                            <span>Nuke</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Mocha.png" alt="Boris FX Mocha Pro">
-                                            <span>Mocha Pro</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Silhouette.png" alt="Silhouette FX">
-                                            <span>Silhouette</span>
+                            <div id="vfxMotionTrack" class="wrapper">
+                                <video loop muted src="Videos/vfxCmm.mp4"></video>
+                                <div class="wrapperBkg">
+                                    <div>
+                                        <div class="skillTitle"><span class="font-M">CMM</span></div>
+                                        <p class="font-S skillsDesc">3D extrapolation of a virtual camera to be used in
+                                            other VFX procedures and geometry layout.
+                                        </p>
+                                        <div class="iconsContainer font-XS">
+                                            <div>
+                                                <img src="Images/Icons/ico_Equalizer.png" alt="3DE4 Equalizer">
+                                                <span>3DE4 Equalizer</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_PFTrack.png" alt="Pixel Farm PFTrack">
+                                                <span>PFTrack</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_Blender.png" alt="Blender">
+                                                <span>Blender</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="vfxSimulation" class="wrapper">
-                            <video loop muted src="Videos/vfxSim.mp4" poster="Images/vfxSim.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <span class="font-M">Sim</span>
-                                    <p class="font-S skillsDesc">Creating computer generated renderings of certain
-                                        visual effects.
-                                        Such
-                                        as explosions, fluid simulations, screen and holographic interfaces and so
-                                        on.
-                                    </p>
-                                    <div class="iconsContainer font-XS">
-                                        <div>
-                                            <img src="Images/Icons/ico_Blender.png" alt="Blender">
-                                            <span>Blender</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Houdini.png" alt="Side FX Houdini">
-                                            <span>Houdini</span>
+                            <div id="vfxRoto" class="wrapper">
+                                <video loop muted src="Videos/vfxRoto.mp4" poster="Images/vfxRoto.jpg"></video>
+                                <div class="wrapperBkg">
+                                    <div>
+                                        <div class="skillTitle"><span class="font-M">Roto</span></div>
+                                        <p class="font-S skillsDesc">Outlining of certain objects on a given video
+                                            footage,
+                                            to be used
+                                            as a
+                                            matte in other VFX procedures.
+                                        </p>
+                                        <div class="iconsContainer font-XS">
+                                            <div>
+                                                <img src="Images/Icons/ico_Nuke.png" alt="The Foundry Nuke">
+                                                <span>Nuke</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_Mocha.png" alt="Boris FX Mocha Pro">
+                                                <span>Mocha Pro</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_Silhouette.png" alt="Silhouette FX">
+                                                <span>Silhouette</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="vfx3D" class="wrapper">
-                            <video loop muted src="Videos/vfx3D.mp4"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <span class="font-M">3D</span>
-                                    <p class="font-S skillsDesc">Modeling, texturing, rigging or animation of 3D
-                                        represantations of real world or imaginary objects to be used in other VFX
-                                        procedures or game development.
-                                    </p>
-                                    <div class="iconsContainer font-XS">
-                                        <div>
-                                            <img src="Images/Icons/ico_Blender.png" alt="Blender">
-                                            <span>Blender</span>
+                            <div id="vfxSimulation" class="wrapper">
+                                <video loop muted src="Videos/vfxSim.mp4" poster="Images/vfxSim.jpg"></video>
+                                <div class="wrapperBkg">
+                                    <div>
+                                        <div class="skillTitle"><span class="font-M">Sim</span></div>
+                                        <p class="font-S skillsDesc">Creating computer generated renderings of certain
+                                            visual effects.
+                                            Such
+                                            as explosions, fluid simulations, screen and holographic interfaces and so
+                                            on.
+                                        </p>
+                                        <div class="iconsContainer font-XS">
+                                            <div>
+                                                <img src="Images/Icons/ico_Blender.png" alt="Blender">
+                                                <span>Blender</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_Houdini.png" alt="Side FX Houdini">
+                                                <span>Houdini</span>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Max.png" alt="Autodesk 3Ds Max">
-                                            <span>3DsMax</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Maya.png" alt="Autodesk Maya">
-                                            <span>Maya</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="vfx3D" class="wrapper">
+                                <video loop muted src="Videos/vfx3D.mp4"></video>
+                                <div class="wrapperBkg">
+                                    <div>
+                                        <div class="skillTitle"><span class="font-M">3D</span></div>
+                                        <p class="font-S skillsDesc">Modeling, texturing, rigging or animation of 3D
+                                            represantations of real world or imaginary objects to be used in other VFX
+                                            procedures or game development.
+                                        </p>
+                                        <div class="iconsContainer font-XS">
+                                            <div>
+                                                <img src="Images/Icons/ico_Blender.png" alt="Blender">
+                                                <span>Blender</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_Max.png" alt="Autodesk 3Ds Max">
+                                                <span>3DsMax</span>
+                                            </div>
+                                            <div>
+                                                <img src="Images/Icons/ico_Maya.png" alt="Autodesk Maya">
+                                                <span>Maya</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <!-- Visual Effects - End -->
 
@@ -346,7 +360,7 @@
                             <video loop muted src="Videos/graphicsUI.mp4" poster="Images/graphicsUI.jpg"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">UI/Web</span>
+                                    <div class="skillTitle"><span class="font-M">UI/Web</span></div>
                                     <p class="font-S skillsDesc">
                                         Graphic design encompassing the visual
                                         look and feel of web pages, desktop and
@@ -374,7 +388,7 @@
                             <video loop muted src="Videos/graphicsMotion.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">Motion</span>
+                                    <div class="skillTitle"><span class="font-M">Motion</span></div>
                                     <p class="font-S skillsDesc">
                                         Illustrated or 3D generated, animated visuals to be used in videos,
                                         applications, games or
@@ -405,7 +419,7 @@
                             <video loop muted src="Videos/graphicsPrint.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">Print</span>
+                                    <div class="skillTitle"><span class="font-M">Print</span></div>
                                     <p class="font-S skillsDesc">
                                         Graphic design primarily focused around printed media, such as event
                                         posters,
@@ -435,7 +449,7 @@
                             <video loop muted src="Videos/graphicsVideo.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">Video</span>
+                                    <div class="skillTitle"><span class="font-M">Video</span></div>
                                     <p class="font-S skillsDesc">
                                         Organising, editing and managing transitions between multuple video and
                                         audio
@@ -497,7 +511,7 @@
                             <video loop muted src="Videos/techRepair.mp4" poster="Images/techRepair.jpg"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">Repair</span>
+                                    <div class="skillTitle"><span class="font-M">Repair</span></div>
                                     <p class="font-S skillsDesc">
                                         Diagnosing and solving software or hardware related problems in desktop or
                                         laptop computers, ranging from replacing or repairing faulty hardware
@@ -525,11 +539,9 @@
                             <video loop muted src="Videos/techSystems.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">System</span>
+                                    <div class="skillTitle"><span class="font-M">System</span></div>
                                     <p class="font-S skillsDesc">
-                                        Over the years, I have managed to gain intimate knowledge over computer
-                                        systems
-                                        and electornics in general. My expertise in this area includes custom
+                                        My expertise in this area includes custom
                                         modifications, maintenance and installation of drivers, operating systems,
                                         application software, hardware, networking gear or software and so on. From
                                         a
@@ -582,7 +594,7 @@
                             <video loop muted src="Videos/progFront.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">Front-End</span>
+                                    <div class="skillTitle"><span class="font-M">Front-End</span></div>
                                     <p class="font-S skillsDesc">
                                         My extensive experience with 2D graphics has certainly helped me gain a
                                         deeper
@@ -616,7 +628,7 @@
                             <video loop muted src="Videos/progGame.mp4"></video>
                             <div class="wrapperBkg">
                                 <div>
-                                    <span class="font-M">Game Dev</span>
+                                    <div class="skillTitle"><span class="font-M">Game Dev</span></div>
                                     <p class="font-S skillsDesc">
                                         Game development has always been a passion for me, mainly because I have been a
                                         dedicated consumer of this type of enterntainment. Similarily to Front-End, my
@@ -651,53 +663,59 @@
             <!-- Programming - End -->
         </section>
         <!-- Experience - End -->
-        <section id="contact">
-            <div id="contactInfo" class="contactContainer">
-                <div id="contactHeadline">
-                    <p class="font-L">Contact</p>
-                </div>
-                <div id="infoContainer">
-                    <div id="email">
-                        <p class="font-S" style="color: lightgrey;">email:</p>
-                        <p class="font-S">bozinovski.stefan@gmail.com</p>
+        <footer>
+            <section id="contact">
+                <div id="contactInfo" class="contactContainer">
+                    <div class="contactHeadline">
+                        <p class="font-M">Contact</p>
+                    </div>
+                    <div id="infoContainer">
+                        <div id="email">
+                            <p class="font-S"><span style="color:lightgrey;">email:</span>
+                                <br>bozinovski.stefan@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contactHeadline">
+                        <p class="font-M">Online Presence</p>
+                    </div>
+                    <div id="linkIcons">
+                        <div class="icoContainer">
+                            <a href="https://www.linkedin.com/in/stefan-bozinovski/" target="_blank">
+                                <img src="Images/Icons/Ico_linkedIn.svg" alt="linkedIn"></img>
+                            </a>
+                        </div>
+                        <div class="icoContainer">
+                            <a href="https://www.behance.net/StefanBozinovski" target="_blank">
+                                <img src="Images/Icons/Ico_behance.svg" alt="behance"></img>
+                            </a>
+                        </div>
+                        <div class="icoContainer">
+                            <a href="https://github.com/Stefanizam" target="_blank">
+                                <img src="Images/Icons/Ico_github.svg" alt="gitHub"></img>
+                            </a>
+                        </div>
+                        <div class="icoContainer">
+                            <a href="https://www.facebook.com/stefan.bozinovski.79/" target="_blank">
+                                <img src="Images/Icons/Ico_facebook.svg" alt="facebook"></img>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div id="linkIcons">
-                    <div class="icoContainer">
-                        <a href="https://www.linkedin.com/in/stefan-bozinovski/" target="_blank">
-                            <img src="Images/Icons/Ico_linkedIn.svg" alt="linkedIn"></img>
-                        </a>
-                    </div>
-                    <div class="icoContainer">
-                        <a href="https://www.behance.net/StefanBozinovski" target="_blank">
-                            <img src="Images/Icons/Ico_behance.svg" alt="behance"></img>
-                        </a>
-                    </div>
-                    <div class="icoContainer">
-                        <a href="https://github.com/Stefanizam" target="_blank">
-                            <img src="Images/Icons/Ico_github.svg" alt="gitHub"></img>
-                        </a>
-                    </div>
-                    <div class="icoContainer">
-                        <a href="https://www.facebook.com/stefan.bozinovski.79/" target="_blank">
-                            <img src="Images/Icons/Ico_facebook.svg" alt="facebook"></img>
-                        </a>
-                    </div>
+                <div id="contactForms" class="contactContainer">
+                    <p class="font-S">Send me a message:</p>
+                    <form id="msgName" method="post" action="php/contact-form-handler.php">
+                        <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                        <br>
+                        <input name="email" type="email" class="form-control" placeholder="Your e-mail" required>
+                        <br>
+                        <textarea name="msgMessage" class="form-control" placeholder="Your Message" id="" cols="30"
+                            rows="4" required></textarea>
+                        <button type="submit" class="form-control submit font-S" value="SEND MESSAGE">Send</button>
+                    </form>
                 </div>
-            </div>
-            <div id="contactForms" class="contactContainer">
-                <p class="font-S">Send me a message:</p>
-                <form id="msgName" method="post" action="php/contact-form-handler.php">
-                    <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-                    <br>
-                    <input name="email" type="email" class="form-control" placeholder="Your e-mail" required>
-                    <br>
-                    <textarea name="msgMessage" class="form-control" placeholder="Your Message" id="" cols="30" rows="4"
-                        required></textarea>
-                    <button type="submit" class="form-control submit font-S" value="SEND MESSAGE">Send</button>
-                </form>
-            </div>
-        </section>
+            </section>
+        </footer>
         <!-- My JS -->
         <script src="main_script.js"></script>
     </div>

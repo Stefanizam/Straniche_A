@@ -25,7 +25,6 @@
     background-color: #d91835;
     transition: background-color 0.25s;
     color: white;
-    /* font-weight: 900; */
     text-transform: uppercase;
 }
 
@@ -45,7 +44,6 @@
 }
 
 .subNavBtn {
-    /* background-image: linear-gradient(48deg, rgba(255,255,255,0), rgba(255,255,255,.1)); */
     height: 2.5rem;
     width: 6rem;
     transition: all 0.5s;
