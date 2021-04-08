@@ -54,9 +54,6 @@ const widthReset = function (element) {
     for (let i = 0; i < element.length; i++) {
         element[i].style.width = '10%';
         element[i].querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0)";
-
-        // element[i].querySelector(".wrapperBkg").style.transform = "scaleX(0)"
-
         element[i].querySelector(".iconsContainer").style.opacity = "0";
         element[i].querySelector(".skillsDesc").style.opacity = "0";
         element[i].querySelector('span').style.fontSize = '0.75rem';
@@ -153,10 +150,7 @@ for (let div of wrapper) {
         titleChange(div);
         expandWidth(div);
 
-        div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0, 0, 0, .4)"
-
-        // div.querySelector(".wrapperBkg").style.transform = "scaleX(1)"
-
+        div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0, 0, 0, .6)"
         div.querySelector(".iconsContainer").style.opacity = "1";
         div.querySelector(".skillsDesc").style.opacity = "1";
         div.querySelector('span').style.fontSize = '1.25rem';
@@ -184,7 +178,6 @@ const subNavContent = document.querySelector("#subNavContent");
 
 navButton.addEventListener('mousedown', () => {
     subNavContent.style.display = 'flex';
-    subNavContent.style.transform = 'scaleY(1)';
 })
 
 subNavContent.addEventListener('mouseleave', () => {
@@ -197,7 +190,9 @@ const buttonCV = document.getElementById('downloadCV');
 const tooltipCV = document.getElementById('tooltipText');
 
 buttonCV.addEventListener('mouseenter', () => {
-    tooltipCV.style.opacity = '1';
+    setTimeout(() => {
+        tooltipCV.style.opacity = '1';
+    },350)
 })
 buttonCV.addEventListener('mouseleave', () => {
     tooltipCV.style.opacity = '0';
