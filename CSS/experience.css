@@ -15,8 +15,8 @@
     text-decoration: underline #5a5a5a;
 }
 
-#experience>section:not(:last-child) {
-    margin-bottom: 25rem;
+#experience>section {
+    margin-bottom: 20rem;
 }
 
 .skillsContainer {
@@ -165,10 +165,6 @@
     .iconsContainer>div {
         margin-right: 0;
     }
-.wrapper {
-    /* justify-content: center; */
-}
-
     .wrapperBkg>div {
         padding-top: 1rem;
         padding-left: 2rem;
