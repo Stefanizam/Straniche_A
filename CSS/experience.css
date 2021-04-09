@@ -46,7 +46,7 @@
     position: relative;
     padding: 0%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     width: 10%;
     height: 480px;
     overflow: hidden;
@@ -61,6 +61,7 @@
 .wrapperBkg {
     background-image: none;
     position: absolute;
+    left: 0;
     margin: 0%;
     height: 100%;
     outline: none;
@@ -164,10 +165,18 @@
     .iconsContainer>div {
         margin-right: 0;
     }
+.wrapper {
+    /* justify-content: center; */
+}
+
     .wrapperBkg>div {
         padding-top: 1rem;
-        padding-left: 1rem;
+        padding-left: 2rem;
         width: 80%;
+    }
+    .wrapperBkg {
+        height: unset;
+        width: unset;
     }
     .jobHeaderText {
         margin-right: 2rem;
