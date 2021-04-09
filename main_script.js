@@ -176,15 +176,19 @@ for (let a of aLink) {
 // navBar Skills Menu
 const navButton = document.querySelector("#skillsBtn");
 const subNavContent = document.querySelector("#subNavContent");
+const subNavElements = document.querySelectorAll('#subNavContent>a');
 
-navButton.addEventListener('mousedown', () => {
+navButton.addEventListener('mouseenter', () => {
     subNavContent.style.visibility = "visible";
     subNavContent.style.opacity = "1";
+    subNavContent.style.transform = "translateY(0em)";
 })
 
 subNavContent.addEventListener('mouseleave', () => {
     subNavContent.style.visibility = "hidden";
     subNavContent.style.opacity = "0";
+
+    subNavContent.style.transform = "translateY(-12em)";
 })
 
 
@@ -200,7 +204,7 @@ buttonCV.addEventListener('mouseleave', () => {
 })
 
 
-// Background Parallax - Disabled on mobile devices
+// Background Parallax
 window.addEventListener('scroll', () => {
     let pageContainer = document.getElementById('pageContainer');
     let scrolled = window.pageYOffset / 2;

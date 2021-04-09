@@ -1,13 +1,13 @@
 .sectionHeader {
     display: flex;
     padding: 3rem;
-    background-color: rgba(15, 15, 15, 0.75);
     border-top: 1px #ED1A3B solid;
 }
 
 #experience>section {
     border-bottom: 1px #ED1A3B solid;
     box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.35);
+    background-color: rgba(15, 15, 15, 0.75);
 }
 
 #experience a {
