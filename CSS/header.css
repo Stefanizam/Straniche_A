@@ -1,40 +1,98 @@
 #headerContainer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    position: relative;
     padding-left: 6rem;
     padding-right: 6rem;
-    padding-bottom: 12rem;
     overflow: hidden;
-
 }
 
-h1 {
+#nameContainer {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    margin-top: 36vh;
+    z-index: 0;
+}
+
+.myName {
+    position: relative;
+    width: max-content;
     padding: 0;
     margin: 0%;
 }
 
-#nameContainer {
-    margin-top: 10rem;
-    margin-left: 6rem;
-    width: 26rem;
-    height: 10rem;
-    /* animation: slideInTop 0.25s ease-in-out 0.5s 1; */
-    /* animation-fill-mode: backwards; */
+.myName:last-of-type {
+    margin-left: 4.6vw;
+}
+
+.cornersContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.corner {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-top: 9px #ED1A3B solid;
+    border-left: 9px #ED1A3B solid;
+}
+
+#corner-T-L {
+    top: -1rem;
+    left: -1rem;
+}
+
+#corner-T-R {
+    top: -1rem;
+    right: -1rem;
+    transform: rotate(90deg);
+}
+
+#corner-B-L {
+    bottom: -1rem;
+    left: -1rem;
+    transform: rotate(-90deg);
+}
+
+#corner-B-R {
+    bottom: -1rem;
+    right: -1rem;
+    transform: rotate(180deg);
+}
+
+#redBkg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ED1A3B;
+    width: 32%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: -20px 0px 20px rgba(0, 0, 0, .2);
+}
+
+#profileImage {
+    max-height: 600px;
+    margin-left: -8rem;
 }
 
 #aboutMeContainer {
-    margin-top: 6rem;
+    margin-top: 4rem;
+    padding-bottom: 6rem;
     display: flex;
+    width: 65%;
+    z-index: 1;
 }
 
 #aboutMeText {
-    margin-left: 4rem;
-    max-width: 60%;
     margin-top: 0;
     text-align: justify;
-    /* animation: slideInRight 0.5s ease-in-out 1s 1; */
-    /* animation-fill-mode: backwards; */
 }
 
 #aboutMeText p {
@@ -48,7 +106,7 @@ h1 {
     width: 8rem;
     height: 2.5rem;
     margin: 0;
-    transition: background-color 0.5s;
+    transition: background-color 1s;
 }
 
 #downloadCV:hover {
@@ -75,77 +133,37 @@ h1 {
     visibility: visible;
 }
 
-#profileImage {
-    max-height: 300px;
-    /* animation: slideInLeft 0.5s ease-in-out 0.75s 1;
-    animation-fill-mode: backwards; */
-}
-
-/* Corners */
-
-.corners {
-    position: relative;
-    left: -2.25rem;
-    top: -0.7rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.corners div {
-    background-color: white;
-}
-
-.corners .horizontal {
-    height: 0.35rem;
-    width: 1rem;
-}
-
-.corners .vertical {
-    height: 0.7rem;
-    width: 0.35rem;
-}
-
-/* Corners end*/
+/* Animations */
 
 /* Media */
 
-@media (min-width: 1170px) {}
+@media screen and (min-width: 1170px) {}
 
-@media (max-width: 800px) {
+@media screen and (max-width: 1170px) {}
+
+@media screen and (max-width: 800px) {
     #headerContainer {
         padding-left: 3rem;
         padding-right: 3rem;
-        padding-bottom: 3rem;
-    }
-    #nameContainer {
-        margin-top: 6rem;
-        margin-left: 4.75rem;
-        width: 19rem;
-        height: 10rem;
     }
     #aboutMeContainer {
         margin-top: 3rem;
+        padding-bottom: 2rem;
     }
     #aboutMeText {
         margin-left: 2rem;
         max-width: unset;
     }
     #profileImage {
-        max-height: 200px;
+        margin-left: -5rem;
+        height: 360px;
     }
 }
 
-@media (max-width: 532px) {
+@media screen and (max-width: 532px) {
     #headerContainer {
         padding-left: 2rem;
         padding-right: 2rem;
-        padding-bottom: 2rem;
-    }
-    #nameContainer {
-        margin-top: 3rem;
-        margin-left: 2rem;
-        width: 14rem;
-        height: 6rem;
     }
     #aboutMeContainer {
         margin-top: 2rem;
@@ -154,44 +172,7 @@ h1 {
         margin-left: 0rem;
     }
     #profileImage {
-        display: none;
+        margin-left: -3rem;
+        height: 200px;
     }
 }
-
-/* Animation */
-
-/* @keyframes slideInTop {
-    from {
-        transform: translateY(-1000%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-200%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(200%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInBottom {
-    from {
-        transform: translateY(1000%);
-    }
-    to {
-        transform: translateY(0);
-    }
-} */

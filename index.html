@@ -78,52 +78,47 @@
     <!-- main -->
     <main id="pageContainer">
         <header id="headerContainer">
+            <div id="redBkg">
+                <img id="profileImage" src="Images/StefanProfileImage.png" alt="Personal Profile Image">
+            </div>
             <div id="nameContainer">
-                <div class="corners">
-                    <div class="horizontal"></div>
-                    <div class="horizontal"></div>
+                <div class="myName font-XL">Stefan
+                    <div class="cornersCont">
+                        <div class="corner" id="corner-T-L"></div>
+                        <div class="corner" id="corner-T-R"></div>
+                    </div>
                 </div>
-                <div class="corners">
-                    <div class="vertical"></div>
-                    <div class="vertical"></div>
-                </div>
-                <h1 class="font-XL">Stefan<br>Bozhinovski</h1>
-                <p class="font-M">
-                    Computer Enthusiast
-                </p>
-                <div class="corners">
-                    <div class="vertical"></div>
-                    <div class="vertical"></div>
-                </div>
-                <div class="corners">
-                    <div class="horizontal"></div>
-                    <div class="horizontal"></div>
+                <div class="myName font-XL">Bozhinovski
+                    <div class="cornersCont">
+                        <div class="corner" id="corner-B-L"></div>
+                        <div class="corner" id="corner-B-R"></div>
+                    </div>
                 </div>
             </div>
-            <div id="nameBack"></div>
             <div id="aboutMeContainer">
-                <picture>
-                    <img id="profileImage" src="Images/StefanProfileImage.png" alt="Personal Profile Image">
-                </picture>
                 <div id="aboutMeText">
                     <p>
                         As a senior visual effects artist and graphic designer by profession, with over a decade of
-                        professional experience, and a concept artist and gamer by hobby, I am confident enough to say
-                        that
-                        I have developed a very strong affinity and knowledge of computers and their most intricate
-                        functions. After ascending the hierarchies of companies I have been employed at, I feel ready
+                        professional experience, and a concept artist and gamer by hobby, I am confident enough to
+                        say
+                        that I have developed a very strong affinity and knowledge of computers and their most
+                        intricate
+                        functions. After ascending the hierarchies of companies I have been employed at, I feel
+                        ready
+                        and eager to take on a new challenge.<br><br>As an employee, I would describe myself as a
+                        high
+                        performer, adaptable, with unrelenting focus. Whether on a supervisory or subordinate
+                        position,
+                        my pragmatic nature leads me to assign value to my co-workers according to merit, efficiency
                         and
-                        eager to take on a new challenge.<br><br>As an employee, I would describe myself as a high
-                        performer,
-                        adaptable, with unrelenting focus. Whether on a supervisory or subordinate position, my
-                        pragmatic
-                        nature leads me to assign value to my co-workers according to merit, efficiency and
-                        perseverance.
-                        <br><br>I have always had a flair for automation and optimization when it comes to solving
-                        problems, so my current plan is to play to my strengths and expand my knowledge of programming
-                        languages further and move into game, software or web development. I am currently in the market,
-                        searching for a full-time or part-time position at any type of organization, but I also welcome
-                        opportunities as a consultant or freelancer.
+                        perseverance. <br><br>I have always had a flair for automation and optimization when it
+                        comes to
+                        solving problems, so my current plan is to play to my strengths and expand my knowledge of
+                        programming languages further and move into game, software or web development. I am
+                        currently in
+                        the market, searching for a full-time or part-time position at any type of organization, but
+                        I
+                        also welcome opportunities as a consultant or freelancer.
                     </p>
                     <a href="https://www.dropbox.com/s/8ptlmt2f0jpf68z/CV_Placeholder.txt?dl=0" target="_blank"
                         download>
@@ -607,12 +602,9 @@
                                 <div>
                                     <div class="skillTitle"><span class="font-M">Front-End</span></div>
                                     <p class="font-S skillsDesc">
-                                        My extensive experience with 2D graphics has certainly helped me gain a
-                                        deeper
+                                        My extensive experience with 2D graphics has certainly helped me gain a deeper
                                         understanding of this topic. I am currently working through web development
-                                        courses, which include frameworks like Angular, React and even Node.js. And
-                                        I am
-                                        enjoying every minute of it.
+                                        courses, which include frameworks like Angular, React and even Node.
                                     </p>
                                     <div class="iconsContainer font-S">
                                         <div>
@@ -642,10 +634,8 @@
                                     <div class="skillTitle"><span class="font-M">Game Dev</span></div>
                                     <p class="font-S skillsDesc">
                                         Game development has always been a passion for me, mainly because I have been a
-                                        dedicated consumer of this type of enterntainment. Similarily to Front-End, my
-                                        extreme familiarity with graphics software, but in this case 3D based ones, have
-                                        eased my entry into this field. I have finished a few smaller Unreal and Unity
-                                        courses, and are currently enrolled in a course about Unreal with C++.
+                                        dedicated consumer of this type of enterntainment. Familiarity with 3D software,
+                                        has eased my entry into this field.
                                     </p>
                                     <div class="iconsContainer font-S">
                                         <div>
@@ -759,7 +749,7 @@
                 </div>
                 <div id="contactForms" class="contactContainer">
                     <p class="font-S">Send me a message:</p>
-                    <form id="msgName" method="post" action="php/contact-form-handler.php">
+                    <form id="msgName" method="post" action="php/contact-form-handler.php" data-netlify="true">
                         <input name="name" type="text" class="form-control" placeholder="Your Name" required>
                         <br>
                         <input name="email" type="email" class="form-control" placeholder="Your e-mail" required>

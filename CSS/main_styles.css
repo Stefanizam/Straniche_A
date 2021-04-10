@@ -92,7 +92,14 @@ button {
 
 /* Media */
 
-@media (max-width: 800px) {
+@media screen and (min-width: 1070px) {
+    .font-XL {
+        font-size: 4rem;
+        line-height: 3.7rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .font-XL {
         font-size: 2rem;
         line-height: 1.9rem;
@@ -107,12 +114,9 @@ button {
     .font-XS {
         font-size: 0.6rem;
     }
-    section {
-        margin: 3rem 0rem;
-    }
 }
 
-@media (max-width: 532px) {
+@media screen and (max-width: 532px) {
     .font-XL {
         font-size: 1.4rem;
         line-height: 1.3rem;
@@ -123,8 +127,5 @@ button {
     }
     .font-M {
         font-size: 0.8rem;
-    }
-    section {
-        margin: 2rem 0rem;
     }
 }

@@ -207,9 +207,9 @@ buttonCV.addEventListener('mouseleave', () => {
 function bkgParallax() {
     window.addEventListener('scroll', () => {
         let pageContainer = document.getElementById('pageContainer');
-        let scrolled = window.pageYOffset / 2;
-
-        pageContainer.style.backgroundPosition = `0px ${scrolled}px`;
+        let scrolledBkg = window.pageYOffset / 2;
+        
+        pageContainer.style.backgroundPosition = `0px ${scrolledBkg}px`;
     })
 }
 window.requestAnimationFrame(bkgParallax);
@@ -266,9 +266,9 @@ for (let container of softContainer) {
     }
 
     function checkPosition() {
-        for (var i = 0; i < elements.length; i++) {
-            var element = elements[i];
-            var positionFromTop = elements[i].getBoundingClientRect().top;
+        for (let i = 0; i < elements.length; i++) {
+            let element = elements[i];
+            let positionFromTop = elements[i].getBoundingClientRect().top;
 
             if (positionFromTop - windowHeight <= 0) {
                 element.classList.add('xpSlide');

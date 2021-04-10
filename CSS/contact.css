@@ -92,7 +92,7 @@
     border: 1px #ED1A3B solid;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     #contact {
         flex-direction: column;
     }
