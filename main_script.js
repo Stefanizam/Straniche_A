@@ -53,7 +53,7 @@ const titleChange = function (element) {
 const widthReset = function (element) {
     for (let i = 0; i < element.length; i++) {
         element[i].style.width = '10%';
-        element[i].querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0)";
+        element[i].querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0.35)";
         element[i].querySelector(".iconsContainer").style.opacity = "0";
         element[i].querySelector(".skillsDesc").style.opacity = "0";
         element[i].querySelector('span').style.fontSize = '0.75rem';
@@ -204,18 +204,21 @@ buttonCV.addEventListener('mouseleave', () => {
 
 
 // Background Parallax  -- Problematic on different devices -- Needs improvement
-window.addEventListener('scroll', () => {
-    let pageContainer = document.getElementById('pageContainer');
-    let scrolled = window.pageYOffset / 2;
+function bkgParallax() {
+    window.addEventListener('scroll', () => {
+        let pageContainer = document.getElementById('pageContainer');
+        let scrolled = window.pageYOffset / 2;
 
-    pageContainer.style.backgroundPosition = `0px ${scrolled}px`;
-})
+        pageContainer.style.backgroundPosition = `0px ${scrolled}px`;
+    })
+}
+window.requestAnimationFrame(bkgParallax);
 
 
 // Software Affinity stuff
 
-// Icon Creator
-let softContainer = document.querySelectorAll('.softContainer');
+    // Icon Creator
+    let softContainer = document.querySelectorAll('.softContainer');
 
 for (let container of softContainer) {
 
@@ -225,7 +228,7 @@ for (let container of softContainer) {
 
     // Create Image Tag and Link it
     let imgTag = document.createElement('img');
-    imgTag.src = `Images/Icons/ico_${pullName}.png`;
+    imgTag.src = `Images/Icons/ico_${pullName}.svg`;
     imgTag.alt = pullName;
     container.appendChild(imgTag);
 
@@ -252,8 +255,34 @@ for (let container of softContainer) {
     xpBarBkg.appendChild(xpBarFill);
 }
 
-// for (let container of softContainer) {
-//     container.addEventListener('mouseenter', () => {
-//         container.querySelector('.xpFill').style.transform = 'scale(1,1)';
-//     })
-// }
+// xpBars Animation
+(function () {
+    var elements;
+    var windowHeight;
+
+    function init() {
+        elements = document.querySelectorAll('.xpFill');
+        windowHeight = window.innerHeight;
+    }
+
+    function checkPosition() {
+        for (var i = 0; i < elements.length; i++) {
+            var element = elements[i];
+            var positionFromTop = elements[i].getBoundingClientRect().top;
+
+            if (positionFromTop - windowHeight <= 0) {
+                element.classList.add('xpSlide');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', init);
+
+    init();
+    checkPosition();
+})();
+
+
+
+

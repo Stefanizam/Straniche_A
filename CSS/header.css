@@ -6,6 +6,12 @@
     padding-right: 6rem;
     padding-bottom: 12rem;
     overflow: hidden;
+
+}
+
+h1 {
+    padding: 0;
+    margin: 0%;
 }
 
 #nameContainer {
@@ -13,8 +19,8 @@
     margin-left: 6rem;
     width: 26rem;
     height: 10rem;
-    animation: slideInTop 0.25s ease-in-out 0.5s 1;
-    animation-fill-mode: backwards;
+    /* animation: slideInTop 0.25s ease-in-out 0.5s 1; */
+    /* animation-fill-mode: backwards; */
 }
 
 #aboutMeContainer {
@@ -23,12 +29,12 @@
 }
 
 #aboutMeText {
-    animation: slideInRight 0.5s ease-in-out 1s 1;
-    animation-fill-mode: backwards;
     margin-left: 4rem;
     max-width: 60%;
     margin-top: 0;
     text-align: justify;
+    /* animation: slideInRight 0.5s ease-in-out 1s 1; */
+    /* animation-fill-mode: backwards; */
 }
 
 #aboutMeText p {
@@ -70,9 +76,9 @@
 }
 
 #profileImage {
-    animation: slideInLeft 0.5s ease-in-out 0.75s 1;
-    animation-fill-mode: backwards;
     max-height: 300px;
+    /* animation: slideInLeft 0.5s ease-in-out 0.75s 1;
+    animation-fill-mode: backwards; */
 }
 
 /* Corners */
@@ -154,7 +160,7 @@
 
 /* Animation */
 
-@keyframes slideInTop {
+/* @keyframes slideInTop {
     from {
         transform: translateY(-1000%);
     }
@@ -188,4 +194,4 @@
     to {
         transform: translateY(0);
     }
-}
+} */
