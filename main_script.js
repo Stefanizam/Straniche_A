@@ -208,7 +208,10 @@ function bkgParallax() {
     window.addEventListener('scroll', () => {
         let pageContainer = document.getElementById('pageContainer');
         let scrolledBkg = window.pageYOffset / 2;
+
+        let pictureContainer = document.getElementById('profileImage');
         
+        pictureContainer.style.bottom = ``
         pageContainer.style.backgroundPosition = `0px ${scrolledBkg}px`;
     })
 }
