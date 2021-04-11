@@ -15,8 +15,12 @@ body {
 }
 
 #pageContainer {
-    background-image: url('../Images/bkgDefocus.png');
-    background-size: cover;
+
+    /* background-color: #202020; */
+
+    background-image: url('../Images/backgroundImage.png');
+
+    background-size: 100%;
     background-position: 0px 0px;
     margin: 0;
     height: 100%;
@@ -25,14 +29,13 @@ body {
     overflow: hidden;
 }
 
-#sB {
+/* #sB {
     padding: 40vh 0 0 6vw;
     position: fixed;
     color: rgba(0, 0, 0, 0.05);
     font-weight: 900;
-    font-size: 50vw;
-    /* z-index: -1; */
-}
+    font-size: 34vw;
+} */
 
 a {
     color: white;

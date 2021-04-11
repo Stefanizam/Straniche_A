@@ -1,53 +1,51 @@
 const titleChange = function (element) {
-    setTimeout(function () {
-        switch (element.id) {
-            case 'vfxPaint':
-                element.querySelector('span').innerText = 'Paint';
-                break;
-            case 'vfxComp':
-                element.querySelector('span').innerText = 'Compositing';
-                break;
-            case 'vfxMotionTrack':
-                element.querySelector('span').innerText = 'Motion Tracking';
-                break;
-            case 'vfxRoto':
-                element.querySelector('span').innerText = 'RotoScoping';
-                break;
-            case 'vfxSimulation':
-                element.querySelector('span').innerText = 'Simulations';
-                break;
-            case 'vfx3D':
-                element.querySelector('span').innerText = '3D Modeling';
-                break;
-            case 'graphicsPrint':
-                element.querySelector('span').innerText = 'Print Design';
-                break;
-            case 'graphicsUI':
-                element.querySelector('span').innerText = 'UI/Web Design';
-                break;
-            case 'graphicsMotion':
-                element.querySelector('span').innerText = 'Motion Graphics';
-                break;
-            case 'graphicsVideo':
-                element.querySelector('span').innerText = 'Video Editing';
-                break;
-            case 'techRepair':
-                element.querySelector('span').innerText = 'Computer Repair';
-                break;
-            case 'techSystems':
-                element.querySelector('span').innerText = 'System Admisitration';
-                break;
-            case 'progFront':
-                element.querySelector('span').innerText = 'Front-End';
-                break;
-            case 'progGames':
-                element.querySelector('span').innerText = 'Game Development';
-                break;
-            case 'progSoftware':
-                element.querySelector('span').innerText = 'Software Development';
-                break;
-        }
-    }, 350)
+    switch (element.id) {
+        case 'vfxPaint':
+            element.querySelector('span').innerText = 'Paint';
+            break;
+        case 'vfxComp':
+            element.querySelector('span').innerText = 'Compositing';
+            break;
+        case 'vfxMotionTrack':
+            element.querySelector('span').innerText = 'Motion Tracking';
+            break;
+        case 'vfxRoto':
+            element.querySelector('span').innerText = 'RotoScoping';
+            break;
+        case 'vfxSimulation':
+            element.querySelector('span').innerText = 'Simulations';
+            break;
+        case 'vfx3D':
+            element.querySelector('span').innerText = '3D Modeling';
+            break;
+        case 'graphicsPrint':
+            element.querySelector('span').innerText = 'Print Design';
+            break;
+        case 'graphicsUI':
+            element.querySelector('span').innerText = 'UI/Web Design';
+            break;
+        case 'graphicsMotion':
+            element.querySelector('span').innerText = 'Motion Graphics';
+            break;
+        case 'graphicsVideo':
+            element.querySelector('span').innerText = 'Video Editing';
+            break;
+        case 'techRepair':
+            element.querySelector('span').innerText = 'Computer Repair';
+            break;
+        case 'techSystems':
+            element.querySelector('span').innerText = 'System Admisitration';
+            break;
+        case 'progFront':
+            element.querySelector('span').innerText = 'Front-End';
+            break;
+        case 'progGames':
+            element.querySelector('span').innerText = 'Game Development';
+            break;
+        case 'progSoftware':
+            element.querySelector('span').innerText = 'Software Development';
+            break;
+    }
 }
 
 const widthReset = function (element) {
@@ -147,7 +145,9 @@ for (let div of wrapper) {
     div.addEventListener('mouseenter', () => {
 
         widthReset(wrapper);
-        titleChange(div);
+        setTimeout(titleChange(div), 350)
+        
+
         expandWidth(div);
 
         div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0, 0, 0, .75)"
@@ -207,10 +207,12 @@ buttonCV.addEventListener('mouseleave', () => {
 function bkgParallax() {
     window.addEventListener('scroll', () => {
         let pageContainer = document.getElementById('pageContainer');
+        let sB = document.getElementById('sB');
 
         let scrolledBkg = window.pageYOffset;
-        
-        pageContainer.style.backgroundPosition = `0px ${scrolledBkg / 2}px`;
+
+        pageContainer.style.backgroundPosition = `0px ${scrolledBkg / 1.5}px`;
+        sB.style.transform = `translate(0px, ${scrolledBkg / 10}px)`;
     })
 }
 window.requestAnimationFrame(bkgParallax);
@@ -218,8 +220,8 @@ window.requestAnimationFrame(bkgParallax);
 
 // Software Affinity stuff
 
-    // Icon Creator
-    let softContainer = document.querySelectorAll('.softContainer');
+// Icon Creator
+let softContainer = document.querySelectorAll('.softContainer');
 
 for (let container of softContainer) {
 
