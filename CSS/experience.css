@@ -65,7 +65,7 @@
     margin: 0%;
     height: 100%;
     outline: none;
-    background-color: rgba(0, 0, 0, .35);
+    background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.5s ease 0.5s, transform 0.5s;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .skillsDesc {
-    width: 16vw;
+    width: 24vw;
     padding-right: 3rem;
     opacity: 0;
     transition: opacity .5s ease .8s;
@@ -145,17 +145,23 @@
 
 /* Media */
 
-@media screen and (min-width: 1070px) {
-    #techRepair video, #programming video {
+@media screen and (min-width: 1440px) {
+    .wrapper>video {
         width: 100%;
         height: none;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .wrapper>video {
+@media screen and (min-width: 1070px) {
+    #computerTech video, #programming video {
         width: 100%;
         height: none;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .skillsDesc {
+        width: 30vw;
     }
 }
 

@@ -53,7 +53,7 @@ const titleChange = function (element) {
 const widthReset = function (element) {
     for (let i = 0; i < element.length; i++) {
         element[i].style.width = '10%';
-        element[i].querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0.35)";
+        element[i].querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0)";
         element[i].querySelector(".iconsContainer").style.opacity = "0";
         element[i].querySelector(".skillsDesc").style.opacity = "0";
         element[i].querySelector('span').style.fontSize = '0.75rem';
@@ -207,12 +207,10 @@ buttonCV.addEventListener('mouseleave', () => {
 function bkgParallax() {
     window.addEventListener('scroll', () => {
         let pageContainer = document.getElementById('pageContainer');
-        let scrolledBkg = window.pageYOffset / 2;
 
-        let pictureContainer = document.getElementById('profileImage');
+        let scrolledBkg = window.pageYOffset;
         
-        pictureContainer.style.bottom = ``
-        pageContainer.style.backgroundPosition = `0px ${scrolledBkg}px`;
+        pageContainer.style.backgroundPosition = `0px ${scrolledBkg / 2}px`;
     })
 }
 window.requestAnimationFrame(bkgParallax);
