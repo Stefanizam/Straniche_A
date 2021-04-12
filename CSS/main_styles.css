@@ -15,27 +15,14 @@ body {
 }
 
 #pageContainer {
-
-    /* background-color: #202020; */
-
     background-image: url('../Images/BackgroundImage.jpg');
-
     background-size: 100%;
     background-position: 0px 0px;
     margin: 0;
     height: 100%;
     width: 100%;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
     overflow: hidden;
 }
-
-/* #sB {
-    padding: 40vh 0 0 6vw;
-    position: fixed;
-    color: rgba(0, 0, 0, 0.05);
-    font-weight: 900;
-    font-size: 34vw;
-} */
 
 a {
     color: white;

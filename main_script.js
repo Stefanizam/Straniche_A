@@ -51,7 +51,7 @@ const titleChange = function (element) {
 const widthReset = function (element) {
     for (let i = 0; i < element.length; i++) {
         element[i].style.width = '10%';
-        element[i].querySelector(".wrapperBkg").style.backgroundColor = "rgba(0,0,0,0)";
+        element[i].querySelector(".wrapperBkg").style.backgroundImage = "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0))";
         element[i].querySelector(".iconsContainer").style.opacity = "0";
         element[i].querySelector(".skillsDesc").style.opacity = "0";
         element[i].querySelector('span').style.fontSize = '0.75rem';
@@ -146,11 +146,11 @@ for (let div of wrapper) {
 
         widthReset(wrapper);
         setTimeout(titleChange(div), 350)
-        
+
 
         expandWidth(div);
 
-        div.querySelector(".wrapperBkg").style.backgroundColor = "rgba(0, 0, 0, .75)"
+        div.querySelector(".wrapperBkg").style.backgroundImage = "linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0))"
         div.querySelector(".iconsContainer").style.opacity = "1";
         div.querySelector(".skillsDesc").style.opacity = "1";
         div.querySelector('span').style.fontSize = '1.25rem';
@@ -206,13 +206,12 @@ buttonCV.addEventListener('mouseleave', () => {
 // Background Parallax  -- Problematic on different devices -- Needs improvement
 function bkgParallax() {
     window.addEventListener('scroll', () => {
-        let pageContainer = document.getElementById('pageContainer');
-        let sB = document.getElementById('sB');
-
         let scrolledBkg = window.pageYOffset;
+        // let sB = document.getElementById('sB');
+        // sB.style.transform = `translate(0px, ${scrolledBkg / 10}px)`;
 
+        let pageContainer = document.getElementById('pageContainer');
         pageContainer.style.backgroundPosition = `0px ${scrolledBkg / 1.5}px`;
-        sB.style.transform = `translate(0px, ${scrolledBkg / 10}px)`;
     })
 }
 window.requestAnimationFrame(bkgParallax);
@@ -285,6 +284,7 @@ for (let container of softContainer) {
     init();
     checkPosition();
 })();
+
 
 
 
