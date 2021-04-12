@@ -167,161 +167,156 @@
                             Fallout, Ghost in the Shell, The Mandalorian, Star Trek: Discovery, etc.</span>
                     </p>
                 </div>
-                <div id="vfxContents">
-                    <div class="skillsContainer">
-                        <div id="vfxPaint" class="wrapper">
-                            <video loop muted src="Videos/vfxPnt.mp4" poster="Images/vfxPaint.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Paint</span></div>
-                                    <p class="font-S skillsDesc">
-                                        Removal of any unwanted object off of a given video footage or still image,
-                                        with
-                                        a
-                                        seamless reconstruction of the surrounding area, background and foreground
-                                        elements.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Nuke.svg" alt="The Foundry Nuke">
-                                            <span>Nuke</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Silhouette.svg" alt="Silhouette FX">
-                                            <span>Silhouette</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Mocha.svg" alt="Boris FX Mocha Pro">
-                                            <span>Mocha Pro</span>
-                                        </div>
-                                    </div>
-                                </div>
+                <div id="vfxNavBar" class="videoNavBar font-S">
+                    <div class="videoNavBtn" data-skill="vfxPaint" data-info="paintInfo">
+                        <p>Paint</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="vfxComp" data-info="compInfo">
+                        <p>Compositing</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="vfxCmm" data-info="cmmInfo">
+                        <p>Motion Tracking</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="vfxRoto" data-info="rotoInfo">
+                        <p>Rotoscoping</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="vfxSim" data-info="simInfo">
+                        <p>Simulations</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="vfx3D" data-info="threeDInfo">
+                        <p> Modeling</p>
+                    </div>
+                </div>
+                <div id="vfxInfo" class="skillInfo">
+                    <!-- Separator -->
+                    <div id="paintInfo" class="skillInfoGroup firstSkillGroup">
+                        <div class="skillTitle font-M">Paint</div>
+                        <div class="skillDescription font-S">
+                            Removal of any unwanted object off of a given video footage
+                            or still image, with a seamless reconstruction of the surrounding area, background and
+                            foreground elements.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_Nuke.svg" alt="Nuke"><span>Nuke</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Silhouette.svg" alt="Silhouette"><span>Silhouette</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Mocha.svg" alt="Mocha Pro"><span>Mocha Pro</span>
                             </div>
                         </div>
-                        <div id="vfxComp" class="wrapper">
-                            <video loop muted src="Videos/vfxComp.mp4" poster="Images/vfxComp.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Comp</span></div>
-                                    <p class="font-S skillsDesc">Match moving and color grading any given object
-                                        onto a given video footage or still image.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Nuke.svg" alt="The Foundry Nuke">
-                                            <span>Nuke</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Fusion.svg" alt="Blackmagic Fusion">
-                                            <span>Fusion</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <!-- Separator -->
+                    <div id="compInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">Compositing</div>
+                        <div class="skillDescription font-S">
+                            Match moving and color grading any given object onto a given video footage or still image
+                            with photorealistic results.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_Nuke.svg" alt="Nuke"><span>Nuke</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Fusion.svg" alt="Fusion"><span>Fusion</span>
                             </div>
                         </div>
-                        <div id="vfxMotionTrack" class="wrapper">
-                            <video loop muted src="Videos/vfxCmm.mp4" poster="Images/vfxCmm.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">CMM</span></div>
-                                    <p class="font-S skillsDesc">3D extrapolation of a virtual camera to be used in
-                                        other VFX procedures and geometry layout.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Equalizer.svg" alt="3DE4 Equalizer">
-                                            <span>3DE4 Equalizer</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_PFTrack.svg" alt="Pixel Farm PFTrack">
-                                            <span>PFTrack</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Blender.svg" alt="Blender">
-                                            <span>Blender</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <!-- Separator -->
+                    <div id="cmmInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">Motion Tracking</div>
+                        <div class="skillDescription font-S">
+                            3D extrapolation of a virtual camera to be used in other VFX procedures and geometry layout.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_Equalizer.svg" alt="Equalizer"><span>Equalizer</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_PFTrack.svg" alt="PFTrack"><span>PFTrack</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Blender.svg" alt="Blender"><span>Blender</span>
                             </div>
                         </div>
-                        <div id="vfxRoto" class="wrapper">
-                            <video loop muted src="Videos/vfxRoto.mp4" poster="Images/vfxRoto.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Roto</span></div>
-                                    <p class="font-S skillsDesc">Outlining of certain objects on a given video
-                                        footage,
-                                        to be used
-                                        as a
-                                        matte in other VFX procedures.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Nuke.svg" alt="The Foundry Nuke">
-                                            <span>Nuke</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Mocha.svg" alt="Boris FX Mocha Pro">
-                                            <span>Mocha Pro</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Silhouette.svg" alt="Silhouette FX">
-                                            <span>Silhouette</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <!-- Separator -->
+                    <div id="rotoInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">Rotoscoping</div>
+                        <div class="skillDescription font-S">
+                            Outlining of certain objects on a given video footage, to be used as a matte in other VFX
+                            procedures.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_Nuke.svg" alt="Nuke"><span>Nuke</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Mocha.svg" alt="Mocha"><span>Mocha Pro</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Silhouette.svg" alt="Silhouette"><span>Silhouette</span>
+
                             </div>
                         </div>
-                        <div id="vfxSimulation" class="wrapper">
-                            <video loop muted src="Videos/vfxSim.mp4" poster="Images/vfxSim.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Sim</span></div>
-                                    <p class="font-S skillsDesc">Creating computer generated renderings of certain
-                                        visual effects.
-                                        Such
-                                        as explosions, fluid simulations, screen and holographic interfaces and so
-                                        on.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Blender.svg" alt="Blender">
-                                            <span>Blender</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Houdini.svg" alt="Side FX Houdini">
-                                            <span>Houdini</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <!-- Separator -->
+                    <div id="simInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">Simulations</div>
+                        <div class="skillDescription font-S">
+                            Creating computer generated renderings of certain visual effects. Such as explosions, fluid
+                            simulations, screen and holographic interfaces and so on.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_Blender.svg" alt="Blender"><span>Blender</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Houdini.svg" alt="Houdini"><span>Houdini</span>
                             </div>
                         </div>
-                        <div id="vfx3D" class="wrapper">
-                            <video loop muted src="Videos/vfx3D.mp4" poster="Images/vfx3D.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">3D</span></div>
-                                    <p class="font-S skillsDesc">Modeling, texturing, rigging or animation of 3D
-                                        represantations of real world or imaginary objects to be used in other VFX
-                                        procedures or game development.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Blender.svg" alt="Blender">
-                                            <span>Blender</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_3DsMax.svg" alt="Autodesk 3Ds Max">
-                                            <span>3DsMax</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Maya.svg" alt="Autodesk Maya">
-                                            <span>Maya</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <!-- Separator -->
+                    <div id="threeDInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">3D Moddeling</div>
+                        <div class="skillDescription font-S">
+                            Modeling, texturing, rigging or animation of 3D represantations of real world or imaginary
+                            objects to be used in other VFX procedures or game development.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/ico_Blender.svg" alt="Blender"><span>Blender</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/ico_3DsMax.svg" alt="3DsMax"><span>3DsMax</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Maya.svg" alt="Maya"><span>Maya</span>
                             </div>
                         </div>
+                    </div>
+                    <!-- Separator -->
+                </div>
+                <div id="vfxContents" class="videosContainer">
+                    <div id="vfxPaint" class="videoWrapper firstVideo">
+                        <video loop muted src="Videos/vfxPnt.mp4" poster="Images/vfxPaint.jpg"></video>
+                    </div>
+                    <div id="vfxComp" class="videoWrapper">
+                        <video loop muted src="Videos/vfxComp.mp4" poster="Images/vfxComp.jpg"></video>
+                    </div>
+                    <div id="vfxCmm" class="videoWrapper">
+                        <video loop muted src="Videos/vfxCmm.mp4" poster="Images/vfxCmm.jpg"></video>
+                    </div>
+                    <div id="vfxRoto" class="videoWrapper">
+                        <video loop muted src="Videos/vfxRoto.mp4" poster="Images/vfxRoto.jpg"></video>
+                    </div>
+                    <div id="vfxSim" class="videoWrapper">
+                        <video loop muted src="Videos/vfxSim.mp4" poster="Images/vfxSim.jpg"></video>
+                    </div>
+                    <div id="vfx3D" class="videoWrapper">
+                        <video loop muted src="Videos/vfx3D.mp4" poster="Images/vfx3D.jpg"></video>
                     </div>
                 </div>
             </section>
@@ -360,126 +355,120 @@
                         Market.
                     </p>
                 </div>
-                <div id="graphicsContents">
-                    <div class="skillsContainer">
-                        <div id="graphicsUI" class="wrapper">
-                            <video loop muted src="Videos/graphicsUI.mp4" poster="Images/graphicsUI.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">UI/Web</span></div>
-                                    <p class="font-S skillsDesc">
-                                        Graphic design encompassing the visual
-                                        look and feel of web pages, desktop and
-                                        mobile applications. Ranging from tiny
-                                        details to full multi-page design.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Photoshop.svg" alt="Adobe Photoshop">
-                                            <span>Photoshop</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Illustrator.svg" alt="Adobe Illustrator">
-                                            <span>Illustrator</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Indesign.svg" alt="Adobe InDesign">
-                                            <span>InDesign</span>
-                                        </div>
-                                    </div>
-                                </div>
+                <div id="graphicsNavBar" class="videoNavBar font-S">
+                    <div class="videoNavBtn" data-skill="graphicsUI" data-info="uiInfo">
+                        <p>UI & Web Design</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="graphicsMotion" data-info="motionInfo">
+                        <p>Motion Graphics</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="graphicsPrint" data-info="printInfo">
+                        <p>Print Design</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="graphicsVideo" data-info="videoInfo">
+                        <p>Video Editing</p>
+                    </div>
+                </div>
+                <div id="graphicsInfo" class="skillInfo">
+                    <!-- Separator -->
+                    <div id="uiInfo" class="skillInfoGroup firstSkillGroup">
+                        <div class="skillTitle font-M">UI & Web Design</div>
+                        <div class="skillDescription font-S">
+                            Graphic design encompassing the visual
+                            look and feel of web pages, desktop and
+                            mobile applications. Ranging from tiny
+                            details to full multi-page design.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_Photoshop.svg" alt="Photoshop"><span>Photoshop</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Illustrator.svg" alt="Illustrator"><span>Illustrator</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_InDesign.svg" alt="InDesign"><span>InDesign</span>
                             </div>
                         </div>
-                        <div id="graphicsMotion" class="wrapper">
+                    </div>
+                    <!-- Separator -->
+                    <div id="motionInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">Motion Graphics</div>
+                        <div class="skillDescription font-S">
+                            Illustrated or 3D generated, animated visuals to be used in videos, applications, games or
+                            any type of promotional material.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/ico_Blender.svg" alt="Blender"><span>Blender</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Nuke.svg" alt="Nuke"><span>Nuke</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Fusion.svg" alt="Fusion"><span>Fusion</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_AfterEffects.svg" alt="After Effects"><span>After
+                                    Effects</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Separator -->
+                    <div id="printInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">Print Design</div>
+                        <div class="skillDescription font-S">
+                            Graphic design primarily focused around printed media, such as event posters, flyers,
+                            billboards, logos, stationery design, storefront design, photorealistic mock-ups and photo
+                            manipulations or retouching.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_Photoshop.svg" alt="Photoshop"><span>Photoshop</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Illustrator.svg" alt="Illustrator"><span>Illustrator</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_InDesign.svg" alt="InDesign"><span>InDesign</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Separator -->
+                    <div id="videoInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">Video Editing</div>
+                        <div class="skillDescription font-S">
+                            Organising, editing and managing transitions between multuple video and audio files into one
+                            finished product.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_Resolve.svg" alt="Resolve"><span>Resolve</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Blender.svg" alt="Blender"><span>Blender</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Premiere.svg" alt="Premiere"><span>Premiere</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="graphicsContents">
+                    <div class="videosContainer">
+                        <div id="graphicsUI" class="videoWrapper">
+                            <video loop muted src="Videos/graphicsUI.mp4" poster="Images/graphicsUI.jpg"></video>
+                        </div>
+                        <div id="graphicsMotion" class="videoWrapper">
                             <video loop muted src="Videos/graphicsMotion.mp4"
                                 poster="Images/graphicsMotion.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Motion</span></div>
-                                    <p class="font-S skillsDesc">
-                                        Illustrated or 3D generated, animated visuals to be used in videos,
-                                        applications, games or
-                                        any type of promotional material.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Blender.svg" alt="Blender">
-                                            <span>Blender</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Nuke.svg" alt="The Foundry Nuke">
-                                            <span>Nuke</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Fusion.svg" alt="Blackmagic Fusion">
-                                            <span>Fusion</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_AfterEffects.svg" alt="Adobe After Effects">
-                                            <span>After Effects</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div id="graphicsPrint" class="wrapper">
+                        <div id="graphicsPrint" class="videoWrapper">
                             <video loop muted src="Videos/graphicsPrint.mp4" poster="Images/graphicsPrint.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Print</span></div>
-                                    <p class="font-S skillsDesc">
-                                        Graphic design primarily focused around printed media, such as event
-                                        posters,
-                                        flyers, billboards, logos, stationery design, storefront design,
-                                        photorealistic
-                                        mock-ups and photo manipulations or retouching.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Photoshop.svg" alt="Adobe Photoshop">
-                                            <span>Photoshop</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Illustrator.svg" alt="Adobe Illustrator">
-                                            <span>Illustrator</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Indesign.svg" alt="Adobe InDesign">
-                                            <span>InDesign</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-
-                        <div id="graphicsVideo" class="wrapper">
+                        <div id="graphicsVideo" class="videoWrapper">
                             <video loop muted src="Videos/graphicsVideo.mp4" poster="Images/graphicsVideo.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Video</span></div>
-                                    <p class="font-S skillsDesc">
-                                        Organising, editing and managing transitions between multuple video and
-                                        audio
-                                        files into one finished product.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Resolve.svg" alt="DaVinci Resolve">
-                                            <span>Resolve</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Blender.svg" alt="Blender">
-                                            <span>Blender</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Premiere.svg" alt="Adobe Premiere">
-                                            <span>Premiere</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -511,66 +500,70 @@
                         revolve
                         around computers.
                     </p>
+
                 </div>
-                <div id="techContents">
-                    <div class="skillsContainer">
-                        <div id="techRepair" class="wrapper">
-                            <video loop muted src="Videos/techRepair.mp4" poster="Images/techRepair.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Repair</span></div>
-                                    <p class="font-S skillsDesc">
-                                        Diagnosing and solving software or hardware related problems in desktop or
-                                        laptop computers, ranging from replacing or repairing faulty hardware
-                                        component
-                                        to installing different operating systems and other complex software.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Hardware.png" alt="Hardware">
-                                            <span>Hardware</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Windows.svg" alt="Microsoft Windows">
-                                            <span>Windows</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Linux.svg" alt="Linux Distros">
-                                            <span>Linux</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div id="techNavBar" class="videoNavBar font-S">
+                    <div class="videoNavBtn" data-skill="techRepair" data-info="repairInfo">
+                        <p>Computer Repair</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="techSystems" data-info="systemsInfo">
+                        <p>System Administration</p>
+                    </div>
+                </div>
+                <div id="techInfo" class="skillInfo">
+                    <!-- Separator -->
+                    <div id="repairInfo" class="skillInfoGroup firstSkillGroup">
+                        <div class="skillTitle font-M">Computer Repair</div>
+                        <div class="skillDescription font-S">
+                            Diagnosing and solving software or hardware related problems in desktop or laptop computers,
+                            ranging from replacing or repairing faulty hardware component to installing different
+                            operating systems and other complex software.
                         </div>
-                        <div id="techSystems" class="wrapper">
-                            <video loop muted src="Videos/techSystems.mp4" poster="Images/techSystems.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">System</span></div>
-                                    <p class="font-S skillsDesc">
-                                        My expertise in this area includes custom modifications, maintenance and
-                                        installation of drivers, operating systems, application software, hardware,
-                                        networking gear or software and so on. From a dead capacitor, to a faulty cable,
-                                        up to power delivery issues or mismatched DRAM timings.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Windows.svg" alt="Microsoft Windows">
-                                            <span>Windows</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Linux.svg" alt="Linux Distros">
-                                            <span>Linux</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Hardware.svg" alt="Hardware">
-                                            <span>Hardware</span>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/ico_Hardware.png" alt="Hardware"><span>Hardware</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Windows.svg" alt="Windows"><span>Windows</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Linux.svg" alt="Linux"><span>Linux</span>
                             </div>
                         </div>
                     </div>
+                    <!-- Separator -->
+                    <div id="systemsInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">System Administration</div>
+                        <div class="skillDescription font-S">
+                            My expertise in this area includes custom modifications, maintenance and
+                            installation of drivers, operating systems, application software, hardware,
+                            networking gear or software and so on. From a dead capacitor, to a faulty cable,
+                            up to power delivery issues or mismatched DRAM timings.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/ico_Hardware.png" alt="Hardware"><span>Hardware</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Windows.svg" alt="Windows"><span>Windows</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Linux.svg" alt="Linux"><span>Linux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  Separator  Separator  -->
+                <div id="techContents">
+                    <div class="videosContainer">
+                        <div id="techRepair" class="videoWrapper">
+                            <video loop muted src="Videos/techRepair.mp4" poster="Images/techRepair.jpg"></video>
+                        </div>
+                        <div id="techSystems" class="videoWrapper">
+                            <video loop muted src="Videos/techSystems.mp4" poster="Images/techSystems.jpg"></video>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </section>
             <!-- Computer Technician - End -->
@@ -593,69 +586,70 @@
                         "type". But I am eager for a chance to proove myself as one of the "good" ones.
                     </p>
                 </div>
-                <div id="programmingContents">
-                    <div class="skillsContainer">
-                        <div id="progFront" class="wrapper">
-                            <video loop muted src="Videos/progFront.mp4" poster="Images/progFront.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Front-End</span></div>
-                                    <p class="font-S skillsDesc">
-                                        My extensive experience with 2D graphics has certainly helped me gain a deeper
-                                        understanding of this topic. I am currently working through web development
-                                        courses, which include frameworks like Angular, React and Node.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_HTML.svg" alt="HTML">
-                                            <span>HTML</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_CSS.svg" alt="CSS">
-                                            <span>CSS</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_JavaScript.svg" alt="JavaScript">
-                                            <span>JavaScript</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_dotNet.svg" alt=".Net Core">
-                                            <span>.Net Core</span>
-                                        </div>
-                                    </div>
-                                </div>
+                <div id="progNavBar" class="videoNavBar font-S">
+                    <div class="videoNavBtn" data-skill="progFront" data-info="frontInfo">
+                        <p>Front-End Development</p>
+                    </div>
+                    <div class="videoNavBtn" data-skill="progGames" data-info="gamesInfo">
+                        <p>Games Development</p>
+                    </div>
+                </div>
+                <div id="progInfo" class="skillInfo">
+                    <!-- Separator -->
+                    <div id="frontInfo" class="skillInfoGroup firstSkillGroup">
+                        <div class="skillTitle font-M">Front-End Development</div>
+                        <div class="skillDescription font-S">
+                            My extensive experience with 2D graphics has certainly helped me gain a deeper
+                            understanding of this topic. I am currently working through web development
+                            courses, which include frameworks like Angular, React and Node.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_HTML.svg" alt="HTML"><span>HTML</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_CSS.svg" alt="CSS"><span>CSS</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_JavaScript.svg" alt="JavaScript"><span>JavaScript</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_dotNet.svg" alt=".Net Core"><span>.Net Core</span>
                             </div>
                         </div>
-                        <div id="progGames" class="wrapper">
-                            <video loop muted src="Videos/progGame.mp4" poster="Images/progGames.jpg"></video>
-                            <div class="wrapperBkg">
-                                <div>
-                                    <div class="skillTitle"><span class="font-M">Game Dev</span></div>
-                                    <p class="font-S skillsDesc">
-                                        Game development has always been a passion for me, mainly because I have been a
-                                        dedicated consumer of this type of enterntainment. Familiarity with 3D software,
-                                        has eased my entry into this field.
-                                    </p>
-                                    <div class="iconsContainer font-S">
-                                        <div>
-                                            <img src="Images/Icons/ico_Unreal.svg" alt="Unreal Engine">
-                                            <span>Unreal</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Unity.svg" alt="Unity 3D">
-                                            <span>Unity</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_CSharp.svg" alt="C Sharp">
-                                            <span>C#</span>
-                                        </div>
-                                        <div>
-                                            <img src="Images/Icons/ico_Cpp.svg" alt="C plus plus">
-                                            <span>C++</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <!-- Separator -->
+                    <div id="gamesInfo" class="skillInfoGroup">
+                        <div class="skillTitle font-M">Games Development</div>
+                        <div class="skillDescription font-S">
+                            Game development has always been a passion for me, mainly because I have been a
+                            dedicated consumer of this type of enterntainment. Familiarity with 3D software,
+                            has eased my entry into this field.
+                        </div>
+                        <div class="skillIcons font-XS">
+                            <div>
+                                <img src="Images/Icons/Ico_Unreal.svg" alt="Unreal"><span>Unreal Engine</span>
                             </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Unity.svg" alt="Unity"><span>Unity</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_CSharp.svg" alt="CSharp"><span>CSharp</span>
+                            </div>
+                            <div>
+                                <img src="Images/Icons/Ico_Cpp.svg" alt="C++"><span>C++</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Separator -->
+                <div id="programmingContents">
+                    <div class="videosContainer">
+                        <div id="progFront" class="videoWrapper">
+                            <video loop muted src="Videos/progFront.mp4" poster="Images/progFront.jpg"></video>
+                        </div>
+                        <div id="progGames" class="videoWrapper">
+                            <video loop muted src="Videos/progGame.mp4" poster="Images/progGames.jpg"></video>
                         </div>
                     </div>
                 </div>

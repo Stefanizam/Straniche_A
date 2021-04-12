@@ -1,161 +1,83 @@
-const titleChange = function (element) {
-    switch (element.id) {
-        case 'vfxPaint':
-            element.querySelector('span').innerText = 'Paint';
-            break;
-        case 'vfxComp':
-            element.querySelector('span').innerText = 'Compositing';
-            break;
-        case 'vfxMotionTrack':
-            element.querySelector('span').innerText = 'Motion Tracking';
-            break;
-        case 'vfxRoto':
-            element.querySelector('span').innerText = 'RotoScoping';
-            break;
-        case 'vfxSimulation':
-            element.querySelector('span').innerText = 'Simulations';
-            break;
-        case 'vfx3D':
-            element.querySelector('span').innerText = '3D Modeling';
-            break;
-        case 'graphicsPrint':
-            element.querySelector('span').innerText = 'Print Design';
-            break;
-        case 'graphicsUI':
-            element.querySelector('span').innerText = 'UI/Web Design';
-            break;
-        case 'graphicsMotion':
-            element.querySelector('span').innerText = 'Motion Graphics';
-            break;
-        case 'graphicsVideo':
-            element.querySelector('span').innerText = 'Video Editing';
-            break;
-        case 'techRepair':
-            element.querySelector('span').innerText = 'Computer Repair';
-            break;
-        case 'techSystems':
-            element.querySelector('span').innerText = 'System Admisitration';
-            break;
-        case 'progFront':
-            element.querySelector('span').innerText = 'Front-End';
-            break;
-        case 'progGames':
-            element.querySelector('span').innerText = 'Game Development';
-            break;
-        case 'progSoftware':
-            element.querySelector('span').innerText = 'Software Development';
-            break;
-    }
-}
+// Skills Event
 
-const widthReset = function (element) {
-    for (let i = 0; i < element.length; i++) {
-        element[i].style.width = '10%';
-        element[i].querySelector(".wrapperBkg").style.backgroundImage = "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0))";
-        element[i].querySelector(".iconsContainer").style.opacity = "0";
-        element[i].querySelector(".skillsDesc").style.opacity = "0";
-        element[i].querySelector('span').style.fontSize = '0.75rem';
-        element[i].querySelector('video').pause();
-        switch (element[i].id) {
-            case 'vfxPaint':
-                element[i].querySelector('span').innerText = 'Pnt';
-                break;
-            case 'vfxComp':
-                element[i].querySelector('span').innerText = 'comp';
-                break;
-            case 'vfxMotionTrack':
-                element[i].querySelector('span').innerText = 'CMM';
-                break;
-            case 'vfxRoto':
-                element[i].querySelector('span').innerText = 'Roto';
-                break;
-            case 'vfxSimulation':
-                element[i].querySelector('span').innerText = 'Sim';
-                break;
-            case 'vfx3D':
-                element[i].querySelector('span').innerText = '3D';
-                break;
-            case 'graphicsPrint':
-                element[i].querySelector('span').innerText = 'Print';
-                break;
-            case 'graphicsUI':
-                element[i].querySelector('span').innerText = 'UI/Web';
-                break;
-            case 'graphicsMotion':
-                element[i].querySelector('span').innerText = 'Motion';
-                break;
-            case 'graphicsVideo':
-                element[i].querySelector('span').innerText = 'Video';
-                break;
-            case 'techRepair':
-                element[i].querySelector('span').innerText = 'Repair';
-                break;
-            case 'techSystems':
-                element[i].querySelector('span').innerText = 'Systems';
-                break;
-            case 'progFront':
-                element[i].querySelector('span').innerText = 'Front-End';
-                break;
-            case 'progGames':
-                element[i].querySelector('span').innerText = 'Game Dev';
-                break;
-            case 'progSoftware':
-                element[i].querySelector('span').innerText = 'Software';
-                break;
-        }
-    };
+const skillsSections = document.querySelectorAll('.skillsSection');
+const videoWrapper = document.querySelectorAll('.videoWrapper');
+const videoNavBars = document.querySelectorAll('.videoNavBar');
+
+function widthReset(exception, parent) {
+    for (let wrapper of parent.parentElement.querySelectorAll(`.videoWrapper:not(#${exception})`)) {
+        wrapper.style.width = "10%";
+        wrapper.querySelector('video').pause();
+    }
 };
 
-const expandWidth = function (element) {
-    if (element.id.substring(0, 3) === "vfx") {
-        element.style.width = "50%";
-        // document.querySelector('#vfxPaint').style.width = '50%';
-        document.querySelector('#graphicsUI').style.width = '70%';
-        document.querySelector('#techRepair').style.width = '90%';
-        document.querySelector('#progFront').style.width = '80%';
-    }
-    else if (element.id.substring(0, 3) === "gra") {
-        element.style.width = "70%";
-        document.querySelector('#vfxPaint').style.width = '50%';
-        // document.querySelector('#graphicsUI').style.width = '70%';
-        document.querySelector('#techRepair').style.width = '90%';
-        document.querySelector('#progFront').style.width = '90%';
-    }
-    else if (element.id.substring(0, 3) === "tec") {
-        element.style.width = "90%";
-        document.querySelector('#vfxPaint').style.width = '50%';
-        document.querySelector('#graphicsUI').style.width = '70%';
-        // document.querySelector('#techRepair').style.width = '90%';
-        document.querySelector('#progFront').style.width = '90%';
-    }
-    else if (element.id.substring(0, 3) === "pro") {
-        element.style.width = "90%";
-        document.querySelector('#vfxPaint').style.width = '50%';
-        document.querySelector('#graphicsUI').style.width = '70%';
-        document.querySelector('#techRepair').style.width = '90%';
-        // document.querySelector('#progFront').style.width = '90%';
-    }
+function widthExpand(element) {
+    let videosNum = element.parentElement.querySelectorAll('.videoWrapper').length;
+    let calcWidth = ((10 - videosNum) + 1) * 10;
+    element.style.width = `${calcWidth}%`;
 }
 
-// Skills Event
-const wrapper = document.querySelectorAll('.wrapper');
+function makeActive(button) {
+    for (let btn of document.querySelectorAll('.videoNavBtn')) {
+        btn.classList.remove('setActive');
+    }
+    button.classList.add('setActive');
+}
 
-for (let div of wrapper) {
+function changeInfo(activeInfo, parent) {
 
-    div.addEventListener('mouseenter', () => {
+    function switchOffOn() {
+        for (let info of parent.querySelectorAll(`.skillInfoGroup`)) {
+            info.style.display = "none";
+        }
+        activeInfo.style.display = "flex";
+    }
 
-        widthReset(wrapper);
-        setTimeout(titleChange(div), 350)
+    function lightsOff() {
+        for (let info of parent.querySelectorAll(`.skillInfoGroup`)) {
+            info.style.opacity = "0";
+        }
+    }
+
+    function lightsOn() {
+        activeInfo.style.opacity = "1";
+    }
+
+    setTimeout(lightsOff, 1)
+    setTimeout(switchOffOn, 501)
+    setTimeout(lightsOn, 750)
+}
 
 
-        expandWidth(div);
+function changeOpacity(activeInfo, parent) {
+    for (let info of parent.querySelectorAll(`.skillInfoGroup`)) {
+        info.style.opacity = "0";
+    }
+    // activeInfo.style.opacity = "1";
+}
 
-        div.querySelector(".wrapperBkg").style.backgroundImage = "linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0))"
-        div.querySelector(".iconsContainer").style.opacity = "1";
-        div.querySelector(".skillsDesc").style.opacity = "1";
-        div.querySelector('span').style.fontSize = '1.25rem';
-        div.querySelector('video').play();
-    })
+
+for (let videoNavBar of videoNavBars) {
+    for (let videoNavBtn of videoNavBar.querySelectorAll('.videoNavBtn')) {
+        videoNavBtn.addEventListener('mousedown', () => {
+
+            // Video Stuff
+            let videoID = videoNavBtn.dataset.skill;
+            let theVideo = document.querySelector(`#${videoID}>video`);
+            let videoContainer = document.querySelector(`#${videoID}`);
+
+            makeActive(videoNavBtn);
+            widthReset(videoID, videoContainer);
+            widthExpand(videoContainer);
+            theVideo.play();
+
+            // Info Text change
+            let infoTextID = document.querySelector(`#${videoNavBtn.dataset.info}`);
+            let parentOfInfo = infoTextID.parentElement;
+
+            changeInfo(infoTextID, parentOfInfo);
+        })
+    }
 }
 // Skills Event - End
 

@@ -1,13 +1,10 @@
-.sectionHeader {
-    display: flex;
-    padding: 8rem;
-    border-top: 1px #ED1A3B solid;
-}
+/* General Section Stuff */
 
 #experience>section {
     border-bottom: 1px #ED1A3B solid;
     background-color: rgba(0, 0, 0, 0.75);
     padding-bottom: 6rem;
+    cursor: default;
 }
 
 #experience a {
@@ -19,7 +16,133 @@
     margin-bottom: 20rem;
 }
 
-.skillsContainer {
+/* Section Header Stuff */
+
+.sectionHeader {
+    display: flex;
+    padding: 8rem 8rem 4rem 8rem;
+    border-top: 1px #ED1A3B solid;
+}
+
+.jobHeaderText {
+    flex-direction: column;
+    margin-right: 3rem;
+    width: 28%;
+}
+
+.jobTitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.jobIntroText {
+    width: 72%;
+    margin-left: 1rem;
+    text-align: justify;
+}
+
+/* Video Navigation Bar Stuff */
+
+.videoNavBar {
+    background-color: #181818;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    /* box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.35); */
+}
+
+.videoNavBtn {
+    margin: 0;
+    padding: 0 3vw;
+    display: inline-block;
+    height: 4rem;
+    outline: none;
+    background-color: #181818;
+    transition: background-color .5s, box-shadow .5s ease 0.25s;
+    border-left: 2px solid #252525;
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.05);
+}
+
+.videoNavBar .videoNavBtn:last-child {
+    border-right: 2px solid #252525;
+}
+
+.videoNavBtn>p {
+    margin: 1.4rem 0 0 0;
+}
+
+.setActive {
+    box-shadow: inset 0px 0px 6px #ED1A3B;
+}
+
+.videoNavBar div:hover {
+    background-color: #ED1A3B;
+}
+
+/* Skills info Stuff */
+
+.skillInfo {
+    /* background-image: linear-gradient(to bottom, #161616, #202020); */
+    background-color: #202020;
+    padding: 4vh 9vw;
+    display: flex;
+
+}
+
+.skillInfoGroup {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+/* DEFAULTS */
+
+.firstSkillGroup {
+    display: flex;
+    opacity: 1;
+}
+
+/* DEFAULTS */
+
+.skillTitle {
+    margin-bottom: .5rem;
+}
+
+.skillDescription {
+    margin-bottom: .5rem;
+}
+
+.skillIcons {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skillIcons div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.skillIcons img {
+    height: 32px;
+    margin-right: .5rem;
+}
+
+/* Videos Container Stuff */
+
+.videosContainer {
     margin-top: 0rem;
     width: 100%;
     display: flex;
@@ -42,8 +165,7 @@
     width: 90%;
 }
 
-.wrapper {
-    position: relative;
+.videoWrapper {
     padding: 0%;
     display: flex;
     justify-content: center;
@@ -53,99 +175,15 @@
     transition: width .5s;
 }
 
-.wrapper>video {
+.videoWrapper>video {
     width: auto;
     height: 480px;
-}
-
-.wrapperBkg {
-    position: absolute;
-    left: 0;
-    margin: 0%;
-    height: 100%;
-    outline: none;
-    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0));
-    transition: background-image 0.5s ease 0.5s, transform 0.5s;
-}
-
-.wrapperBkg>div {
-    padding-top: 1.5rem;
-    padding-left: 3rem;
-    transition: padding 0.5s;
-    width: 100%;
-}
-
-.skillTitle {
-    width: 18rem;
-}
-
-.wrapper .font-M {
-    font-size: 0.75rem;
-    transition: font-size 0.5s ease 0.65s;
-    width: 20vw;
-}
-
-.wrapperBkg p {
-    margin: 0.5rem 0rem;
-}
-
-.skillsDesc {
-    width: 40%;
-    opacity: 0;
-    transition: opacity .5s ease .8s;
-}
-
-.iconsContainer {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 18vw;
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
-    transition: opacity .5s ease .95s;
-    transform: translateX(-1rem);
-}
-
-.iconsContainer>div {
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    align-items: center;
-}
-
-.iconsContainer img {
-    height: 36px;
-    margin-right: .5rem;
-}
-
-.jobHeaderText {
-    flex-direction: column;
-    margin-right: 3rem;
-    width: 28%;
-}
-
-.jobTitle {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: left;
-}
-
-.jobIntroText {
-    width: 72%;
-    margin-left: 1rem;
-    text-align: justify;
-}
-
-#moviesList {
-    display: inline;
 }
 
 /* Media */
 
 @media screen and (min-width: 1440px) {
-    .wrapper>video {
+    .videoWrapper>video {
         width: 100%;
         height: none;
     }
@@ -158,8 +196,7 @@
     }
 }
 
-@media screen and (max-width: 1070px) {
-}
+@media screen and (max-width: 1070px) {}
 
 @media screen and (max-width: 800px) {
     .sectionHeader {
@@ -168,38 +205,21 @@
     #experience>section:not(:last-child) {
         margin-bottom: 16rem;
     }
-    .iconsContainer>div {
-        margin-right: 0;
-    }
-    .wrapperBkg>div {
-        padding-top: 1rem;
-        padding-left: 2rem;
-        width: 80%;
-    }
     .jobHeaderText {
         margin-right: 2rem;
     }
     .jobIntroText {
         margin-left: 2rem;
     }
-    .skillsDesc {
-        width: 65%;
-    }
-    .iconsContainer {
-        width: 45vw;
-    }
 }
 
 @media screen and (max-width: 532px) {
+    #experience>section:not(:last-child) {
+        margin-bottom: 15rem;
+    }
     .sectionHeader {
         justify-content: flex-end;
         padding: 2rem;
-    }
-    .sectionHeader>picture {
-        display: none;
-    }
-    #experience>section:not(:last-child) {
-        margin-bottom: 15rem;
     }
     .jobHeaderText {
         margin-right: 1rem;
@@ -211,21 +231,6 @@
         width: 100%;
         margin-left: 1rem;
     }
-    .wrapperBkg>div {
-        max-width: 90%;
-    }
-    #moviesList {
-        display: none;
-    }
 }
 
 /* Animations */
-
-@keyframes widthExpand {
-    from {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 60%);
-    }
-    to {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%);
-    }
-}

@@ -13,7 +13,7 @@
     width: max-content;
     height: max-content;
     position: relative;
-    margin-top: 36vh;
+    margin-top: 32vh;
     z-index: 0;
 }
 
@@ -84,7 +84,7 @@
 
 #aboutMeContainer {
     margin-top: 6rem;
-    padding-bottom: 8rem;
+    padding-bottom: 11rem;
     display: flex;
     width: 60%;
     z-index: 1;
