@@ -48,15 +48,6 @@ function changeInfo(activeInfo, parent) {
     setTimeout(lightsOn, 750)
 }
 
-
-function changeOpacity(activeInfo, parent) {
-    for (let info of parent.querySelectorAll(`.skillInfoGroup`)) {
-        info.style.opacity = "0";
-    }
-    // activeInfo.style.opacity = "1";
-}
-
-
 for (let videoNavBar of videoNavBars) {
     for (let videoNavBtn of videoNavBar.querySelectorAll('.videoNavBtn')) {
         videoNavBtn.addEventListener('mousedown', () => {
@@ -129,8 +120,6 @@ buttonCV.addEventListener('mouseleave', () => {
 function bkgParallax() {
     window.addEventListener('scroll', () => {
         let scrolledBkg = window.pageYOffset;
-        // let sB = document.getElementById('sB');
-        // sB.style.transform = `translate(0px, ${scrolledBkg / 10}px)`;
 
         let pageContainer = document.getElementById('pageContainer');
         pageContainer.style.backgroundPosition = `0px ${scrolledBkg / 1.5}px`;
@@ -140,8 +129,7 @@ window.requestAnimationFrame(bkgParallax);
 
 
 // Software Affinity stuff
-
-// Icon Creator
+// Icon Crafter
 let softContainer = document.querySelectorAll('.softContainer');
 
 for (let container of softContainer) {

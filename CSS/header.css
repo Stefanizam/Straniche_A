@@ -5,6 +5,7 @@
     padding-left: 12vw;
     padding-right: 6rem;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 #nameContainer {

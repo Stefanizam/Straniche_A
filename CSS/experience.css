@@ -54,7 +54,6 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    /* box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.35); */
 }
 
 .videoNavBtn {
@@ -88,7 +87,6 @@
 /* Skills info Stuff */
 
 .skillInfo {
-    /* background-image: linear-gradient(to bottom, #161616, #202020); */
     background-color: #202020;
     padding: 4vh 9vw;
     display: flex;
