@@ -16,7 +16,7 @@ body {
 
 #pageContainer {
     background-image: url('../Images/BackgroundImage.jpg');
-    background-size: 100%;
+    /* background-size: 100%; */
     background-position: 0px 0px;
     margin: 0;
     height: 100%;
@@ -60,6 +60,7 @@ button {
     font-weight: 900;
     line-height: 2.7rem;
     text-transform: uppercase;
+    transition: font-size .25s;
 }
 
 .font-L {
@@ -67,6 +68,7 @@ button {
     font-weight: 900;
     line-height: 2rem;
     text-transform: uppercase;
+    transition: font-size .25s;
 }
 
 .font-M {
@@ -74,18 +76,21 @@ button {
     font-weight: 900;
     line-height: normal;
     text-transform: uppercase;
+    transition: font-size .25s;
 }
 
 .font-S {
     font-size: 0.9rem;
     font-weight: 300;
     line-height: 1.25rem;
+    transition: font-size .25s;
 }
 
 .font-XS {
     font-size: .8rem;
     font-weight: 300;
     line-height: normal;
+    transition: font-size .25s;
 }
 
 /* Media */

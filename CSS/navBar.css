@@ -40,7 +40,8 @@ nav p {
     color: white;
     text-transform: uppercase;
     display: inline-block;
-    z-index: 2;
+    transition: width 0.5s;
+    
 }
 
 #subNavContent {
@@ -56,28 +57,8 @@ nav p {
     transform: translateY(-12em);
 }
 
-/* .navBtn:hover, .subNavBtn:hover {
+.navBtn:hover, .subNavBtn:hover {
     box-shadow: inset 0px 0px 4px #fff1a4;
-} */
-
-.setActiveNav {
-    animation-name: clickGlow;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;
-}
-
-@keyframes clickGlow {
-    0% {
-        box-shadow: none;
-    }
-    50% {
-        box-shadow: inset 0px 0px 6px #fff1a4;
-    }
-    100% {
-        box-shadow: none;
-    }
 }
 
 .subNavBtn {
@@ -93,6 +74,9 @@ nav p {
 
 @media screen and (max-width: 532px) {
     nav {
-        display: none;
+        /* display: none; */
+    }
+    .navBtn, .subNavBtn {
+        width: 5rem;
     }
 }

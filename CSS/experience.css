@@ -20,7 +20,8 @@
 
 .sectionHeader {
     display: flex;
-    padding: 8rem 8rem 4rem 8rem;
+    flex-direction: column;
+    padding: 6vw 10vw 6vw 10vw;
     border-top: 1px #ED1A3B solid;
 }
 
@@ -31,14 +32,15 @@
 }
 
 .jobTitle {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 1rem;
     text-align: left;
+    /* width: 100%; */
 }
 
 .jobIntroText {
-    width: 72%;
-    margin-left: 1rem;
+    /* width: 72%; */
+    /* margin-left: 1rem; */
     text-align: justify;
 }
 
@@ -88,7 +90,7 @@
 
 .skillInfo {
     background-color: #202020;
-    padding: 4vh 9vw;
+    padding: 4vh 10vw;
     display: flex;
 
 }
