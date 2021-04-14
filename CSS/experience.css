@@ -167,7 +167,7 @@
 }
 
 .videoWrapper:not(:first-child) {
-    border-left: 4px solid #ED1A3B;
+    border-left: 1px solid #ED1A3B;
 
 }
 
