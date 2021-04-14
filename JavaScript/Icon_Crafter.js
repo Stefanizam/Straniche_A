@@ -1,4 +1,4 @@
-// Icon Crafter
+// Icon Crafter 1.0
 
 function craftIcons() {
 

@@ -6,9 +6,9 @@ nav {
     z-index: 2;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     cursor: default;
-    background-color: #ED1A3B;
+    background-color: #202020;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .35);
 }
 
@@ -21,11 +21,14 @@ nav div {
 }
 
 nav>div {
-    border-left: 2px solid rgba(255, 255, 255, .1);
+    border-left: 1px solid rgba(255, 255, 255, .1);
+}
+nav>div:last-child {
+    border-right: 1px solid rgba(255, 255, 255, .1);
 }
 
 .subNavBtn {
-    border-top: 2px solid rgba(255, 255, 255, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
 }
 
 nav p {
@@ -36,12 +39,16 @@ nav p {
 .navBtn, .subNavBtn {
     height: 2.5rem;
     width: 12rem;
-    transition: background-color 0.25s, box-shadow 0.25s;
     color: white;
     text-transform: uppercase;
     display: inline-block;
     transition: width 0.5s;
-    
+    background-color: #171717;
+    transition: background-color 0.25s;
+}
+
+.subNavBtn {
+    background-color: unset;
 }
 
 #subNavContent {
@@ -58,7 +65,7 @@ nav p {
 }
 
 .navBtn:hover, .subNavBtn:hover {
-    box-shadow: inset 0px 0px 4px #fff1a4;
+    background-color: #d1223d;
 }
 
 .subNavBtn {
@@ -73,9 +80,6 @@ nav p {
 }
 
 @media screen and (max-width: 532px) {
-    nav {
-        /* display: none; */
-    }
     .navBtn, .subNavBtn {
         width: 5rem;
     }

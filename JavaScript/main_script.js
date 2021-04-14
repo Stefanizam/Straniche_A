@@ -86,8 +86,7 @@ for (let a of aLink) {
 }
 
 
-// navBar Skills Menu
-const skillsButton = document.querySelector("#skillsBtn");
+// navBar Stuff
 const subNavContent = document.querySelector("#subNavContent");
 const subNavElements = document.querySelectorAll('#subNavContent>a');
 
@@ -114,18 +113,6 @@ for (let navBtn of navBarBtns) {
         }
     })
 }
-
-// skillsButton.addEventListener('mousedown', () => {
-//     subNavContent.style.visibility = "visible";
-//     subNavContent.style.opacity = "1";
-//     subNavContent.style.transform = "translateY(0em)";
-// })
-
-// subNavContent.addEventListener('mouseleave', () => {
-//     subNavContent.style.visibility = "hidden";
-//     subNavContent.style.opacity = "0";
-//     subNavContent.style.transform = "translateY(-12em)";
-// })
 
 
 // CV Tooltip Hover

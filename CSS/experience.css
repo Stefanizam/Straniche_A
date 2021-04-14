@@ -25,22 +25,12 @@
     border-top: 1px #ED1A3B solid;
 }
 
-.jobHeaderText {
-    flex-direction: column;
-    margin-right: 3rem;
-    width: 28%;
-}
-
 .jobTitle {
-    /* margin-top: 1rem; */
     margin-bottom: 1rem;
     text-align: left;
-    /* width: 100%; */
 }
 
 .jobIntroText {
-    /* width: 72%; */
-    /* margin-left: 1rem; */
     text-align: justify;
 }
 
@@ -173,6 +163,12 @@
     height: 480px;
     overflow: hidden;
     transition: width .5s;
+
+}
+
+.videoWrapper:not(:first-child) {
+    border-left: 4px solid #ED1A3B;
+
 }
 
 .videoWrapper>video {
