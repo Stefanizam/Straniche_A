@@ -166,7 +166,7 @@ craftIcons();
             let positionFromTop = container.getBoundingClientRect().top;
 
             if (positionFromTop - windowHeight <= 0) {
-                container.classList.add('xpAppear');
+                container.classList.add('xpOpacityAppear');
             }
         }
     }
@@ -179,6 +179,12 @@ craftIcons();
 })();
 
 
+// Form Submit stuff
+
+let contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+})
 
 
 

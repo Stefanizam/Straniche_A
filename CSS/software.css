@@ -102,9 +102,9 @@
     animation-fill-mode: backwards;
 }
 
-.xpAppear {
+.xpOpacityAppear {
     animation-name: opacityAppear;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-delay: .0.01s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
