@@ -16,7 +16,8 @@ body {
 
 #pageContainer {
     background-image: url('../Images/BackgroundImage.jpg');
-    /* background-size: 100%; */
+    /* background-size: 100% ; */
+    background-repeat: repeat-y;
     background-position: 0px 0px;
     margin: 0;
     height: 100%;

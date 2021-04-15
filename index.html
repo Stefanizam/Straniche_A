@@ -121,8 +121,7 @@
                         I
                         also welcome opportunities as a consultant or freelancer.
                     </p>
-                    <a href="https://www.dropbox.com/s/8ptlmt2f0jpf68z/CV_Placeholder.txt?dl=0" target="_blank"
-                        download>
+                    <a href="CSS/experience.css" download="experience">
                         <button id="downloadCV">Download CV
                             <p id="tooltipText" class="font-XS">The current file is only a placeholder</p>
                         </button>
@@ -168,7 +167,7 @@
                     </p>
                 </div>
                 <div id="vfxNavBar" class="videoNavBar font-S">
-                    <div class="videoNavBtn" data-skill="vfxPaint" data-info="paintInfo">
+                    <div class="videoNavBtn setActive" data-skill="vfxPaint" data-info="paintInfo">
                         <p>Paint</p>
                     </div>
                     <div class="videoNavBtn" data-skill="vfxComp" data-info="compInfo">
@@ -356,7 +355,7 @@
                     </p>
                 </div>
                 <div id="graphicsNavBar" class="videoNavBar font-S">
-                    <div class="videoNavBtn" data-skill="graphicsUI" data-info="uiInfo">
+                    <div class="videoNavBtn setActive" data-skill="graphicsUI" data-info="uiInfo">
                         <p>UI & Web Design</p>
                     </div>
                     <div class="videoNavBtn" data-skill="graphicsMotion" data-info="motionInfo">
@@ -503,7 +502,7 @@
 
                 </div>
                 <div id="techNavBar" class="videoNavBar font-S">
-                    <div class="videoNavBtn" data-skill="techRepair" data-info="repairInfo">
+                    <div class="videoNavBtn setActive" data-skill="techRepair" data-info="repairInfo">
                         <p>Computer Repair</p>
                     </div>
                     <div class="videoNavBtn" data-skill="techSystems" data-info="systemsInfo">
@@ -646,7 +645,7 @@
                 <!-- Separator -->
                 <div id="programmingContents">
                     <div class="videosContainer">
-                        <div id="progFront" class="videoWrapper">
+                        <div id="progFront setActive" class="videoWrapper">
                             <video loop muted src="Videos/progFront.mp4" poster="Images/progFront.jpg"></video>
                         </div>
                         <div id="progGames" class="videoWrapper">
@@ -748,8 +747,9 @@
                         <br>
                         <input name="email" type="email" class="form-control" placeholder="Your e-mail" required>
                         <br>
-                        <textarea name="msgMessage" class="form-control" placeholder="I am still working on hosting the site on my own apache web server. So this form isn't yet functional." id="" cols="30"
-                            rows="4" required></textarea>
+                        <textarea name="msgMessage" class="form-control"
+                            placeholder="I am still working on hosting the site on my own apache web server. So this form isn't yet functional."
+                            id="" cols="30" rows="4" required></textarea>
                         <button type="submit" class="form-control submit font-S" value="SEND MESSAGE">Send</button>
                     </form>
                 </div>

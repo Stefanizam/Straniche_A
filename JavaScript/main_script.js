@@ -17,8 +17,8 @@ function widthExpand(element) {
     element.style.width = `${calcWidth}%`;
 }
 
-function makeActive(button) {
-    for (let btn of document.querySelectorAll('.videoNavBtn')) {
+function makeActive(button, parent) {
+    for (let btn of parent.querySelectorAll('.videoNavBtn')) {
         btn.classList.remove('setActive');
     }
     button.classList.add('setActive');
@@ -56,17 +56,21 @@ for (let videoNavBar of videoNavBars) {
             let videoID = videoNavBtn.dataset.skill;
             let theVideo = document.querySelector(`#${videoID}>video`);
             let videoContainer = document.querySelector(`#${videoID}`);
+            
+            let infoTextID = document.querySelector(`#${videoNavBtn.dataset.info}`);
+            let parentOfInfo = infoTextID.parentElement;
 
-            makeActive(videoNavBtn);
+            if (!(videoNavBtn.classList.contains('setActive'))) {
+                changeInfo(infoTextID, parentOfInfo);
+            }
+
+            makeActive(videoNavBtn, videoNavBar);
             widthReset(videoID, videoContainer);
             widthExpand(videoContainer);
             theVideo.play();
 
             // Info Text change
-            let infoTextID = document.querySelector(`#${videoNavBtn.dataset.info}`);
-            let parentOfInfo = infoTextID.parentElement;
 
-            changeInfo(infoTextID, parentOfInfo);
         })
     }
 }
