@@ -46,6 +46,7 @@
     display: flex;
     justify-content: left;
     align-items: flex-start;
+    /* animation: opacityAppear 2s ease 0.01s 1; */
 }
 
 .softContainer p {
@@ -63,6 +64,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    transition: opacity 0.5s;
 }
 
 .xpBkg {
@@ -88,14 +90,24 @@
 
 .xpFill>p {
     padding-right: .5rem;
+    /* position: absolute; */
 }
 
-.xpSlide {
+.xpSlideAnimator {
     animation-name: slideIn;
-    animation-duration: .75s;
-    animation-delay: .25s;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
     animation-iteration-count: 1;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+}
+
+.xpAppear {
+    animation-name: opacityAppear;
+    animation-duration: 2s;
+    animation-delay: .0.01s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
     animation-fill-mode: backwards;
 }
 
@@ -107,6 +119,15 @@
     }
     to {
         transform: scale(1, 1);
+    }
+}
+
+@keyframes opacityAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 

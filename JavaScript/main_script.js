@@ -142,23 +142,31 @@ buttonCV.addEventListener('mouseleave', () => {
 // Software Affinity stuff
 craftIcons();
 
-// xpBars Animation
+// Software Affinity - xpBars Animation
 (function () {
-    var elements;
-    var windowHeight;
+    let xpFill;
+    let windowHeight;
+    let softContainer;
 
     function init() {
-        elements = document.querySelectorAll('.xpFill');
+        xpFill = document.querySelectorAll('.xpFill');
+        softContainer = document.querySelectorAll('.softContainer');
         windowHeight = window.innerHeight;
     }
 
     function checkPosition() {
-        for (let i = 0; i < elements.length; i++) {
-            let element = elements[i];
-            let positionFromTop = elements[i].getBoundingClientRect().top;
+        for (let xpFillBar of xpFill) {
+            let positionFromTop = xpFillBar.getBoundingClientRect().top;
 
             if (positionFromTop - windowHeight <= 0) {
-                element.classList.add('xpSlide');
+                xpFillBar.classList.add('xpSlideAnimator');
+            }
+        }
+        for (let container of softContainer) {
+            let positionFromTop = container.getBoundingClientRect().top;
+
+            if (positionFromTop - windowHeight <= 0) {
+                container.classList.add('xpAppear');
             }
         }
     }

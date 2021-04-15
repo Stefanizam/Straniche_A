@@ -32,10 +32,10 @@ function craftIcons() {
         let xpBarFill = document.createElement('div');
         xpBarFill.classList.add('xpFill', 'font-XS');
         xpBarFill.style.width = `${pullPercentage}%`;
-        let percentageP = document.createElement('p');
-        let percentageNum = document.createTextNode(pullPercentage);
-        percentageP.appendChild(percentageNum);
-        xpBarFill.appendChild(percentageP);
+        // let percentageP = document.createElement('p');
+        // let percentageNum = document.createTextNode(pullPercentage);
+        // percentageP.appendChild(percentageNum);
+        // xpBarFill.appendChild(percentageP);
         xpBarBkg.appendChild(xpBarFill);
     }
 }
