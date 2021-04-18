@@ -43,16 +43,17 @@
     margin: 0%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     text-transform: uppercase;
+    padding-left: 10vw; 
 }
 
 .videoNavBtn {
     margin: 0;
     padding: 0 3vw;
     display: inline-block;
-    height: 4rem;
+    height: 3.4rem;
     outline: none;
     background-color: #181818;
     transition: background-color .5s, box-shadow .5s ease 0.25s;
@@ -65,11 +66,11 @@
 }
 
 .videoNavBtn>p {
-    margin: 1.4rem 0 0 0;
+    margin: 1.1rem 0 0 0;
 }
 
 .setActive {
-    box-shadow: inset 0px 0px 6px #ED1A3B;
+    background-color: #ED1A3B;
 }
 
 .videoNavBar div:hover {
@@ -111,7 +112,6 @@
 }
 
 .skillIcons {
-    margin-top: 3vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -123,6 +123,7 @@
     flex-direction: row;
     align-items: center;
     margin-right: 2rem;
+    margin-top: .75rem;
 }
 
 .skillIcons img {
@@ -204,9 +205,6 @@
     .jobHeaderText {
         margin-right: 2rem;
     }
-    .jobIntroText {
-        margin-left: 2rem;
-    }
 }
 
 @media screen and (max-width: 532px) {
@@ -225,7 +223,6 @@
     }
     .jobIntroText {
         width: 100%;
-        margin-left: 1rem;
     }
 }
 

@@ -26,26 +26,26 @@ function makeActive(button, parent) {
 
 function changeInfo(activeInfo, parent) {
 
-    function switchOffOn() {
-        for (let info of parent.querySelectorAll(`.skillInfoGroup`)) {
-            info.style.display = "none";
-        }
-        activeInfo.style.display = "flex";
-    }
+    lightsOff(); // Calls first
 
     function lightsOff() {
         for (let info of parent.querySelectorAll(`.skillInfoGroup`)) {
             info.style.opacity = "0";
         }
+        setTimeout(switchOffOn, 350); // Calls next
     }
 
-    function lightsOn() {
+    function switchOffOn() {
+        for (let info of parent.querySelectorAll(`.skillInfoGroup`)) {
+            info.style.display = "none";
+        }
+        activeInfo.style.display = "flex";
+        setTimeout(lightsOn, 350); // Calls next
+    }
+
+    function lightsOn() { 
         activeInfo.style.opacity = "1";
-    }
-
-    setTimeout(lightsOff, 1)
-    setTimeout(switchOffOn, 501)
-    setTimeout(lightsOn, 750)
+    } // Last function
 }
 
 for (let videoNavBar of videoNavBars) {
@@ -56,7 +56,7 @@ for (let videoNavBar of videoNavBars) {
             let videoID = videoNavBtn.dataset.skill;
             let theVideo = document.querySelector(`#${videoID}>video`);
             let videoContainer = document.querySelector(`#${videoID}`);
-            
+
             let infoTextID = document.querySelector(`#${videoNavBtn.dataset.info}`);
             let parentOfInfo = infoTextID.parentElement;
 

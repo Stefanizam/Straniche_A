@@ -18,7 +18,7 @@ body {
     background-image: url('../Images/BackgroundImage.jpg');
     /* background-size: 100% ; */
     background-repeat: repeat-y;
-    background-position: 0px 0px;
+    background-position: center 0px;
     margin: 0;
     height: 100%;
     width: 100%;

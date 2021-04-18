@@ -24,52 +24,54 @@
 <body>
     <nav id="navBar" class="font-S">
         <div>
-            <a href="#top">
-                <div class="navBtn">
-                    <p>Home</p>
-                </div>
-            </a>
-        </div>
-        <div>
-            <div id="skillsBtn" class="navBtn">
-                <p>Skills</p>
-            </div>
-            <div id="subNavContent">
-                <a href="#vfxContainer">
-                    <div class="subNavBtn">
-                        <p>Visual Effects</p>
-                    </div>
-                </a>
-                <a href="#graphicsContainer">
-                    <div class="subNavBtn">
-                        <p>Graphic Design</p>
-                    </div>
-                </a>
-                <a href="#computerTech">
-                    <div class="subNavBtn">
-                        <p>IT Technician</p>
-                    </div>
-                </a>
-                <a href="#programming">
-                    <div class="subNavBtn">
-                        <p>Programming</p>
+            <div>
+                <a href="#top">
+                    <div class="navBtn">
+                        <p>Home</p>
                     </div>
                 </a>
             </div>
-        </div>
-        <div>
-            <a href="#software">
-                <div class="navBtn">
-                    <p>Affinity</p>
+            <div>
+                <div id="skillsBtn" class="navBtn">
+                    <p>Skills</p>
                 </div>
-            </a>
-        </div>
-        <div>
-            <a href="#contact">
-                <div class="navBtn">
-                    <p>Contact</p>
+                <div id="subNavContent">
+                    <a href="#vfxContainer">
+                        <div class="subNavBtn">
+                            <p>Visual Effects</p>
+                        </div>
+                    </a>
+                    <a href="#graphicsContainer">
+                        <div class="subNavBtn">
+                            <p>Graphic Design</p>
+                        </div>
+                    </a>
+                    <a href="#computerTech">
+                        <div class="subNavBtn">
+                            <p>IT Technician</p>
+                        </div>
+                    </a>
+                    <a href="#programming">
+                        <div class="subNavBtn">
+                            <p>Programming</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            </div>
+            <div>
+                <a href="#software">
+                    <div class="navBtn">
+                        <p>Affinity</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="#contact">
+                    <div class="navBtn">
+                        <p>Contact</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </nav>
     <!-- Navigation Bar END -->
@@ -587,7 +589,7 @@
                     </div>
                 </div>
                 <div id="progNavBar" class="videoNavBar font-S">
-                    <div class="videoNavBtn" data-skill="progFront" data-info="frontInfo">
+                    <div class="videoNavBtn setActive" data-skill="progFront" data-info="frontInfo">
                         <p>Front-End Development</p>
                     </div>
                     <div class="videoNavBtn" data-skill="progGames" data-info="gamesInfo">
@@ -645,7 +647,7 @@
                 <!-- Separator -->
                 <div id="programmingContents">
                     <div class="videosContainer">
-                        <div id="progFront setActive" class="videoWrapper">
+                        <div id="progFront" class="videoWrapper firstVideo">
                             <video loop muted src="Videos/progFront.mp4" poster="Images/progFront.jpg"></video>
                         </div>
                         <div id="progGames" class="videoWrapper">

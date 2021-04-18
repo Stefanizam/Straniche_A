@@ -20,12 +20,12 @@ function craftIcons() {
         let softInfoDiv = document.createElement('div');
         softInfoDiv.classList.add('softInfo');
         let nameP = document.createElement('p');
-        let softName = document.createTextNode(`${pullName}`);
+        let softName = document.createTextNode(pullName);
         nameP.appendChild(softName);
         softInfoDiv.appendChild(nameP);
         container.appendChild(softInfoDiv);
 
-        // Create and Append XP Bar
+        // Create and Append XP Bar0
         let xpBarBkg = document.createElement('div');
         xpBarBkg.classList.add('xpBkg');
         softInfoDiv.appendChild(xpBarBkg);
