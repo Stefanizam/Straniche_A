@@ -1,20 +1,49 @@
-// Skills Event
+// Skills Events
+
 
 const skillsSections = document.querySelectorAll('.skillsSection');
 const videoWrapper = document.querySelectorAll('.videoWrapper');
+const allVideos = document.querySelectorAll('video');
 const videoNavBars = document.querySelectorAll('.videoNavBar');
 
+function createVideoOverlays() {
+
+    for (let wrapper of videoWrapper) {
+        let overlayDiv = document.createElement('div');
+        overlayDiv.classList.add('videoOverlay');
+        wrapper.prepend(overlayDiv);
+    }
+}
+
+createVideoOverlays();
+
+function playVideo(currentVideo) {
+    for (let otherVideos of document.querySelectorAll('video')) {
+        otherVideos.pause();
+    }
+    currentVideo.play();
+}
 function widthReset(exception, parent) {
     for (let wrapper of parent.parentElement.querySelectorAll(`.videoWrapper:not(#${exception})`)) {
         wrapper.style.width = "10%";
-        wrapper.querySelector('video').pause();
+        setTimeout(() => {
+            wrapper.style.transform = 'scale(1)';
+        }, 200)
+        wrapper.querySelector('.videoOverlay').style.opacity = '1';
+        wrapper.style.zIndex = '1';
+        wrapper.classList.remove('setActiveVideo');
+        setTimeout(() => { wrapper.querySelector('video').pause(); }, 600);
     }
 };
 
-function widthExpand(element) {
-    let videosNum = element.parentElement.querySelectorAll('.videoWrapper').length;
+function widthExpand(wrapper) {
+    let videosNum = wrapper.parentElement.querySelectorAll('.videoWrapper').length;
     let calcWidth = ((10 - videosNum) + 1) * 10;
-    element.style.width = `${calcWidth}%`;
+    wrapper.style.width = `${calcWidth}%`;
+    wrapper.querySelector('.videoOverlay').style.opacity = '0';
+    wrapper.style.transform = 'scale(1.1)';
+    wrapper.style.zIndex = '2';
+    setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 600);
 }
 
 function makeActive(button, parent) {
@@ -26,13 +55,14 @@ function makeActive(button, parent) {
 
 function changeInfo(activeInfo, parent) {
 
+    let delay = 150;
     lightsOff(); // Calls first
 
     function lightsOff() {
         for (let info of parent.querySelectorAll(`.skillInfoGroup`)) {
             info.style.opacity = "0";
         }
-        setTimeout(switchOffOn, 350); // Calls next
+        setTimeout(switchOffOn, delay); // Calls next
     }
 
     function switchOffOn() {
@@ -40,39 +70,55 @@ function changeInfo(activeInfo, parent) {
             info.style.display = "none";
         }
         activeInfo.style.display = "flex";
-        setTimeout(lightsOn, 350); // Calls next
+        setTimeout(lightsOn, delay); // Calls next
     }
 
-    function lightsOn() { 
+    function lightsOn() {
         activeInfo.style.opacity = "1";
     } // Last function
 }
 
+// videoNavBar clicks
 for (let videoNavBar of videoNavBars) {
     for (let videoNavBtn of videoNavBar.querySelectorAll('.videoNavBtn')) {
         videoNavBtn.addEventListener('mousedown', () => {
 
-            // Video Stuff
             let videoID = videoNavBtn.dataset.skill;
             let theVideo = document.querySelector(`#${videoID}>video`);
             let videoContainer = document.querySelector(`#${videoID}`);
 
-            let infoTextID = document.querySelector(`#${videoNavBtn.dataset.info}`);
-            let parentOfInfo = infoTextID.parentElement;
 
             if (!(videoNavBtn.classList.contains('setActive'))) {
+                let infoTextID = document.querySelector(`#${videoNavBtn.dataset.info}`);
+                let parentOfInfo = infoTextID.parentElement;
                 changeInfo(infoTextID, parentOfInfo);
             }
 
             makeActive(videoNavBtn, videoNavBar);
             widthReset(videoID, videoContainer);
             widthExpand(videoContainer);
-            theVideo.play();
-
-            // Info Text change
-
+            playVideo(theVideo);
         })
     }
+}
+
+// Video clicks
+for (let video of allVideos) {
+    video.parentElement.addEventListener('mousedown', () => {
+        let videoID = video.parentElement.id;
+        let videoNavBtn = document.querySelector(`[data-skill='${videoID}']`);
+        let videoNavBar = videoNavBtn.parentElement;
+
+        if (!(videoNavBtn.classList.contains('setActive'))) {
+            let infoTextID = document.querySelector(`#${videoNavBtn.dataset.info}`);
+            let parentOfInfo = infoTextID.parentElement;
+            changeInfo(infoTextID, parentOfInfo);
+        }
+        makeActive(videoNavBtn, videoNavBar);
+        widthReset(videoID, video.parentElement);
+        widthExpand(video.parentElement);
+        playVideo(video);
+    })
 }
 // Skills Event - End
 

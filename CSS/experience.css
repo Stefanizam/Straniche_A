@@ -46,7 +46,7 @@
     justify-content: left;
     align-items: center;
     text-transform: uppercase;
-    padding-left: 10vw; 
+    padding-left: 10vw;
 }
 
 .videoNavBtn {
@@ -81,9 +81,8 @@
 
 .skillInfo {
     background-color: #202020;
-    padding: 4vh 10vw;
+    padding: 4vh 10vw 8vh 10vw;
     display: flex;
-
 }
 
 .skillInfoGroup {
@@ -99,6 +98,10 @@
 .firstSkillGroup {
     display: flex;
     opacity: 1;
+}
+
+.firstVideo {
+
 }
 
 /* DEFAULTS */
@@ -137,7 +140,7 @@
     margin-top: 0rem;
     width: 100%;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #vfxPaint {
@@ -157,19 +160,34 @@
 }
 
 .videoWrapper {
+    position: relative;
     padding: 0%;
     display: flex;
     justify-content: center;
     width: 10%;
     height: 480px;
     overflow: hidden;
-    transition: width .5s;
+    transition: width .5s ease 0s, transform .35s ease .5s, z-index .4s linear 0.4s;
+    transform-origin: center;
+    z-index: 1;
+}
 
+.videoOverlay {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: opacity 0.5s ease .5s;
 }
 
 .videoWrapper:not(:first-child) {
-    border-left: 1px solid #ED1A3B;
+    border-left: 2px solid #ED1A3B;
+}
 
+.setActiveVideo {
+    border-right: 2px solid #ED1A3B;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .videoWrapper>video {
