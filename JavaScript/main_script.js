@@ -21,7 +21,7 @@ function playVideo(currentVideo) {
     for (let otherVideos of document.querySelectorAll('video')) {
         otherVideos.pause();
     }
-    currentVideo.play();
+    setTimeout(() => { currentVideo.play() }, 750);
 }
 function widthReset(exception, parent) {
     for (let wrapper of parent.parentElement.querySelectorAll(`.videoWrapper:not(#${exception})`)) {
@@ -32,7 +32,6 @@ function widthReset(exception, parent) {
         wrapper.querySelector('.videoOverlay').style.opacity = '1';
         wrapper.style.zIndex = '1';
         wrapper.classList.remove('setActiveVideo');
-        setTimeout(() => { wrapper.querySelector('video').pause(); }, 600);
     }
 };
 

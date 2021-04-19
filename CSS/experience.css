@@ -83,6 +83,7 @@
     background-color: #202020;
     padding: 4vh 10vw 8vh 10vw;
     display: flex;
+    height: 16vh;
 }
 
 .skillInfoGroup {
@@ -98,10 +99,6 @@
 .firstSkillGroup {
     display: flex;
     opacity: 1;
-}
-
-.firstVideo {
-
 }
 
 /* DEFAULTS */
@@ -137,10 +134,9 @@
 /* Videos Container Stuff */
 
 .videosContainer {
-    margin-top: 0rem;
-    width: 100%;
+    /* width: 60%; */
+    margin: auto;
     display: flex;
-    /* overflow: hidden; */
 }
 
 #vfxPaint {
@@ -181,12 +177,8 @@
     transition: opacity 0.5s ease .5s;
 }
 
-.videoWrapper:not(:first-child) {
-    border-left: 2px solid #ED1A3B;
-}
-
 .setActiveVideo {
-    border-right: 2px solid #ED1A3B;
+    border: 1px solid #ED1A3B;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -197,7 +189,7 @@
 
 /* Media */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1370px) {
     .videoWrapper>video {
         width: 100%;
         height: none;
@@ -236,11 +228,12 @@
     .jobHeaderText {
         margin-right: 1rem;
     }
-    .jobInfoText {
-        display: none;
-    }
     .jobIntroText {
         width: 100%;
+    }
+    .skillIcons {
+        display: none;
+        ;
     }
 }
 
