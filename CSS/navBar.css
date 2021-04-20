@@ -87,4 +87,8 @@ nav p {
     .navBtn, .subNavBtn {
         width: 5rem;
     }
+
+    nav>div {
+        padding-left: 0;
+    }
 }

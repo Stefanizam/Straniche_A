@@ -236,6 +236,9 @@
         justify-content: flex-end;
         padding: 2rem;
     }
+    .videoNavBar {
+        padding-left: 0;
+    }
     .jobHeaderText {
         margin-right: 1rem;
     }
