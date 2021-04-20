@@ -81,9 +81,8 @@
 
 .skillInfo {
     background-color: #202020;
-    padding: 4vh 10vw 8vh 10vw;
+    padding: 4rem 10vw 4rem 10vw;
     display: flex;
-    height: 16vh;
 }
 
 .skillInfoGroup {
@@ -161,11 +160,20 @@
     display: flex;
     justify-content: center;
     width: 10%;
-    height: 480px;
     overflow: hidden;
     transition: width .5s ease 0s, transform .35s ease .5s, z-index .4s linear 0.4s;
     transform-origin: center;
     z-index: 1;
+}
+
+.videosContainer>.videoWrapper:first-child {
+    transform-origin: left;
+    /* clipping repair */
+}
+
+.videosContainer>.videoWrapper:last-child {
+    transform-origin: right;
+    /* clipping repair */
 }
 
 .videoOverlay {
@@ -215,6 +223,9 @@
     .jobHeaderText {
         margin-right: 2rem;
     }
+    .videoWrapper>video {
+        height: 320px;
+    }
 }
 
 @media screen and (max-width: 532px) {
@@ -234,6 +245,9 @@
     .skillIcons {
         display: none;
         ;
+    }
+    .videoWrapper>video {
+        height: 200px;
     }
 }
 
