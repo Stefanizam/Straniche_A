@@ -116,7 +116,7 @@ for (let video of allVideos) {
 
         makeActive(videoNavBtn, videoNavBar);
         widthReset(videoID, video.parentElement);
-        video.onloadeddata = widthExpand(video.parentElement);
+        video.load(widthExpand(video.parentElement))
         playVideo(video);
     })
 }
