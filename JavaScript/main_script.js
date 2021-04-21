@@ -40,7 +40,7 @@ function widthExpand(wrapper) {
     let calcWidth = ((10 - videosNum) + 1) * 10;
     wrapper.style.width = `${calcWidth}%`;
     wrapper.querySelector('.videoOverlay').style.opacity = '0';
-    setTimeout(() => {wrapper.style.transform = 'translate(0,-16px)';}, 250)
+    setTimeout(() => { wrapper.style.transform = 'translate(0,-16px)'; }, 250)
     wrapper.style.zIndex = '2';
     setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 750);
 }
@@ -95,8 +95,8 @@ for (let videoNavBar of videoNavBars) {
 
             makeActive(videoNavBtn, videoNavBar);
             widthReset(videoID, videoContainer);
-            widthExpand(videoContainer);
-            playVideo(theVideo);
+            theVideo.onloadeddata = widthExpand(videoContainer);
+            theVideo.onloadeddata = playVideo(theVideo);
         })
     }
 }
@@ -115,8 +115,8 @@ for (let video of allVideos) {
         }
         makeActive(videoNavBtn, videoNavBar);
         widthReset(videoID, video.parentElement);
-        widthExpand(video.parentElement);
-        playVideo(video);
+        video.onloadeddata = widthExpand(video.parentElement);
+        video.onloadeddata = playVideo(video);
     })
 }
 // Skills Event - End
