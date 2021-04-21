@@ -96,7 +96,7 @@ for (let videoNavBar of videoNavBars) {
             makeActive(videoNavBtn, videoNavBar);
             widthReset(videoID, videoContainer);
             theVideo.onloadeddata = widthExpand(videoContainer);
-            theVideo.onloadeddata = playVideo(theVideo);
+            playVideo(theVideo);
         })
     }
 }
@@ -117,7 +117,7 @@ for (let video of allVideos) {
         makeActive(videoNavBtn, videoNavBar);
         widthReset(videoID, video.parentElement);
         video.onloadeddata = widthExpand(video.parentElement);
-        video.onloadeddata = playVideo(video);
+        playVideo(video);
     })
 }
 // Skills Event - End

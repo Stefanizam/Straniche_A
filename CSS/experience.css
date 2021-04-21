@@ -187,7 +187,7 @@
 
 .setActiveVideo {
     outline: 1px solid #303030;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .videoWrapper>video {
@@ -233,7 +233,7 @@
 
 @media screen and (max-width: 532px) {
     #experience>section:not(:last-child) {
-        margin-bottom: 15rem;
+        margin-bottom: 10rem;
     }
     .sectionHeader {
         justify-content: flex-end;
@@ -245,6 +245,10 @@
     .jobIntroText {
         width: 100%;
     }
+    .skillInfo {
+        padding: 2rem 10vw 2rem 10vw;
+        height: 7rem;
+    }
     .skillIcons {
         display: none;
     }
@@ -253,4 +257,4 @@
     }
 }
 
-/* Animations */
+/* Animations */    
