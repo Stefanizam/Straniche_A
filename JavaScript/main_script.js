@@ -27,7 +27,7 @@ function widthReset(exception, parent) {
     for (let wrapper of parent.parentElement.querySelectorAll(`.videoWrapper:not(#${exception})`)) {
         wrapper.style.width = "10%";
         setTimeout(() => {
-            wrapper.style.transform = 'scale(1)';
+            wrapper.style.transform = 'translate(0,0)';
         }, 200)
         wrapper.querySelector('.videoOverlay').style.opacity = '1';
         wrapper.style.zIndex = '1';
@@ -40,9 +40,9 @@ function widthExpand(wrapper) {
     let calcWidth = ((10 - videosNum) + 1) * 10;
     wrapper.style.width = `${calcWidth}%`;
     wrapper.querySelector('.videoOverlay').style.opacity = '0';
-    wrapper.style.transform = 'scale(1.1)';
+    setTimeout(() => {wrapper.style.transform = 'translate(0,-16px)';}, 250)
     wrapper.style.zIndex = '2';
-    setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 600);
+    setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 750);
 }
 
 function makeActive(button, parent) {

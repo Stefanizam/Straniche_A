@@ -13,7 +13,6 @@ nav>div {
     display: flex;
     flex-wrap: wrap;
     padding-left: 10vw;
-
 }
 
 nav a {
@@ -27,6 +26,7 @@ nav div {
 nav>div {
     border-left: 1px solid rgba(255, 255, 255, .1);
 }
+
 nav>div:last-child {
     border-right: 1px solid rgba(255, 255, 255, .1);
 }
@@ -79,16 +79,15 @@ nav p {
 
 @media screen and (max-width: 800px) {
     .navBtn, .subNavBtn {
-        width: 8rem;
+        width: 9rem;
+    }
+    nav>div {
+        padding-left: 0;
     }
 }
 
 @media screen and (max-width: 532px) {
     .navBtn, .subNavBtn {
-        width: 5rem;
-    }
-
-    nav>div {
-        padding-left: 0;
+        width: 6rem;
     }
 }
