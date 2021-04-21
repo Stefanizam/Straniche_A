@@ -95,7 +95,7 @@ for (let videoNavBar of videoNavBars) {
 
             makeActive(videoNavBtn, videoNavBar);
             widthReset(videoID, videoContainer);
-            theVideo.onloadeddata = widthExpand(videoContainer);
+            theVideo.load(widthExpand(videoContainer));
             playVideo(theVideo);
         })
     }
@@ -116,7 +116,7 @@ for (let video of allVideos) {
 
         makeActive(videoNavBtn, videoNavBar);
         widthReset(videoID, video.parentElement);
-        video.load(widthExpand(video.parentElement))
+        video.load(widthExpand(video.parentElement));
         playVideo(video);
     })
 }
