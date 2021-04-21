@@ -28,10 +28,16 @@ function widthReset(exception, parent) {
         wrapper.style.width = "10%";
         setTimeout(() => {
             wrapper.style.transform = 'translate(0,0)';
+            setTimeout(() => {
+                wrapper.querySelector('.videoOverlay').style.opacity = '1';
+                setTimeout(() => {
+                    wrapper.style.zIndex = '1';
+                    setTimeout(() => {
+                        wrapper.classList.remove('setActiveVideo');
+                    }, 50)
+                }, 50)
+            }, 50)
         }, 200)
-        wrapper.querySelector('.videoOverlay').style.opacity = '1';
-        wrapper.style.zIndex = '1';
-        wrapper.classList.remove('setActiveVideo');
     }
 };
 
@@ -40,9 +46,15 @@ function widthExpand(wrapper) {
     let calcWidth = ((10 - videosNum) + 1) * 10;
     wrapper.style.width = `${calcWidth}%`;
     wrapper.querySelector('.videoOverlay').style.opacity = '0';
-    setTimeout(() => { wrapper.style.transform = 'translate(0,-16px)'; }, 200)
-    wrapper.style.zIndex = '2';
-    setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 300);
+    setTimeout(() => {
+        wrapper.style.transform = 'translate(0,-16px)';
+        setTimeout(() => {
+            wrapper.style.zIndex = '2';
+            setTimeout(() => {
+                wrapper.classList.add('setActiveVideo')
+            }, 50)
+        }, 50)
+    }, 200)
 }
 
 function makeActive(button, parent) {
