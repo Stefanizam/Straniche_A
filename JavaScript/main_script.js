@@ -42,7 +42,7 @@ function widthExpand(wrapper) {
     wrapper.querySelector('.videoOverlay').style.opacity = '0';
     setTimeout(() => { wrapper.style.transform = 'translate(0,-16px)'; }, 250)
     wrapper.style.zIndex = '2';
-    setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 750);
+    setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 500);
 }
 
 function makeActive(button, parent) {
@@ -113,6 +113,7 @@ for (let video of allVideos) {
             let parentOfInfo = infoTextID.parentElement;
             changeInfo(infoTextID, parentOfInfo);
         }
+
         makeActive(videoNavBtn, videoNavBar);
         widthReset(videoID, video.parentElement);
         video.onloadeddata = widthExpand(video.parentElement);
