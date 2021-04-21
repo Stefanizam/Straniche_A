@@ -40,9 +40,9 @@ function widthExpand(wrapper) {
     let calcWidth = ((10 - videosNum) + 1) * 10;
     wrapper.style.width = `${calcWidth}%`;
     wrapper.querySelector('.videoOverlay').style.opacity = '0';
-    setTimeout(() => { wrapper.style.transform = 'translate(0,-16px)'; }, 250)
+    setTimeout(() => { wrapper.style.transform = 'translate(0,-16px)'; }, 200)
     wrapper.style.zIndex = '2';
-    setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 500);
+    setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 300);
 }
 
 function makeActive(button, parent) {
@@ -142,23 +142,32 @@ const subNavElements = document.querySelectorAll('#subNavContent>a');
 
 const navBarBtns = document.querySelectorAll('.navBtn, .subNavBtn');
 
+const screenS = window.matchMedia('(max-width: 800px)');
+const screenXS = window.matchMedia('(max-width: 532px)');
+
+
 function removeActive() {
     for (let navBtn of navBarBtns) {
         navBtn.classList.remove('setActiveNav');
     }
 }
+
 for (let navBtn of navBarBtns) {
     navBtn.addEventListener('mousedown', () => {
-        removeActive();
-        navBtn.classList.add('setActiveNav');
         if (navBtn.id === "skillsBtn") {
             subNavContent.style.visibility = "visible";
-            subNavContent.style.opacity = "1";
-            subNavContent.style.transform = "translateY(0em)";
+            if (screenXS.matches) {
+                subNavContent.style.height = "10.5rem";
+            }
+            else {
+                subNavContent.style.height = "10";
+            }
+            setTimeout(() => { subNavContent.style.opacity = "1"; }, 350)
+
             subNavContent.addEventListener('mouseleave', () => {
                 subNavContent.style.visibility = "hidden";
+                subNavContent.style.height = "0";
                 subNavContent.style.opacity = "0";
-                subNavContent.style.transform = "translateY(-12em)";
             })
         }
     })
@@ -189,8 +198,10 @@ buttonCV.addEventListener('mouseleave', () => {
 // window.requestAnimationFrame(bkgParallax);
 
 
+
 // Software Affinity stuff
-craftIcons();
+craftIcons(); // uses Icon_Crafter.js
+
 
 // Software Affinity - xpBars Animation
 (function () {
@@ -235,6 +246,3 @@ let contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
 })
-
-
-

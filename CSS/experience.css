@@ -247,13 +247,19 @@
     }
     .skillInfo {
         padding: 2rem 10vw 2rem 10vw;
-        height: 7rem;
+        height: 8rem;
     }
     .skillIcons {
         display: none;
     }
     .videoWrapper>video {
-        height: 280px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .skillInfo {
+        height: 10rem;
     }
 }
 
