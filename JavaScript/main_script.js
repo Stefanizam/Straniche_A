@@ -28,16 +28,10 @@ function widthReset(exception, parent) {
         wrapper.style.width = "10%";
         setTimeout(() => {
             wrapper.style.transform = 'translate(0,0)';
-            setTimeout(() => {
-                wrapper.querySelector('.videoOverlay').style.opacity = '1';
-                setTimeout(() => {
-                    wrapper.style.zIndex = '1';
-                    setTimeout(() => {
-                        wrapper.classList.remove('setActiveVideo');
-                    }, 50)
-                }, 50)
-            }, 50)
         }, 200)
+        wrapper.querySelector('.videoOverlay').style.opacity = '1';
+        wrapper.style.zIndex = '1';
+        wrapper.classList.remove('setActiveVideo');
     }
 };
 
@@ -46,15 +40,9 @@ function widthExpand(wrapper) {
     let calcWidth = ((10 - videosNum) + 1) * 10;
     wrapper.style.width = `${calcWidth}%`;
     wrapper.querySelector('.videoOverlay').style.opacity = '0';
-    setTimeout(() => {
-        wrapper.style.transform = 'translate(0,-16px)';
-        setTimeout(() => {
-            wrapper.style.zIndex = '2';
-            setTimeout(() => {
-                wrapper.classList.add('setActiveVideo')
-            }, 50)
-        }, 50)
-    }, 200)
+    setTimeout(() => { wrapper.style.transform = 'translate(0,-16px)'; }, 200)
+    wrapper.style.zIndex = '2';
+    setTimeout(() => { wrapper.classList.add('setActiveVideo'); }, 300);
 }
 
 function makeActive(button, parent) {
@@ -151,8 +139,11 @@ for (let a of aLink) {
 // navBar Stuff
 const subNavContent = document.querySelector("#subNavContent");
 const subNavElements = document.querySelectorAll('#subNavContent>a');
+const navTag = document.querySelector('nav');
 
 const navBarBtns = document.querySelectorAll('.navBtn, .subNavBtn');
+const hamburgerButton = document.getElementById("hamburgerContainer");
+const arrowUpButton = document.getElementById("hideNavBar");
 
 const screenS = window.matchMedia('(max-width: 800px)');
 const screenXS = window.matchMedia('(max-width: 532px)');
@@ -184,6 +175,47 @@ for (let navBtn of navBarBtns) {
         }
     })
 }
+
+
+// Hamburger Nav Menu for screenXS (max-width: 532px)
+window.addEventListener('resize', resetNavBar);
+
+function resetNavBar() {
+    if (!screenXS.matches) {
+        hamburgerButton.style.display = "none";
+        arrowUpButton.style.display = "none";
+        navTag.style.transform = "translate(0, 0)";
+    }
+    else {
+        hamburgerButton.style.display = "flex";
+        arrowUpButton.style.display = "none";
+        navTag.style.transform = "translate(0, -10.25rem)";
+    }
+}
+
+hamburgerButton.addEventListener('click', () => {
+    if (screenXS.matches) {
+        hamburgerButton.style.display = "none";
+        arrowUpButton.style.display = "flex";
+
+        navTag.classList.add('hamburgerMenuDrop');
+        navTag.classList.remove('hamburgerMenuRaise');
+
+        navTag.style.transform = "translate(0,0)";
+    }
+});
+arrowUpButton.addEventListener('click', () => {
+    if (screenXS.matches) {
+        hamburgerButton.style.display = "flex";
+        arrowUpButton.style.display = "none";
+
+        navTag.classList.remove('hamburgerMenuDrop');
+        navTag.classList.add('hamburgerMenuRaise');
+
+        navTag.style.transform = "translate(0, -10.25rem)";
+    }
+});
+
 
 
 // CV Tooltip Hover

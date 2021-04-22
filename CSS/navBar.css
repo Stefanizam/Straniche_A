@@ -8,6 +8,80 @@ nav {
     cursor: default;
     background-color: #202020;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .35);
+    transform-origin: top;
+    transform: translate(0, 0);
+}
+
+.hamburgerMenuDrop {
+    animation-name: hamburgerMenuDrop;
+    animation-timing-function: ease;
+    animation-duration: .25s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+.hamburgerMenuRaise {
+    animation-name: hamburgerMenuRaise;
+    animation-timing-function: ease;
+    animation-duration: .25s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes hamburgerMenuDrop {
+    0% {
+        transform: translate(0, -10.25rem);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes hamburgerMenuRaise {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -10.25rem);
+    }
+}
+
+#hamburgerContainer {
+    display: none;
+    justify-content: flex-end;
+    height: 2.5rem;
+}
+
+#hideNavBar {
+    display: none;
+    justify-content: center;
+    height: 1.5rem;
+}
+
+#arrowUp {
+    height: 1.5rem;
+    width: 100%;
+    position: relative;
+    padding: 0 1rem;
+    background-color: #171717;
+    transition: all .35s;
+}
+
+#arrowUp:hover {
+    background-color: #ED1A3B;
+}
+
+#hamburger {
+    position: relative;
+    height: 2.5rem;
+    width: 1.5rem;
+    padding: 0 1rem;
+    background-color: #171717;
+    transition: all .35s;
+    border-left: 1px solid #303030;
+}
+
+#hamburger:hover {
+    background-color: #ED1A3B;
 }
 
 #navBar {
@@ -24,12 +98,12 @@ nav div {
     text-align: center;
 }
 
-nav>div {
-    border-left: 1px solid rgba(255, 255, 255, .1);
+#navBar>div {
+    border-left: 1px solid #303030;
 }
 
-nav>div:last-child {
-    border-right: 1px solid rgba(255, 255, 255, .1);
+#navBar>div:last-child {
+    border-right: 1px solid #303030;
 }
 
 nav p {
@@ -86,10 +160,14 @@ nav p {
     nav {
         direction: column;
         justify-content: center;
+        transform: translate(0, -10.25rem);
     }
     #navBar {
         width: 100%;
         flex-direction: column;
+    }
+    #hamburgerContainer {
+        display: flex;
     }
     .navBtn, .subNavBtn {
         width: 100%;
