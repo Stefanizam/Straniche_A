@@ -103,12 +103,12 @@
 
 #downloadCV {
     position: relative;
-    border: 1px rgba(255, 255, 255, .1) solid;
-    background-color: transparent;
+    border: 1px #303030 solid;
+    background-color: #171717;
     width: 8rem;
     height: 2.5rem;
     margin: 0;
-    transition: background-color 1s;
+    transition: background-color .5s;
 }
 
 #downloadCV:hover {
