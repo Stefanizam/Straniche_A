@@ -161,9 +161,10 @@
     justify-content: center;
     width: 10%;
     overflow: hidden;
+    transition: width .5s ease 0s, transform .35s ease .5s, z-index .4s linear 0.4s;
     -webkit-transition: width .5s ease 0s, transform .35s ease .5s, z-index .4s linear 0.4s;
     -moz-transition: width .5s ease 0s, transform .35s ease .5s, z-index .4s linear 0.4s;
-    transition: width .5s ease 0s, transform .35s ease .5s, z-index .4s linear 0.4s;
+    -o-transition: width .5s ease 0s, transform .35s ease .5s, z-index .4s linear 0.4s;
     transform-origin: center;
     z-index: 1;
 }
