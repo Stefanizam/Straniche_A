@@ -1,0 +1,22 @@
+{
+  "name": "straniche_a",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "main_script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stefanizam/Straniche_A.git"
+  },
+  "author": "Stefan Bozhinovski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stefanizam/Straniche_A/issues"
+  },
+  "homepage": "https://github.com/Stefanizam/Straniche_A#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
